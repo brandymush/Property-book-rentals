@@ -2701,10 +2701,12 @@ a.btn1 {
 }
 
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) img {
-  height: 300px;
+  height: 165px;
   width: 300px;
   margin: auto;
   padding-top: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div {
@@ -2713,7 +2715,7 @@ a.btn1 {
 
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > input {
   height: 40px;
-  width: 150px;
+  width: 100%;
   border: 1px solid #ff0000;
   margin-bottom: 15px;
   padding-left: 20px;
