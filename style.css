@@ -1480,7 +1480,7 @@ button.top img {
             box-shadow: none;
   }
   section.surbubs .main-details img {
-    height: 230px !important;
+    height: auto !important;
   }
   section.surbubs .main-details .position-relative {
     left: auto;
