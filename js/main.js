@@ -26,7 +26,9 @@ var carouselOption={
     margin:10,
     autoplay:false,
     autoplayTimeout:500,
-    nav:true,
+    navigation:true,
+    animateOut: 'fadeOut',
+       animateIn: 'fadeIn',
     autoplayHoverPause:true,
     responsive:{
         0:{
