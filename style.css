@@ -1255,6 +1255,9 @@ button.top img {
   nav.navbar #navbar ul li.nav-item a {
     color: black;
   }
+  button.top {
+    right: 10px;
+  }
   #navbar > div {
     right: 12px;
     top: 0;
