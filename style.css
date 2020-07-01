@@ -69,6 +69,8 @@ nav.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-display: flex;
+  -webkit-align-items: center;
 }
 
 nav.navbar .navbar-toggler {
@@ -101,6 +103,7 @@ nav.navbar #navbar ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-display: flex;
 }
 
 nav.navbar #navbar ul li {
