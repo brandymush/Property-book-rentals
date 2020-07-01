@@ -56,7 +56,7 @@ table {
 button, a:focus {
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 nav.navbar {
@@ -64,8 +64,8 @@ nav.navbar {
   height: 10vh;
   background-color: white;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,8 +101,8 @@ nav.navbar .main-img img {
 
 nav.navbar #navbar ul {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-display: flex;
 }
 
@@ -143,8 +143,8 @@ nav.navbar #navbar ul li a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav.navbar #navbar ul li a img {
@@ -171,16 +171,16 @@ nav.navbar #navbar ul li a .login {
   height: 100px;
   width: 330px;
   -webkit-box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
-          box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
+  box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 5px;
   z-index: 9999;
 }
@@ -196,17 +196,17 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .modal-content .modal-header button {
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  -ms-grid-row-align: end;
+  align-self: end;
   position: absolute;
   right: 20px;
 }
@@ -256,11 +256,11 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -284,11 +284,11 @@ nav.navbar #navbar ul li a .login {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 0 30px;
   position: relative;
   z-index: 999;
@@ -297,7 +297,7 @@ nav.navbar #navbar ul li a .login {
 .heroe .search h1 {
   font-size: 30px;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   padding-bottom: 30px;
   color: white;
 }
@@ -386,11 +386,11 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 20px;
   padding-bottom: 20px;
 }
@@ -424,8 +424,8 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .popular-areas .showcase span::after {
@@ -448,7 +448,7 @@ nav.navbar #navbar ul li a .login {
   width: 100%;
   overflow: hidden;
   -webkit-box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
-          box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
+  box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
   border-radius: 5px;
   position: relative;
   -webkit-transition: height 5s ease-in-out;
@@ -465,15 +465,15 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 20px;
   line-height: 30px;
   -webkit-transition: .5s ease;
@@ -501,7 +501,7 @@ nav.navbar #navbar ul li a .login {
   text-transform: uppercase;
   font-size: 8px;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   margin: auto;
 }
 
@@ -518,7 +518,7 @@ nav.navbar #navbar ul li a .login {
 
 .popular-areas .showcase .item:hover img {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .popular-areas .showcase:hover {
@@ -546,11 +546,11 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 20px;
   padding-bottom: 70px;
 }
@@ -566,7 +566,7 @@ nav.navbar #navbar ul li a .login {
 
 .trending .card {
   -webkit-box-shadow: 0px 5px 20px whitesmoke;
-          box-shadow: 0px 5px 20px whitesmoke;
+  box-shadow: 0px 5px 20px whitesmoke;
   border: none;
   border-radius: 5px;
 }
@@ -590,8 +590,8 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .trending .card .card-body p img {
@@ -609,8 +609,8 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   text-transform: capitalize;
   color: #000000;
 }
@@ -620,8 +620,8 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #000000;
   font-family: "Gotham";
 }
@@ -643,11 +643,11 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 150px;
   font-family: "Gotham";
   font-weight: bolder;
@@ -666,11 +666,11 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: relative;
   top: -200px;
 }
@@ -703,7 +703,7 @@ nav.navbar #navbar ul li a .login {
 .owl-nav button:focus {
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .owl-dots {
@@ -711,8 +711,8 @@ nav.navbar #navbar ul li a .login {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 60px;
 }
 
@@ -727,7 +727,7 @@ nav.navbar #navbar ul li a .login {
 .owl-dots button.owl-dot:focus {
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .owl-dots button.owl-dot.active {
@@ -744,8 +744,8 @@ section.surbubs h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-weight: 900;
   padding-bottom: 20px;
   padding-left: 80px;
@@ -786,14 +786,14 @@ section.surbubs .main-details .region {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 250px;
   -webkit-box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
-          box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
+  box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
   width: 520px;
   padding: 40px 80px;
   margin: auto;
@@ -822,7 +822,7 @@ section.surbubs .main-details .region .left button {
   height: 37px;
   width: 150px;
   -webkit-box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
-          box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
+  box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
 }
 
 section.surbubs .main-details .region span {
@@ -849,12 +849,12 @@ section.surbubs button.control {
   height: 40px;
   width: 150px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: white;
   font-family: 'Gotham';
   border: none;
@@ -879,8 +879,8 @@ section.surbubs .carousel-item {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-weight: 900;
   padding-bottom: 290px;
   padding-left: 80px;
@@ -899,7 +899,7 @@ section.surbubs .carousel-item {
   text-align: center;
   width: 320px;
   -webkit-box-shadow: 0px 3px 8px #646464;
-          box-shadow: 0px 3px 8px #646464;
+  box-shadow: 0px 3px 8px #646464;
   padding: 40px 10px;
   height: 100%;
   position: relative;
@@ -912,7 +912,7 @@ section.surbubs .carousel-item {
   left: 50%;
   top: -35%;
   -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .community .social-media p {
@@ -948,12 +948,12 @@ section.surbubs .carousel-item {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 150px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: white;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -994,11 +994,11 @@ section.submit {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 50px 20px;
 }
 
@@ -1063,11 +1063,11 @@ footer.main-footer {
 
 footer.main-footer .footer-inner {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 60px 0;
 }
 
@@ -1090,11 +1090,11 @@ footer.main-footer .last {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 footer.main-footer .last p {
@@ -1107,8 +1107,8 @@ footer.main-footer .last .icons {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 footer.main-footer .last .icons a {
@@ -1162,7 +1162,7 @@ button.top img {
     width: 60%;
     padding: 20px;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   section.surbubs .sub-details {
     display: none;
@@ -1235,8 +1235,8 @@ button.top img {
   }
   nav.navbar #navbar ul {
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     line-height: 2;
   }
   nav.navbar #navbar ul li.nav-item {
@@ -1257,6 +1257,7 @@ button.top img {
   }
   button.top {
     right: 10px;
+    height: 60px;
   }
   #navbar > div {
     right: 12px;
@@ -1268,8 +1269,8 @@ button.top img {
   section.submit {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   section.submit img {
     height: 30px;
@@ -1291,15 +1292,15 @@ button.top img {
   .heroe .search h1 {
     font-size: 30px;
     -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
     padding-bottom: 30px;
     color: white;
   }
   .heroe .search form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .heroe .search form input {
     width: 100%;
@@ -1323,12 +1324,12 @@ button.top img {
   }
   .heroe .search form button {
     -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    -ms-flex-order: 4;
+    order: 4;
   }
   .heroe .search ul {
     -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
   }
   .heroe .search ul li {
     padding-right: 0px;
@@ -1341,11 +1342,11 @@ button.top img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 5px;
   }
   .heroe .search ul li a {
@@ -1392,7 +1393,7 @@ button.top img {
   .popular-areas .showcase .item {
     width: 100%;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .popular-areas:hover .showcase {
     width: 100%;
@@ -1401,7 +1402,7 @@ button.top img {
     height: 350px;
     width: 100%;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .trending {
     margin-bottom: 50px;
@@ -1426,11 +1427,11 @@ button.top img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     position: relative;
     top: -200px;
   }
@@ -1458,7 +1459,7 @@ button.top img {
   .owl-nav button:focus {
     outline: none;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .owl-dots button.owl-dot {
     height: 18px;
@@ -1480,7 +1481,7 @@ button.top img {
   }
   section.surbubs .main-details {
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   section.surbubs .main-details img {
     height: auto !important;
@@ -1488,12 +1489,12 @@ button.top img {
   section.surbubs .main-details .position-relative {
     left: auto;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   section.surbubs .main-details .region {
     width: 100%;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   section.surbubs .main-details .region .left span {
     font-size: 65px;
@@ -1513,8 +1514,8 @@ button.top img {
     padding-left: 0px;
     text-align: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .community h2:after {
     display: none;
@@ -1552,11 +1553,11 @@ button.top img {
   footer.main-footer .last {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   footer.main-footer .last p {
     font-size: 12px;
