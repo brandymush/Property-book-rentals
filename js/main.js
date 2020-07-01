@@ -25,6 +25,7 @@ var carouselOption={
     // loop:true,
     margin:10,
     autoplay:false,
+    // nav:true,
     autoplayTimeout:500,
     navigation:true,
     animateOut: 'fadeOut',
