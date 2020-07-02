@@ -69,7 +69,7 @@ nav.navbar{padding: 0 120px;height:10vh;background-color:white;-webkit-box-align
 		img{height: 4rem;}
 	}
 	#navbar{
-		ul{-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-display:flex;
+		ul{-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-display:flex;
 			li{margin: 0 10px;
 				&:nth-of-type(3){
 					img{position: relative;}
@@ -190,8 +190,8 @@ nav.navbar{padding: 0 120px;height:10vh;background-color:white;-webkit-box-align
 					img{height:auto;padding-right: 12px;width: 30px;}
 				}
 				.services{border-bottom: 2px solid lightgray;border-top: 2px solid lightgray;padding:15px 0px;margin:20px 0;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;text-transform: capitalize;color:#000000;
-					span{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#000000;font-family: "Gotham";
-						img{height: 30px;width: auto;padding-left: 10px;}
+					span{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#4D4D4D;font-family: "Font Awesome 5 Free";
+						
 					}
 				}
 				a{background: red;color: white;margin:0 auto;text-align: center;text-transform: capitalize;padding: 10px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 150px;font-family: "Gotham";font-weight:bolder;font-style:bold;font-weight: 900;text-decoration: none;

@@ -72,3 +72,13 @@ $("#myBtn").click(function() {
         scrollTop: $("nav").offset().top},
         'slow');
 });
+
+
+
+function myFunction(imgs) {
+    var expandImg = document.getElementById("brend");
+
+    expandImg.src = imgs.src ;
+
+
+}

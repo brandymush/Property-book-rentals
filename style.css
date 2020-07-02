@@ -103,7 +103,7 @@ nav.navbar #navbar ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-display: flex;
+  -webkit-box-display: flex;
 }
 
 nav.navbar #navbar ul li {
@@ -622,14 +622,8 @@ nav.navbar #navbar ul li a .login {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #000000;
-  font-family: "Gotham";
-}
-
-.trending .card .card-body .services span img {
-  height: 30px;
-  width: auto;
-  padding-left: 10px;
+  color: #4D4D4D;
+  font-family: "Font Awesome 5 Free";
 }
 
 .trending .card .card-body a {
