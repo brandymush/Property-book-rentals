@@ -45,6 +45,13 @@ var carouselOption={
 
 }
 owl.owlCarousel(carouselOption);
+
+
+$('.carousel').carousel({
+    interval: false,
+  });
+
+
   
 
 
@@ -67,7 +74,7 @@ owl.owlCarousel(carouselOption);
 //   document.documentElement.scrollTop = 0;
 // }
 
-$("#myBtn").click(function() {
+$(".myBtn").click(function() {
     $('html,body').animate({
         scrollTop: $("nav").offset().top},
         'slow');

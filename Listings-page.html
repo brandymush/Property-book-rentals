@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="fontawesome-5.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <!-- header start -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand main-img" href="index.html"><img src="images/Images/Harare Rentals Logo.png" alt=""></a>
+    <button class="navbar-toggler ml-auto border-none" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Listings-page.html">Rentals <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Property for sale</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  position-relative dollar" ><img  src="images/icons8-currency-exchange-24.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#" ><span class="fa fa-plus"></span> list Property</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link btn-login" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><span><!--<img src="images/user.png" alt="">--></span>  login</a>
+        </li>
+      </ul>
+      <div class="currency-container position-absolute">
+        <div class="currency-menu">
+            <ul class="list-unstyled currency-ul">
+                <li style="font-weight: bold">
+                    <a class="bg-default" href="javascript:void(0)" >USD - Foreign Transactions</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" >ZWL - Local Transactions</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+ <!-- header ends -->
+
+ <!-- LOGIN MODAL -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel" >Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="post" class="form-group">
+         <input class="form-control" type="phone number" placeholder="Phone Number" required>
+         <input class="form-control" type="pasword" placeholder="Password" required>
+         <button class="form-control" role="button">sign in</button>
+        </form>
+        <p>forgot password click  <a href="">here</a>to reset </p>
+      </div>
+     
+       
+      </div>
+    </div>
+  </div>
+
+
+ <!-- LOGIN MODAL ENDS -->
+
+
+
+
+    
+ <section class="heroe-listings">
+   <div class="overlay">
+     
+   </div>
+      
+  <div class="search">
+    <h1>Find Places to rent in Harare</h1>
+    <form action="post">
+    <input  type="text" placeholder="Search For a Rental in Harare" role="combobox" autocomplete="none"><button>search</button>
+  </form>
+  <span class="dropdown-wrapper" aria-hidden="true"></span>
+  <!-- Example split danger button -->
+  <ul class="nav"> 
+    <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         Bills
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#" >5</a>
+          <a class="dropdown-item" href="#" >10</a>
+          <a class="dropdown-item" href="#" >28</a>
+          <a class="dropdown-item" href="#" >28</a>
+          <a class="dropdown-item" href="#" >28</a>
+          <a class="dropdown-item" href="#" >28</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Property type
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         Rooms
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Bathrooms
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         Bills
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  </div>
+</section>
+
+<!-- heroe ends -->
+
+<!-- Listed -->
+
+<section class="listed">
+    <div class="container">
+        <div class="list-head d-flex justify-content-between align-content center">
+            <div class="left">
+                <h2>Harare Rentals</h2>
+                <span>20 results</span>
+            </div>
+
+            <div class="right">
+                <a href="#" ><i><img src="images/reload.png" alt=""></i> Reset Search</a>
+                <a href=""> <span class="fa fa-heart"></span> Save Search</a>
+              
+                <div class="dropdown d-inline">
+                  <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="">Price (Lo-High)<i class="fa fa-angle-down"></i></a>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Newest</a>
+                    <a class="dropdown-item" href="#">Price(Hi-Lo)</a>
+                    <a class="dropdown-item" href="#">Price(Lo-hi)</a>
+                    <a class="dropdown-item" href="#">Lowest SqFt</a>
+                  </div>
+                </div>
+                <a href="">Property Rank</a>
+               
+            </div>
+
+            
+        </div>
+
+
+       
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="information">
+                  <div class="card form">
+                      <h2>Subscribe to our newsletter</h2>
+                      <p>get notifications of our properties on rental</p>
+                      <form action="" class="form-group">
+                          <input class="form-control" type="text" placeholder="Enter Your Email">
+                          <button class="btn form-control">Submit</button>
+                      </form>
+                  </div>
+
+                  <div class="card searches">
+                    <h2>Related Searches</h2>
+                    <a href="">Apartments/Flats to Rent in Zimbabwe</a>
+                    <a href="">Offices to Rent in Zimbabwe</a>
+                    <a href="">Auctions to Rent in Zimbabwe</a>
+                    <a href="">Retails to Rent in Zimbabwe</a>
+                    <a href="">Commercials to Rent in Zimbabwe</a>
+                    <a href="">Rooms/Shared to Rent in Zimbabwe</a>
+                    <a href="">Cottages to Rent in Zimbabwe</a>
+                    
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-9 border-top pt-5 px-0">
+
+
+
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item d-sm-none d-lg-block" data-ride="carousel">
+
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+                <div class="properties col-12 p-0">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4 col-sm-12 col-md-6">
+                            <div class="property-cards">
+                                <div class="img-infor">
+                                  <div class="overlay">
+                                    <a href=""> <i class="fa fa-camera"></i> 19</a>
+                                  
+                                  </div>
+                                    <img class="img-fluid" src="images/feature_-_IMG_5467.jpg" alt="">
+                                    <div class="top">
+                                        <a href="">Featured</a>
+                                        <a href="">Rent</a>
+                                    </div>
+
+                                </div>
+                                <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                                <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                                <div class="items">
+                                    <a href=""><span class="fa fa-bed"></span> 4</a>
+                                    <a href=""><span class="fa fa-bath"></span> 4</a>
+                                    <a href=""><span class="fa fa-box"></span> 2019</a>
+                                    <a href=""><span class="fa fa-car"></span> 4</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6">
+                          <div class="property-cards">
+                              <div class="img-infor">
+                                <div class="overlay">
+                                  <a href=""> <i class="fa fa-camera"></i> 19</a>
+                                
+                                </div>
+                                  <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                                  <div class="top">
+                                      <a href="">Featured</a>
+                                      <a href=""> Pending </a>
+                                  </div>
+
+                              </div>
+                              <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
+                              <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                              <div class="items">
+                                  <a href=""><span class="fa fa-bed"></span> 4</a>
+                                  <a href=""><span class="fa fa-bath"></span> 4</a>
+                                  <a href=""><span class="fa fa-box"></span> 2019</a>
+                                  <a href=""><span class="fa fa-car"></span> 4</a>
+                              </div>
+                          </div>
+                        
+                      </div>
+                      <div class="col-lg-4 col-sm-12 col-md-6 ">
+                        <div class="property-cards">
+                            <div class="img-infor">
+                              <div class="overlay">
+                                <a href=""> <i class="fa fa-camera"></i> 19</a>
+                              
+                              </div>
+                                <img class="img-fluid" src="images/0d.jpg" alt="">
+                                <div class="top">
+                                    <a href="">Featured</a>
+                                    <a href="">Urgent</a>
+                                </div>
+
+                            </div>
+                            <h3>Villa in Riverside    <img src="images/agent7.png" alt="" class="logo"></h3>
+                            <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                            <div class="items">
+                                <a href=""><span class="fa fa-bed"></span> 4</a>
+                                <a href=""><span class="fa fa-bath"></span> 4</a>
+                                <a href=""><span class="fa fa-box"></span> 2019</a>
+                                <a href=""><span class="fa fa-car"></span> 4</a>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-md-6">
+                      <div class="property-cards">
+                          <div class="img-infor">
+                            <div class="overlay">
+                              <a href=""> <i class="fa fa-camera"></i> 19</a>
+                            
+                            </div>
+                              <img class="img-fluid" src="images/abalina_beach_cottage_front-left-photo_01-500x333.jpg" alt="">
+                              <div class="top">
+                                  <a href="">Featured</a>
+                                  <a href="">Rent</a>
+                              </div>
+
+                          </div>
+                          <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                          <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                          <div class="items">
+                              <a href=""><span class="fa fa-bed"></span> 4</a>
+                              <a href=""><span class="fa fa-bath"></span> 4</a>
+                              <a href=""><span class="fa fa-box"></span> 2019</a>
+                              <a href=""><span class="fa fa-car"></span> 4</a>
+                          </div>
+                      </div>
+                    
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-6">
+                    <div class="property-cards">
+                        <div class="img-infor">
+                          <div class="overlay">
+                            <a href=""> <i class="fa fa-camera"></i> 19</a>
+                          
+                          </div>
+                            <img class="img-fluid" src="images/jacques-bopp-wtzOhxEX4WU-unsplash.jpg" alt="">
+                            <div class="top">
+                                <a href="">Featured</a>
+                                <a href="">Rent</a>
+                            </div>
+
+                        </div>
+                        <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                        <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                        <div class="items">
+                            <a href=""><span class="fa fa-bed"></span> 4</a>
+                            <a href=""><span class="fa fa-bath"></span> 4</a>
+                            <a href=""><span class="fa fa-box"></span> 2019</a>
+                            <a href=""><span class="fa fa-car"></span> 4</a>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-6 ">
+                  <div class="property-cards">
+                      <div class="img-infor">
+                        <div class="overlay">
+                          <a href=""> <i class="fa fa-camera"></i> 19</a>
+                        
+                        </div>
+                          <img class="img-fluid" src="images/img/brick-country-home.jpg" alt="">
+                          <div class="top">
+                              <a href="">Featured</a>
+                              <a href="">Rent</a>
+                          </div>
+
+                      </div>
+                      <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                      <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                      <div class="items">
+                          <a href=""><span class="fa fa-bed"></span> 4</a>
+                          <a href=""><span class="fa fa-bath"></span> 4</a>
+                          <a href=""><span class="fa fa-box"></span> 2019</a>
+                          <a href=""><span class="fa fa-car"></span> 4</a>
+                      </div>
+                  </div>
+                
+              </div>
+                    <div class="col-lg-4 col-sm-12 col-md-6 ">
+                      <div class="property-cards">
+                          <div class="img-infor">
+                            <div class="overlay">
+                              <a href=""> <i class="fa fa-camera"></i> 19</a>
+                            
+                            </div>
+                              <img class="img-fluid" src="images/img/colorful-heritage-homes.jpg" alt="">
+                              <div class="top">
+                                  <a href="">Featured</a>
+                                  <a href="">Sole Mandate</a>
+                              </div>
+
+                          </div>
+                          <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                          <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                          <div class="items">
+                              <a href=""><span class="fa fa-bed"></span> 4</a>
+                              <a href=""><span class="fa fa-bath"></span> 4</a>
+                              <a href=""><span class="fa fa-box"></span> 2019</a>
+                              <a href=""><span class="fa fa-car"></span> 4</a>
+                          </div>
+                      </div>
+                    
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-6">
+                    <div class="property-cards">
+                        <div class="img-infor">
+                          <div class="overlay">
+                            <a href=""> <i class="fa fa-camera"></i> 19</a>
+                          
+                          </div>
+                            <img class="img-fluid" src="images/img/high-end-country-home-on-hillside.jpg" alt="">
+                            <div class="top">
+                                <a href="">Priority</a>
+                                <a href="">Rent</a>
+                            </div>
+
+                        </div>
+                        <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                        <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                        <div class="items">
+                            <a href=""><span class="fa fa-bed"></span> 4</a>
+                            <a href=""><span class="fa fa-bath"></span> 4</a>
+                            <a href=""><span class="fa fa-box"></span> 2019</a>
+                            <a href=""><span class="fa fa-car"></span> 4</a>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-6 ">
+                  <div class="property-cards">
+                      <div class="img-infor">
+                        <div class="overlay">
+                          <a href=""> <i class="fa fa-camera"></i> 19</a>
+                        
+                        </div>
+                          <img class="img-fluid" src="images/img/high-end-country-home-on-hillside.jpg" alt="">
+                          <div class="top">
+                              <a href="">Priority</a>
+                              <a href="">Rent</a>
+                          </div>
+
+                      </div>
+                      <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                      <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                      <div class="items">
+                          <a href=""><span class="fa fa-bed"></span> 4</a>
+                          <a href=""><span class="fa fa-bath"></span> 4</a>
+                          <a href=""><span class="fa fa-box"></span> 2019</a>
+                          <a href=""><span class="fa fa-car"></span> 4</a>
+                      </div>
+                  </div>
+                
+              </div>
+              <div class="col-lg-4 col-sm-12 col-md-6 ">
+                <div class="property-cards">
+                    <div class="img-infor">
+                      <div class="overlay">
+                        <a href=""> <i class="fa fa-camera"></i> 19</a>
+                      
+                      </div>
+                        <img class="img-fluid" src="images/Images/HDhut.blogspot.com (6).jpeg" alt="">
+                        <div class="top">
+                            <a href="">Priority</a>
+                            <a href="">Rent</a>
+                        </div>
+
+                    </div>
+                    <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                    <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                    <div class="items">
+                        <a href=""><span class="fa fa-bed"></span> 4</a>
+                        <a href=""><span class="fa fa-bath"></span> 4</a>
+                        <a href=""><span class="fa fa-box"></span> 2019</a>
+                        <a href=""><span class="fa fa-car"></span> 4</a>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-6">
+              <div class="property-cards">
+                  <div class="img-infor">
+                    <div class="overlay">
+                      <a href=""> <i class="fa fa-camera"></i> 19</a>
+                    
+                    </div>
+                      <img class="img-fluid" src="images/Images/HDhut.blogspot.com (6).jpeg" alt="">
+                      <div class="top">
+                          <a href="">Priority</a>
+                          <a href="">Rent</a>
+                      </div>
+
+                  </div>
+                  <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                  <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                  <div class="items">
+                      <a href=""><span class="fa fa-bed"></span> 4</a>
+                      <a href=""><span class="fa fa-bath"></span> 4</a>
+                      <a href=""><span class="fa fa-box"></span> 2019</a>
+                      <a href=""><span class="fa fa-car"></span> 4</a>
+                  </div>
+              </div>
+            
+          </div>
+          <div class="col-lg-4 col-sm-12 col-md-6 ">
+            <div class="property-cards">
+                <div class="img-infor">
+                  <div class="overlay">
+                    <a href=""> <i class="fa fa-camera"></i> 19</a>
+                  
+                  </div>
+                    <img class="img-fluid" src="images/Images/HDhut.blogspot.com (6).jpeg" alt="">
+                    <div class="top">
+                        <a href="">Ordinary</a>
+                        <a href="">Rent</a>
+                    </div>
+
+                </div>
+                <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                <div class="items">
+                    <a href=""><span class="fa fa-bed"></span> 4</a>
+                    <a href=""><span class="fa fa-bath"></span> 4</a>
+                    <a href=""><span class="fa fa-box"></span> 2019</a>
+                    <a href=""><span class="fa fa-car"></span> 4</a>
+                </div>
+            </div>
+          
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-6 ">
+          <div class="property-cards">
+              <div class="img-infor">
+                <div class="overlay">
+                  <a href=""> <i class="fa fa-camera"></i> 19</a>
+                
+                </div>
+                  <img class="img-fluid" src="images/property.jpg" alt="">
+                  <div class="top">
+                      <a href="">Ordinary</a>
+                      <a href="">Rent</a>
+                  </div>
+
+              </div>
+              <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+              <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+              <div class="items">
+                  <a href=""><span class="fa fa-bed"></span> 4</a>
+                  <a href=""><span class="fa fa-bath"></span> 4</a>
+                  <a href=""><span class="fa fa-box"></span> 2019</a>
+                  <a href=""><span class="fa fa-car"></span> 4</a>
+              </div>
+          </div>
+        
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-6 ">
+        <div class="property-cards">
+            <div class="img-infor">
+              <div class="overlay">
+                <a href=""> <i class="fa fa-camera"></i> 19</a>
+              
+              </div>
+                <img class="img-fluid" src="images/property.jpg" alt="">
+                <div class="top">
+                    <a href="">Ordinary</a>
+                    <a href="">Rent</a>
+                </div>
+
+            </div>
+            <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+            <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+            <div class="items">
+                <a href=""><span class="fa fa-bed"></span> 4</a>
+                <a href=""><span class="fa fa-bath"></span> 4</a>
+                <a href=""><span class="fa fa-box"></span> 2019</a>
+                <a href=""><span class="fa fa-car"></span> 4</a>
+            </div>
+        </div>
+      
+    </div>
+    <div class="col-lg-4 col-sm-12 col-md-6 ">
+      <div class="property-cards">
+          <div class="img-infor">
+            <div class="overlay">
+              <a href=""> <i class="fa fa-camera"></i> 19</a>
+            
+            </div>
+              <img class="img-fluid" src="images/property.jpg" alt="">
+              <div class="top">
+                  <a href="">Ordinary</a>
+                  <a href="">Rent</a>
+              </div>
+
+          </div>
+          <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+          <p> <span><del>$5,000/mo</del> </span>$200/mo</p>
+          <div class="items">
+              <a href=""><span class="fa fa-bed"></span> 4</a>
+              <a href=""><span class="fa fa-bath"></span> 4</a>
+              <a href=""><span class="fa fa-box"></span> 2019</a>
+              <a href=""><span class="fa fa-car"></span> 4</a>
+          </div>
+      </div>
+    
+  </div>
+                    </div>
+                </div>
+
+        </div>
+
+         <!--Second slide-->
+
+         <div class="carousel-item">
+          <div class="properties col-12 p-0">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-sm-12 col-md-6">
+                    <div class="property-cards">
+                        <div class="img-infor">
+                          <div class="overlay">
+                            <a href=""> <i class="fa fa-camera"></i> 19</a>
+                          
+                          </div>
+                            <img class="img-fluid" src="images/feature_-_IMG_5467.jpg" alt="">
+                            <div class="top">
+                                <a href="">Featured</a>
+                                <a href="">Rent</a>
+                            </div>
+
+                        </div>
+                        <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                        <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                        <div class="items">
+                            <a href=""><span class="fa fa-bed"></span> 4</a>
+                            <a href=""><span class="fa fa-bath"></span> 4</a>
+                            <a href=""><span class="fa fa-box"></span> 2019</a>
+                            <a href=""><span class="fa fa-car"></span> 4</a>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-6">
+                  <div class="property-cards">
+                      <div class="img-infor">
+                        <div class="overlay">
+                          <a href=""> <i class="fa fa-camera"></i> 19</a>
+                        
+                        </div>
+                          <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                          <div class="top">
+                              <a href="">Featured</a>
+                              <a href=""> Pending </a>
+                          </div>
+
+                      </div>
+                      <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
+                      <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                      <div class="items">
+                          <a href=""><span class="fa fa-bed"></span> 4</a>
+                          <a href=""><span class="fa fa-bath"></span> 4</a>
+                          <a href=""><span class="fa fa-box"></span> 2019</a>
+                          <a href=""><span class="fa fa-car"></span> 4</a>
+                      </div>
+                  </div>
+                
+              </div>
+              <div class="col-lg-4 col-sm-12 col-md-6">
+                <div class="property-cards">
+                    <div class="img-infor">
+                      <div class="overlay">
+                        <a href=""> <i class="fa fa-camera"></i> 19</a>
+                      
+                      </div>
+                        <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                        <div class="top">
+                            <a href="">Featured</a>
+                            <a href=""> Pending </a>
+                        </div>
+
+                    </div>
+                    <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
+                    <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                    <div class="items">
+                        <a href=""><span class="fa fa-bed"></span> 4</a>
+                        <a href=""><span class="fa fa-bath"></span> 4</a>
+                        <a href=""><span class="fa fa-box"></span> 2019</a>
+                        <a href=""><span class="fa fa-car"></span> 4</a>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-6">
+              <div class="property-cards">
+                  <div class="img-infor">
+                    <div class="overlay">
+                      <a href=""> <i class="fa fa-camera"></i> 19</a>
+                    
+                    </div>
+                      <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                      <div class="top">
+                          <a href="">Featured</a>
+                          <a href=""> Pending </a>
+                      </div>
+
+                  </div>
+                  <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
+                  <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                  <div class="items">
+                      <a href=""><span class="fa fa-bed"></span> 4</a>
+                      <a href=""><span class="fa fa-bath"></span> 4</a>
+                      <a href=""><span class="fa fa-box"></span> 2019</a>
+                      <a href=""><span class="fa fa-car"></span> 4</a>
+                  </div>
+              </div>
+            
+          </div>
+          <div class="col-lg-4 col-sm-12 col-md-6">
+            <div class="property-cards">
+                <div class="img-infor">
+                  <div class="overlay">
+                    <a href=""> <i class="fa fa-camera"></i> 19</a>
+                  
+                  </div>
+                    <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                    <div class="top">
+                        <a href="">Featured</a>
+                        <a href=""> Pending </a>
+                    </div>
+
+                </div>
+                <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
+                <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                <div class="items">
+                    <a href=""><span class="fa fa-bed"></span> 4</a>
+                    <a href=""><span class="fa fa-bath"></span> 4</a>
+                    <a href=""><span class="fa fa-box"></span> 2019</a>
+                    <a href=""><span class="fa fa-car"></span> 4</a>
+                </div>
+            </div>
+          
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-6">
+          <div class="property-cards">
+              <div class="img-infor">
+                <div class="overlay">
+                  <a href=""> <i class="fa fa-camera"></i> 19</a>
+                
+                </div>
+                  <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                  <div class="top">
+                      <a href="">Featured</a>
+                      <a href=""> Pending </a>
+                  </div>
+
+              </div>
+              <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
+              <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+              <div class="items">
+                  <a href=""><span class="fa fa-bed"></span> 4</a>
+                  <a href=""><span class="fa fa-bath"></span> 4</a>
+                  <a href=""><span class="fa fa-box"></span> 2019</a>
+                  <a href=""><span class="fa fa-car"></span> 4</a>
+              </div>
+          </div>
+        
+      </div>
+              <div class="col-lg-4 col-sm-12 col-md-6 ">
+                <div class="property-cards">
+                    <div class="img-infor">
+                      <div class="overlay">
+                        <a href=""> <i class="fa fa-camera"></i> 19</a>
+                      
+                      </div>
+                        <img class="img-fluid" src="images/0d.jpg" alt="">
+                        <div class="top">
+                            <a href="">Featured</a>
+                            <a href="">Urgent</a>
+                        </div>
+
+                    </div>
+                    <h3>Villa in Riverside    <img src="images/agent7.png" alt="" class="logo"></h3>
+                    <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                    <div class="items">
+                        <a href=""><span class="fa fa-bed"></span> 4</a>
+                        <a href=""><span class="fa fa-bath"></span> 4</a>
+                        <a href=""><span class="fa fa-box"></span> 2019</a>
+                        <a href=""><span class="fa fa-car"></span> 4</a>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+
+      </div>
+      <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+     <!--3rd slide-->
+
+     <div class="carousel-item">
+      <div class="properties col-12 p-0">
+        <div class="row justify-content-between">
+            <div class="col-lg-4 col-sm-12 col-md-6">
+                <div class="property-cards">
+                    <div class="img-infor">
+                      <div class="overlay">
+                        <a href=""> <i class="fa fa-camera"></i> 19</a>
+                      
+                      </div>
+                        <img class="img-fluid" src="images/feature_-_IMG_5467.jpg" alt="">
+                        <div class="top">
+                            <a href="">Featured</a>
+                            <a href="">Rent</a>
+                        </div>
+
+                    </div>
+                    <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
+                    <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                    <div class="items">
+                        <a href=""><span class="fa fa-bed"></span> 4</a>
+                        <a href=""><span class="fa fa-bath"></span> 4</a>
+                        <a href=""><span class="fa fa-box"></span> 2019</a>
+                        <a href=""><span class="fa fa-car"></span> 4</a>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-6">
+              <div class="property-cards">
+                  <div class="img-infor">
+                    <div class="overlay">
+                      <a href=""> <i class="fa fa-camera"></i> 19</a>
+                    
+                    </div>
+                      <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                      <div class="top">
+                          <a href="">Featured</a>
+                          <a href=""> Pending </a>
+                      </div>
+
+                  </div>
+                  <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
+                  <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                  <div class="items">
+                      <a href=""><span class="fa fa-bed"></span> 4</a>
+                      <a href=""><span class="fa fa-bath"></span> 4</a>
+                      <a href=""><span class="fa fa-box"></span> 2019</a>
+                      <a href=""><span class="fa fa-car"></span> 4</a>
+                  </div>
+              </div>
+            
+          </div>
+          <div class="col-lg-4 col-sm-12 col-md-6">
+            <div class="property-cards">
+                <div class="img-infor">
+                  <div class="overlay">
+                    <a href=""> <i class="fa fa-camera"></i> 19</a>
+                  
+                  </div>
+                    <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                    <div class="top">
+                        <a href="">Featured</a>
+                        <a href=""> Pending </a>
+                    </div>
+
+                </div>
+                <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
+                <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                <div class="items">
+                    <a href=""><span class="fa fa-bed"></span> 4</a>
+                    <a href=""><span class="fa fa-bath"></span> 4</a>
+                    <a href=""><span class="fa fa-box"></span> 2019</a>
+                    <a href=""><span class="fa fa-car"></span> 4</a>
+                </div>
+            </div>
+          
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-6">
+          <div class="property-cards">
+              <div class="img-infor">
+                <div class="overlay">
+                  <a href=""> <i class="fa fa-camera"></i> 19</a>
+                
+                </div>
+                  <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                  <div class="top">
+                      <a href="">Featured</a>
+                      <a href=""> Pending </a>
+                  </div>
+
+              </div>
+              <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
+              <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+              <div class="items">
+                  <a href=""><span class="fa fa-bed"></span> 4</a>
+                  <a href=""><span class="fa fa-bath"></span> 4</a>
+                  <a href=""><span class="fa fa-box"></span> 2019</a>
+                  <a href=""><span class="fa fa-car"></span> 4</a>
+              </div>
+          </div>
+        
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="property-cards">
+            <div class="img-infor">
+              <div class="overlay">
+                <a href=""> <i class="fa fa-camera"></i> 19</a>
+              
+              </div>
+                <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                <div class="top">
+                    <a href="">Featured</a>
+                    <a href=""> Pending </a>
+                </div>
+
+            </div>
+            <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
+            <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+            <div class="items">
+                <a href=""><span class="fa fa-bed"></span> 4</a>
+                <a href=""><span class="fa fa-bath"></span> 4</a>
+                <a href=""><span class="fa fa-box"></span> 2019</a>
+                <a href=""><span class="fa fa-car"></span> 4</a>
+            </div>
+        </div>
+      
+    </div>
+    <div class="col-lg-4 col-sm-12 col-md-6">
+      <div class="property-cards">
+          <div class="img-infor">
+            <div class="overlay">
+              <a href=""> <i class="fa fa-camera"></i> 19</a>
+            
+            </div>
+              <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+              <div class="top">
+                  <a href="">Featured</a>
+                  <a href=""> Pending </a>
+              </div>
+
+          </div>
+          <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
+          <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+          <div class="items">
+              <a href=""><span class="fa fa-bed"></span> 4</a>
+              <a href=""><span class="fa fa-bath"></span> 4</a>
+              <a href=""><span class="fa fa-box"></span> 2019</a>
+              <a href=""><span class="fa fa-car"></span> 4</a>
+          </div>
+      </div>
+    
+  </div>
+          <div class="col-lg-4 col-sm-12 col-md-6 ">
+            <div class="property-cards">
+                <div class="img-infor">
+                  <div class="overlay">
+                    <a href=""> <i class="fa fa-camera"></i> 19</a>
+                  
+                  </div>
+                    <img class="img-fluid" src="images/0d.jpg" alt="">
+                    <div class="top">
+                        <a href="">Featured</a>
+                        <a href="">Urgent</a>
+                    </div>
+
+                </div>
+                <h3>Villa in Riverside    <img src="images/agent7.png" alt="" class="logo"></h3>
+                <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
+                <div class="items">
+                    <a href=""><span class="fa fa-bed"></span> 4</a>
+                    <a href=""><span class="fa fa-bath"></span> 4</a>
+                    <a href=""><span class="fa fa-box"></span> 2019</a>
+                    <a href=""><span class="fa fa-car"></span> 4</a>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+
+
+
+
+            </div>
+
+      <!--Controls-->
+      <div class="controls-bottom">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><button>Previous Page</button> </a>
+        <a class="btn-floating" href="#multi-item-example" data-slide="next"><button>Next Page</button> </a>
+      </div>
+      <!--/.Controls-->
+
+      <!-- Indicators
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active">1</li>
+        <li data-target="#multi-item-example" data-slide-to="1"> 2</li>
+        <li data-target="#multi-item-example" data-slide-to="2"> 3</li>
+        <li data-target="#multi-item-example" data-slide-to="2"> 3</li>
+      </ol> -->
+      <!--/.Indicators-->
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- listed end -->
+
+
+
+
+
+
+
+
+
+
+        
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="areas">
+    <div class="container">
+      <h1>Places to rent in harare</h1>
+  
+      <div class="row">
+        <div class="col-md-3 col-6 col-sm-6">
+          <h2>Harare North</h2>
+  
+          <a href="">Avondale</a>
+          <a href="">Mt Pleasant</a>
+          <a href="">Borrowdale</a>
+          <a href="">Greystone</a>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <h2>Harare South</h2>
+  
+          <a href="">Avondale</a>
+          <a href="">Mt Pleasant</a>
+          <a href="">Borrowdale</a>
+          <a href="">Greystone</a>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <h2>Harare West</h2>
+  
+          <a href="">Avondale</a>
+          <a href="">Mt Pleasant</a>
+          <a href="">Borrowdale</a>
+          <a href="">Greystone</a>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <h2>Harare East</h2>
+  
+          <a href="">Avondale</a>
+          <a href="">Mt Pleasant</a>
+          <a href="">Borrowdale</a>
+          <a href="">Greystone</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="submit">
+    <p>Receive our property highlights</p>
+    <img src="images/subscribe-arrow.svg" alt="">
+     <form action="post">
+       <input type="email" placeholder="Email Address" required>
+       <button type="submit">subscribe</button>
+     </form>
+  </section>
+  
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h5>Property</h5>
+          <ul>
+            <li><a href="">Property for sale</a></li>
+            <li><a href="">Property for rent</a></li>
+            <li><a href="">Developments</a></li>
+            <li><a href="">Commercial Rentals</a></li>
+            <li><a href="">Find an Estate Agent</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Advertise</h5>
+          <ul>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Property book the margazine</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="">Property Advice</a></li>
+            <li><a href="">Mortgage Calculator</a></li>
+            <li><a href="">E.A.C</a></li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Facebook Groups</h5>
+          <ul>
+            <li><a href="">harare rentals</a></li>
+            <li><a href=""> harare Property sales</a></li>
+            <li><a href="">harare rooms for rent</a></li>
+            <li><a href="">All Groups(+30)</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+ 
+  
+  <footer class="main-footer">
+    <div class="container">
+    <div class="footer-inner nav">
+      <ul class="nav">
+        <li>
+          <a href=""> about us</a>
+        </li>
+        <li>
+          <a href=""> contact us</a>
+        </li>
+        <li>
+          <a href=""> terms & conditions</a>
+        </li>
+        <li>
+          <a href=""> private policy</a>
+        </li>
+        <li>
+          <a href="">disclaimer</a>
+        </li>
+      </ul>
+  
+      <img src="images/logo.jpeg" alt="">
+    </div>
+    <hr class="hr">
+    <div class="last">
+      <p>This site is protected by copyright and trademark laws under Zimbawe and International <Law class="a">harare rentals.co &copy 2020</Law> </p>
+     
+      <div class="icons">
+        <a href="" class=""> <img src="images/facebook.png" alt=""></a>
+        <a href="" class=""> <img src="images/twitter.png" alt=""></a>
+        <a href="" class=""> <img src="images/linkedin.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <button class="top myBtn" id="myBtn" title="Go to top" > <img src="images/img/up-arrow-png-27154.png" alt=""></button>
+  </footer>
+  
+         <script src="js/jquery.min.js"></script>
+         <script src="js/popper.js"></script>
+         <script src="js/owl.carousel.min.js"></script>
+         <script src="js/owl.carousel.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+        
+         <script src="js/main.js"></script>
+  </body>
+  </html>

@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -96,7 +97,7 @@ nav.navbar .navbar-toggler:focus {
 }
 
 nav.navbar .main-img img {
-  height: 4rem;
+  height: 3rem;
 }
 
 nav.navbar #navbar ul {
@@ -115,7 +116,7 @@ nav.navbar #navbar ul li:nth-of-type(3) img {
 }
 
 nav.navbar #navbar ul li:nth-of-type(4) {
-  background-color: red;
+  background-color: #e93f33;
   border: none;
   color: white;
   border-radius: 5px;
@@ -127,7 +128,7 @@ nav.navbar #navbar ul li:nth-of-type(4) a {
 
 nav.navbar #navbar ul li:nth-of-type(4):hover {
   background: #4D4D4D;
-  color: red;
+  color: #e93f33;
 }
 
 nav.navbar #navbar ul li:last-of-type span img {
@@ -212,7 +213,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .modal-content .modal-header h5 {
-  color: red;
+  color: #e93f33;
   font-size: 20px;
 }
 
@@ -227,7 +228,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .modal-content .modal-body form button {
-  background: red;
+  background: #e93f33;
   width: 80%;
   margin: auto;
   color: white;
@@ -241,7 +242,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .modal-content .modal-body p a {
-  color: red;
+  color: #e93f33;
   text-decoration: none;
   padding: 10px;
 }
@@ -276,7 +277,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .heroe .search {
-  background-color: red;
+  background-color: #e93f33;
   height: 200px;
   width: 60%;
   display: -webkit-box;
@@ -496,7 +497,7 @@ nav.navbar #navbar ul li a .login {
 .popular-areas .showcase .item .overlay button {
   width: 50%;
   border: none;
-  background-color: red;
+  background-color: #e93f33;
   color: white;
   text-transform: uppercase;
   font-size: 8px;
@@ -528,7 +529,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .popular-areas .showcase:hover span, .popular-areas .showcase:hover h5 {
-  color: red;
+  color: #e93f33;
 }
 
 .trending {
@@ -627,7 +628,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .trending .card .card-body a {
-  background: red;
+  background: #e93f33;
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -725,7 +726,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .owl-dots button.owl-dot.active {
-  background: red;
+  background: #e93f33;
 }
 
 section.surbubs {
@@ -799,7 +800,7 @@ section.surbubs .main-details .region {
 section.surbubs .main-details .region .left h5 {
   font-size: 30px;
   font-weight: bolder;
-  color: red;
+  color: #e93f33;
 }
 
 section.surbubs .main-details .region .left p {
@@ -834,7 +835,7 @@ section.surbubs .sub-details img {
 }
 
 section.surbubs button.control {
-  background-color: red;
+  background-color: #e93f33;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -922,7 +923,7 @@ section.surbubs .carousel-item {
   display: inline-block;
   padding: 10px;
   color: white;
-  background-color: red;
+  background-color: #e93f33;
   margin: auto;
   border-radius: 20px;
   font-size: 20px;
@@ -932,8 +933,8 @@ section.surbubs .carousel-item {
   border: none;
   height: 37px;
   width: 100px;
-  color: red;
-  border: 1px solid red;
+  color: #e93f33;
+  border: 1px solid #e93f33;
   border-radius: 15px;
   display: block;
   margin: 20px auto;
@@ -954,7 +955,7 @@ section.surbubs .carousel-item {
 }
 
 .community .social-media button:hover {
-  background-color: red;
+  background-color: #e93f33;
   color: white;
 }
 
@@ -1025,12 +1026,12 @@ section.submit form button {
   height: 40px;
   width: 150px;
   border: none;
-  background: red;
+  background: #e93f33;
   color: white;
 }
 
 section.services {
-  background-color: red;
+  background-color: #e93f33;
   padding: 50px;
 }
 
@@ -1070,7 +1071,7 @@ footer.main-footer .footer-inner ul li {
 }
 
 footer.main-footer .footer-inner ul li a {
-  color: red;
+  color: #e93f33;
   text-transform: capitalize;
   font-size: 20px;
 }
@@ -1115,7 +1116,7 @@ footer.main-footer .last .icons a {
 }
 
 footer.main-footer .last .icons a:hover {
-  background-color: red;
+  background-color: #e93f33;
 }
 
 footer.main-footer .last .icons a img {
@@ -1139,6 +1140,466 @@ button.top img {
   height: 100px;
 }
 
+.heroe-listings {
+  background: url(./images/Images/iStock-140781367.jpg);
+  height: 30vh;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 300px;
+}
+
+.heroe-listings .overlay {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .5;
+  height: 100%;
+  z-index: 1;
+}
+
+.heroe-listings .search {
+  background-color: #e93f33;
+  height: 200px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 30px;
+  position: relative;
+  z-index: 999;
+  top: 50%;
+}
+
+.heroe-listings .search h1 {
+  font-size: 30px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.heroe-listings .search form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.heroe-listings .search form input {
+  width: 90%;
+  height: 50px;
+  padding: 20px;
+  border: none;
+  background: url(./images/iconmonstr-search-thin-240.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-color: white;
+  padding-left: 60px;
+  background-position: 20px center;
+}
+
+.heroe-listings .search form input > ::-webkit-input-placeholder {
+  padding-left: 100px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.heroe-listings .search form input > :-ms-input-placeholder {
+  padding-left: 100px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.heroe-listings .search form input > ::-ms-input-placeholder {
+  padding-left: 100px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.heroe-listings .search form input > ::placeholder {
+  padding-left: 100px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.heroe-listings .search form button {
+  height: 50px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #4D4D4D;
+}
+
+.heroe-listings .search ul {
+  padding: 12px 0;
+}
+
+.heroe-listings .search ul li {
+  padding-right: 20px;
+}
+
+.heroe-listings .search ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.heroe-listings .search ul li .dropdown-item {
+  color: #000000;
+}
+
+section.listed .list-head {
+  margin-bottom: 25px;
+}
+
+section.listed .list-head .left h2 {
+  font-size: 35px;
+  line-height: 40px;
+  padding-bottom: 5px;
+}
+
+section.listed .list-head .left span {
+  font-size: 18px;
+}
+
+section.listed .list-head .right a {
+  color: black;
+  font-size: 16px;
+  padding: 0 10px;
+  text-decoration: none;
+  font-family: 'Gotham';
+}
+
+section.listed .list-head .right a img {
+  height: 16px;
+  margin: auto;
+}
+
+section.listed .list-head .right a i {
+  padding-left: 10px;
+  color: #4D4D4D;
+  font-size: 20px;
+}
+
+section.listed .list-head .right a:hover {
+  background-color: #4D4D4D;
+  color: white;
+  padding: 10px;
+}
+
+section.listed .list-head .right a:hover i {
+  color: white;
+  padding-right: 4px;
+}
+
+section.listed .list-head .right button {
+  background-color: #4D4D4D;
+  color: white;
+}
+
+section.listed .list-head .right button a {
+  color: white;
+}
+
+section.listed .list-head .right button a i {
+  color: white;
+}
+
+section.listed .list-head .right .dropdown-menu {
+  width: 100%;
+}
+
+section.listed .list-head .right .dropdown-menu a {
+  padding-bottom: 10px;
+  color: #4D4D4D;
+}
+
+section.listed .list-head .right .dropdown-menu a:hover {
+  background-color: white;
+  padding: 10px;
+  color: black;
+}
+
+section.listed .card {
+  width: 100%;
+  height: 300px;
+  -webkit-box-shadow: 3px 3px 7px rgba(128, 128, 128, 0.692);
+          box-shadow: 3px 3px 7px rgba(128, 128, 128, 0.692);
+  padding: 20px 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section.listed .card h2 {
+  font-size: 25px;
+  text-align: center;
+  line-height: 30px;
+}
+
+section.listed .card p {
+  padding: 20px 0;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+section.listed .card form input {
+  height: 37px;
+  font-size: 20px;
+  background-color: #e93f33;
+}
+
+section.listed .card form > ::-webkit-input-placeholder {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+section.listed .card form > :-ms-input-placeholder {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+section.listed .card form > ::-ms-input-placeholder {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+section.listed .card form > ::placeholder {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+section.listed .card form button {
+  height: 37px;
+  -webkit-box-sizing: 3px 3px 7px rgba(128, 128, 128, 0.692);
+          box-sizing: 3px 3px 7px rgba(128, 128, 128, 0.692);
+  background-color: #e93f33;
+  margin-top: 16px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+section.listed .card.searches {
+  text-align: center;
+  height: auto;
+}
+
+section.listed .card.searches h2 {
+  padding-bottom: 30px;
+}
+
+section.listed .card.searches a {
+  padding-bottom: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 30px;
+  color: #4D4D4D;
+}
+
+section.listed .card.searches a:hover {
+  color: #e93f33;
+}
+
+section.listed .properties {
+  width: 100%;
+  background-color: #fff;
+  height: 100%;
+  overflow: hidden;
+}
+
+section.listed .properties .property-cards {
+  width: 100%;
+  position: relative;
+  border-radius: 3px;
+  -webkit-box-shadow: -1px -1px -1px rgba(128, 128, 128, 0.692);
+          box-shadow: -1px -1px -1px rgba(128, 128, 128, 0.692);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+section.listed .properties .property-cards .img-infor {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+section.listed .properties .property-cards .img-infor img {
+  width: 100%;
+  height: 100%;
+}
+
+section.listed .properties .property-cards .img-infor .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+section.listed .properties .property-cards .img-infor .overlay a {
+  position: relative;
+  right: -80%;
+  top: 5%;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+section.listed .properties .property-cards .img-infor .top {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+
+section.listed .properties .property-cards .img-infor .top a {
+  background-color: #358ee1;
+  padding: 5px;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+section.listed .properties .property-cards .img-infor .top a:nth-of-type(2) {
+  background-color: #e93f33;
+}
+
+section.listed .properties .property-cards h3 {
+  font-size: 20px;
+  font-weight: 900;
+  font-style: bolder;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.listed .properties .property-cards h3 img.logo {
+  height: 40px;
+}
+
+section.listed .properties .property-cards p {
+  padding-bottom: 10px;
+  font-size: 17px;
+  padding: 10px 12px;
+}
+
+section.listed .properties .property-cards p span {
+  font-size: 12px;
+  color: #4D4D4D;
+}
+
+section.listed .properties .property-cards .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: 1px solid #4D4D4D;
+  padding: 24px 0px;
+}
+
+section.listed .properties .property-cards .items a {
+  color: black;
+  text-decoration: none;
+}
+
+section.listed .properties .property-cards .items a span {
+  color: gray;
+  padding-right: 3px;
+}
+
+section.listed .properties .property-cards .items a span:hover {
+  color: green;
+}
+
+section.listed .properties .property-cards:hover {
+  -webkit-box-shadow: 3px 3px 14px rgba(128, 128, 128, 0.692);
+          box-shadow: 3px 3px 14px rgba(128, 128, 128, 0.692);
+}
+
+section.listed .properties .property-cards:hover .overlay {
+  display: block;
+}
+
+section.listed .properties .property-cards:hover .items a span {
+  color: #358ee1;
+}
+
+section.listed #pages {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+}
+
+section.listed .controls-bottom {
+  margin: 40px 0;
+  text-align: center;
+}
+
+section.listed .controls-bottom a button {
+  height: 37px;
+  width: 180px;
+  background-color: #e93f33;
+  color: white;
+  border: none;
+}
+
 /* Large desktop */
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 800px) and (max-width: 1024px) {
@@ -1146,7 +1607,7 @@ button.top img {
     padding: 0 0px;
     height: 100%;
   }
-  .heroe .search {
+  .heroe .search, .heroe-listings .search {
     width: 85%;
   }
   section.surbubs .main-details .position-relative {
@@ -1200,6 +1661,43 @@ button.top img {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  section.listed .list-head {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section.listed .list-head .left h2 {
+    font-size: 30px;
+  }
+  section.listed .list-head .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+  section.listed .list-head .right a {
+    text-align: left;
+    margin-bottom: 20px !important;
+  }
+  section.listed .list-head .right button {
+    margin-bottom: 20px;
+  }
+  .heroe-listings {
+    height: 90vh;
+    margin-bottom: 20px;
+  }
+  .heroe-listings .search {
+    position: relative;
+    top: auto;
+  }
+  .heroe-listings .search h1 {
+    font-size: 22px;
+  }
   nav.navbar {
     padding: 15px 0px;
     height: 100%;
@@ -1275,57 +1773,57 @@ button.top img {
   section.submit form button {
     width: 100%;
   }
-  .heroe {
+  .heroe, .heroe-listings {
     height: 100vh;
   }
-  .heroe .search {
+  .heroe .search, .heroe-listings .search {
     background-color: transparent;
     padding: 0 0px;
     width: 90%;
   }
-  .heroe .search h1 {
-    font-size: 30px;
+  .heroe .search h1, .heroe-listings .search h1 {
+    font-size: 22px;
     -ms-flex-item-align: start;
     align-self: flex-start;
     padding-bottom: 30px;
     color: white;
   }
-  .heroe .search form {
+  .heroe .search form, .heroe-listings .search form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .heroe .search form input {
+  .heroe .search form input, .heroe-listings .search form input {
     width: 100%;
     margin-bottom: 20px;
   }
-  .heroe .search form input > ::-webkit-input-placeholder {
+  .heroe .search form input > ::-webkit-input-placeholder, .heroe-listings .search form input > ::-webkit-input-placeholder {
     padding-left: 0px;
     font-size: 16px;
   }
-  .heroe .search form input > :-ms-input-placeholder {
+  .heroe .search form input > :-ms-input-placeholder, .heroe-listings .search form input > :-ms-input-placeholder {
     padding-left: 0px;
     font-size: 16px;
   }
-  .heroe .search form input > ::-ms-input-placeholder {
+  .heroe .search form input > ::-ms-input-placeholder, .heroe-listings .search form input > ::-ms-input-placeholder {
     padding-left: 0px;
     font-size: 16px;
   }
-  .heroe .search form input > ::placeholder {
+  .heroe .search form input > ::placeholder, .heroe-listings .search form input > ::placeholder {
     padding-left: 0px;
     font-size: 16px;
   }
-  .heroe .search form button {
+  .heroe .search form button, .heroe-listings .search form button {
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
     order: 4;
   }
-  .heroe .search ul {
+  .heroe .search ul, .heroe-listings .search ul {
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
   }
-  .heroe .search ul li {
+  .heroe .search ul li, .heroe-listings .search ul li {
     padding-right: 0px;
     width: 48%;
     background-color: #fff;
@@ -1343,11 +1841,11 @@ button.top img {
     align-items: center;
     padding: 5px;
   }
-  .heroe .search ul li a {
+  .heroe .search ul li a, .heroe-listings .search ul li a {
     color: black;
     font-size: 16px;
   }
-  .heroe .search ul li .dropdown-item {
+  .heroe .search ul li .dropdown-item, .heroe-listings .search ul li .dropdown-item {
     color: #000000;
   }
   #owl-carousel > div.owl-nav {
@@ -1592,6 +2090,85 @@ button.top img {
 }
 
 @media (max-width: 576px) {
+  .heroe, .heroe-listings {
+    height: 100vh;
+  }
+  .heroe .search, .heroe-listings .search {
+    width: 96%;
+  }
+  .heroe .search h1, .heroe-listings .search h1 {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .heroe .search form input, .heroe-listings .search form input {
+    margin-bottom: 10px;
+    height: 35px;
+  }
+  .heroe .search form > ::-webkit-input-placeholder, .heroe-listings .search form > ::-webkit-input-placeholder {
+    padding-left: 0px;
+    font-size: 14px;
+  }
+  .heroe .search form button, .heroe-listings .search form button {
+    height: 35px;
+  }
+  .heroe .search ul, .heroe-listings .search ul {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  .heroe .search ul li, .heroe-listings .search ul li {
+    padding-right: 0px;
+    width: 48%;
+    background-color: #fff;
+    height: 37px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .heroe .search ul li a, .heroe-listings .search ul li a {
+    color: black;
+    font-size: 16px;
+  }
+  .heroe .search ul li .dropdown-item, .heroe-listings .search ul li .dropdown-item {
+    color: #000000;
+  }
+  section.listed .list-head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.listed .list-head .left h2 {
+    font-size: 30px;
+  }
+  section.listed .list-head .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+  section.listed .list-head .right a {
+    text-align: left;
+    margin-bottom: 20px !important;
+  }
+  section.listed .list-head .right button {
+    margin-bottom: 20px;
+  }
   button.top {
     display: none;
   }
@@ -1608,7 +2185,7 @@ button.top img {
 
 /* Landscape phones and down */
 @media (max-width: 400px) {
-  .heroe {
+  .heroe, .heroe-listings {
     height: 68vh;
   }
   #carouselExampleFade > div > div.carousel-item.active > div > div.col-12.main-details > div > div.col-md-12.col-lg-4.m-auto.position-relative > div {
