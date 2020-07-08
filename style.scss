@@ -441,10 +441,13 @@ section.listed{
 	#pages{margin:40px 0;display: flex;justify-content: center;justify-self: center;}
 	.controls-bottom{margin:40px 0;text-align: center;
 		a{
-			button{height: 37px;width:180px;background-color: rgb(233,63,51);color:white;border:none}
+			button{height: 37px;width:180px;background-color: rgb(233,63,51);color:white;border:none;margin-bottom: 10px;border-radius: 3px;}
 		}
 	}
 
+}
+#small-modal{
+	a{padding:20px 0;color: #4D4D4D;margin:auto;font-size: 20px;color:rgb(233,63,51);}
 }
 
 

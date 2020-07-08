@@ -1598,6 +1598,16 @@ section.listed .controls-bottom a button {
   background-color: #e93f33;
   color: white;
   border: none;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+#small-modal a {
+  padding: 20px 0;
+  color: #4D4D4D;
+  margin: auto;
+  font-size: 20px;
+  color: #e93f33;
 }
 
 /* Large desktop */
