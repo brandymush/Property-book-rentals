@@ -61,7 +61,7 @@ button, a:focus {
 }
 
 nav.navbar {
-  padding: 15px 120px;
+  padding: 15px 0px;
   height: 3.75rem;
   background-color: white;
   -webkit-box-align: center;
@@ -74,6 +74,9 @@ nav.navbar {
   -webkit-align-items: center;
   -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
           box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
 }
 
 nav.navbar .navbar-toggler {
@@ -185,13 +188,32 @@ nav.navbar #navbar ul li a .fa {
 
 nav.navbar #navbar ul li a .login {
   border: 1px solid #4D4D4D;
-  padding: 5px;
+  padding: 20px;
   border-radius: 20px;
   margin-right: 12px;
 }
 
 nav.navbar #navbar ul li a:hover {
   color: #e93f33;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #fff;
+  z-index: 99999999;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #ff0000;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
 }
 
 .currency-container {
@@ -430,27 +452,6 @@ nav.navbar #navbar ul li a:hover {
 .popular-areas .showcase {
   margin-top: auto;
   width: 100%;
-}
-
-.popular-areas .showcase span {
-  font-size: 18px;
-  font-style: bold;
-  font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.popular-areas .showcase span::after {
-  content: '';
-  width: 50px;
-  height: 4px;
-  background-color: black;
-  display: block;
-  margin-left: 20px;
 }
 
 .popular-areas .showcase h5 {
@@ -837,11 +838,15 @@ section.surbubs .main-details .region .overlay {
 section.surbubs .main-details .region .overlay h5 {
   padding-bottom: 60px;
   font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+  font-style: bold;
 }
 
 section.surbubs .main-details .region .overlay p {
   font-size: 20px;
   line-height: 30px;
+  padding: 0 35px;
 }
 
 section.surbubs .main-details .region .overlay button {
@@ -850,9 +855,10 @@ section.surbubs .main-details .region .overlay button {
   border: none;
   color: white;
   border-radius: 5px;
+  margin-top: 12px;
 }
 
-section.surbubs .main-details .region .overlay:hover {
+section.surbubs .main-details .region:hover .overlay {
   top: 0;
 }
 
@@ -894,6 +900,8 @@ section.surbubs .carousel-item {
   transition: transform 2s ease;
   transition: transform 2s ease, -webkit-transform 2s ease;
   opacity: .5s ease-out;
+  left: 0;
+  right: 0;
 }
 
 .community {
@@ -2131,7 +2139,9 @@ button.top img {
 
 .carousel-item {
   display: none;
-  margin-right: -1%;
+  margin-right: 0% !important;
+  left: 0;
+  right: 0;
 }
 
 a.play {
@@ -2617,51 +2627,6 @@ section.priority-listings .priority-item .prior-details .bottom-infor a.submit:h
   }
   #owl-carousel > div.owl-nav {
     display: none;
-  }
-  .popular-areas {
-    margin: 40px 0px;
-  }
-  .popular-areas h1 {
-    font-size: 18px;
-  }
-  .popular-areas h1::before, .popular-areas h1::after {
-    width: 60px;
-    margin: 15px;
-  }
-  .popular-areas p {
-    padding-bottom: 50px;
-    font-size: 16px;
-  }
-  .popular-areas .showcase {
-    margin-bottom: 40px;
-  }
-  .popular-areas .showcase .overlay {
-    width: 100% !important;
-    height: 100%;
-    left: 100%;
-    right: 0;
-  }
-  .popular-areas .showcase h5 {
-    font-size: 20px;
-    padding: 10px;
-    margin: 0;
-  }
-  .popular-areas .showcase span {
-    padding: 10px 0;
-  }
-  .popular-areas .showcase .item {
-    width: 100%;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-  .popular-areas:hover .showcase {
-    width: 100%;
-  }
-  .popular-areas:hover .showcase .item {
-    height: 350px;
-    width: 100%;
-    -webkit-box-shadow: none;
-    box-shadow: none;
   }
   .trending {
     margin-bottom: 50px;
