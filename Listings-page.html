@@ -15,6 +15,7 @@
     
 
   <!-- header start -->
+  <div class="contaner">
   <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand main-img" href="index.html"><img src="images/Images/Harare Rentals Logo.png" alt=""></a>
     <button class="navbar-toggler ml-auto border-none" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +33,14 @@
           <a class="nav-link" href="#">Property for sale</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  position-relative dollar" ><img  src="images/icons8-currency-exchange-24.png" alt=""></a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link " href="#" ><span class="fa fa-plus"></span> list Property</a>
         </li>
         <li class="nav-item">
-           <a class="nav-link btn-login" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><span><!--<img src="images/user.png" alt="">--></span>  login</a>
+          <a class="nav-link  position-relative dollar" ><img  src="images/icons8-currency-exchange-24.png" alt=""></a>
+        </li>
+       
+        <li class="nav-item">
+           <a class="nav-link btn-login" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><span><img src="images/user.png" alt=""></span>  login</a>
         </li>
       </ul>
       <div class="currency-container position-absolute">
@@ -56,6 +58,7 @@
     </div>
 
   </nav>
+</div>
  <!-- header ends -->
 
  <!-- LOGIN MODAL -->
@@ -88,25 +91,15 @@
 
 
 
-    
-<div class="modal fade bd-example-modal-sm" id="small-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-         <a href="#Properties">Featured Listings</a>
-         <a href="#Properties">Priority Listings</a>
-         <a href="#Properties">Ordinary Listings</a>
-    </div>
-  </div>
-</div>
- <section class="heroe-listings">
-   <div class="overlay">
-     
-   </div>
+
+ <section class="heroe-listings ">
+  
       
-  <div class="search">
+  <div class="search shadow">
+    <div class="container">
     <h1>Find Places to rent in Harare</h1>
     <form action="post">
-    <input  type="text" placeholder="Search For a Rental in Harare" role="combobox" autocomplete="none"><button>search</button>
+    <input  type="text" placeholder="Search For a Rental in Harare" role="combobox" autocomplete="none"><button class="shadow">search</button>
   </form>
   <span class="dropdown-wrapper" aria-hidden="true"></span>
   <!-- Example split danger button -->
@@ -114,7 +107,7 @@
     <li>
       <div class="dropdown">
         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-         Bills
+        Property-Type
         </a>
       
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -130,7 +123,7 @@
     <li>
       <div class="dropdown">
         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Property type
+          Min Price
         </a>
       
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -143,7 +136,7 @@
     <li>
       <div class="dropdown">
         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-         Rooms
+       Max Price
         </a>
       
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -156,7 +149,7 @@
     <li>
       <div class="dropdown">
         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Bathrooms
+          Beds
         </a>
       
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -169,7 +162,20 @@
     <li>
       <div class="dropdown">
         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-         Bills
+         Baths
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         Area
         </a>
       
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -182,903 +188,2141 @@
   </ul>
 
   </div>
+</div>
 </section>
 
 <!-- heroe ends -->
 
-<!-- Listed -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="side-bar">
+        <h2>Search</h2>
+        <p>Find Your Apartment</p>
+        
 
-<section class="listed">
-    <div class="container">
-        <div class="list-head d-flex justify-content-between align-content center">
-            <div class="left">
-                <h2>Harare Rentals</h2>
-                <span>20 results</span>
+
+        <div class="advanced-search">
+          <h4>Advanced Search</h4>
+       <form action="" class="form-group">
+          <input type="text" placeholder="Search" class="form-control">
+          <div class="input-group mb-3">
+            <select class="custom-select" id="inputGroupSelect02">
+              <option selected>Select Category</option>
+              <option value="1">Featured Properties</option>
+              <option value="2">Priority Listings</option>
+              <option value="3">Other</option>
+            </select>
+
+          </div>
+          <div class="input-group mb-3">
+            <select class="custom-select" id="inputGroupSelect02">
+              <option selected>Select Location</option>
+              <option value="1">Marlbrough</option>
+              <option value="2">Borrowdale</option>
+              <option value="3">Greystone Park</option>
+            </select>
+          </div>
+
+          <a href="#" type="submit" class="submit form-control">Search</a>
+
+        </form>
+        </div>
+
+        <div class="card subscribe shadow">
+          <form action="" class="form-group" >
+            <h3>Subscribe </h3>
+            <input type="text" placeholder="Email Adress" class="form-control">
+            <input type="submit" placeholder="Subcsribe" class="form-control">
+
+          </form>
+        </div>
+
+
+        <div class="card related-searches shadow">
+          <h3>Related Searches</h3>
+
+          <ul>
+            <li>
+              <a href="#">Apartments/Flats to Rent in Zimbabwe</a>
+            </li>
+            <li>
+              <a href="#">Offices to Rent in Zimbabwe</a>
+            </li>
+            <li>
+              <a href="#">Offices to Rent in Zimbabwe</a>
+            </li>
+            <li>
+              <a href="#">Offices to Rent in Zimbabwe</a>
+            </li>
+            <li>
+              <a href="#">Commercials to Rent in Zimbabwe</a>
+            </li>
+            <li>
+              <a href="#">Rooms/Shared to Rent in Zimbabwe</a>
+            </li>
+            <li>
+              <a href="#">Townhouses/Complexes to Rent in Zimbabwe</a>
+            </li>
+            <li>
+              <a href="#">Houses to Rent in Zimbabwe</a>
+            </li>
+            <li>
+              <a href="#">Industrial to Rent in Zimbabwe</a>
+            </li>
+          </ul>
+
+          <a href="#" class="btn">View More</a>
+        </div>
+
+        <div class="card join shadow">
+          <h3>Join Us</h3>
+          <h5>Join Our Growing Community</h5>
+          <p>Be the first to comment</p>
+          <a href="https://www.facebook.com/propertybookzim/">
+          <span class="fa fa-users">
+            
+          </span>
+        </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-9">
+      <div class="main-bar">
+        <h2>Rentals In harare</h2>
+        <p>ReInventing the art of Real Estate</p>
+
+        <div class="top-bar">
+          <div class="sort">
+            <h3>Properties</h2>
+            <p> Showing: <span>1 to 10</span> of 39</p>
+          
+          </div>
+          <div class="input-group form">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Sort By:</label>
             </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Default</option>
+              <option value="1">Most Recent</option>
+              <option value="2">Price-High to low</option>
+              <option value="3">Price-Low to High</option>
+            </select>
+          </div>
 
-            <div class="right">
-                <a href="#" ><i><img src="images/reload.png" alt=""></i> Reset Search</a>
-                <a href=""> <span class="fa fa-heart"></span> Save Search</a>
-              
-                <div class="dropdown d-inline">
-                  <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <a href="">Price (Lo-High)<i class="fa fa-angle-down"></i></a>
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Newest</a>
-                    <a class="dropdown-item" href="#">Price(Hi-Lo)</a>
-                    <a class="dropdown-item" href="#">Price(Lo-hi)</a>
-                    <a class="dropdown-item" href="#">Lowest SqFt</a>
+          <div class="input-group show-page">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Show on page</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>1</option>
+              <option value="1">2</option>
+              <option value="2">3</option>
+              <option value="3">4</option>
+            </select>
+          </div>
+        </div>
+
+<!-- FEATURED -->
+        <!-- starts feartured items -->
+
+          <div class="featured-infor shadow">
+                
+            <div id="carouselExample" class="carousel slide" data-ride="false" data-interval="9000"> 
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="slide-1">
+                     <input type="radio" name="slides" id="slide-2">
+                     <input type="radio" name="slides" id="slide-3">
+                     
+
+                     <ul class="carousel__slides">
+                       <div class="overlay"></div>
+                       <div class="overlay-text">
+                        <div class="top">
+                          <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+                        </div>
+                        <p>Property Type:Apartment housing</p>
+                        <p>Agent:Pam Golding</p>
+                        <a href="#">@Propertybook.co.zw</a>
+                       </div>
+
+                      <span class="ribbon">
+                        <img src="images/Harare Rentals Ribbon.png" alt="">
+                        <p>Rent</p>
+                      </span>
+                        
+                        
+                      <li class="carousel__slide shadow">
+                            <img src="featured/patterned-tiles-on-stairs.jpg" alt="">
+                                
+                      </li>
+                         <li class="carousel__slide shadow">
+                             <img src="featured/a-large-white-colonial-house-with-garden.jpg" alt="">
+                                
+                             </li>
+                         <li class="carousel__slide shadow">
+                              <img src="featured/doors-open-in-white-house.jpg" alt="">
+                                
+                           </li>
+                     </ul>    
+                     <ul class="carousel__thumbnails">
+                         <li>
+                             <label for="slide-1">
+                               <img src="featured/a-hall-with-a-series-of-doors.jpg" alt="">
+                             </label>
+                         </li>
+                         <li>
+                             <label for="slide-2">
+                               <img src="featured/a-large-white-colonial-house-with-garden.jpg" alt="">
+                             </label>
+                         </li>
+                         <li>
+                             <label for="slide-3">
+                               <img src="featured/doors-open-in-white-house.jpg" alt="">
+                             </label>
+                         </li>
+                        
+                     </ul>
+                 </div>
+                <!-- <div class="text">
+                 <div class="feature">
+                   <div class="area align-items-center">
+                     <h3>Borrowdale</h3>
+                     <p>128 Borrowdale Road</p>
+                   </div>
+                   <span class="price d-flex">
+                       <p>$3000.00</p>
+                       <a href="#">Featured <br>
+                         Listing</a>
+
+                   </span>
+
+
+                 </div>
+                </div> -->
+              </div>
+              <div class="carousel-item">
+                <div class="carousel">
+                  <input type="radio" name="slides" checked="checked" id="slide-7">
+                   <input type="radio" name="slides" id="slide-8">
+                   <input type="radio" name="slides" id="slide-9">
+                    
+
+                   <ul class="carousel__slides">
+
+                    <div class="overlay"></div>
+                    <div class="overlay-text">
+                     <div class="top">
+                       <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+                     </div>
+                     <p>Property Type:Apartment housing</p>
+                     <p>Agent:Pam Golding</p>
+                     <a href="#">@Propertybook.co.zw</a>
+                    </div>
+
+                    <span class="ribbon">
+                      <img src="images/Harare Rentals Ribbon.png" alt="">
+                      <p>Rent</p>
+                    </span>
+                      
+                      
+                    <li class="carousel__slide shadow">
+                          <img src="featured/shadows-cast-on-an-apartment-building.jpg" alt="">
+                              
+                    </li>
+                       <li class="carousel__slide shadow">
+                           <img src="featured/thank-you-for-staying-home.jpg" alt="">
+                              
+                           </li>
+                       <li class="carousel__slide shadow">
+                            <img src="images/Screenshot (465).png" alt="">
+                              
+                         </li>
+                   </ul>    
+                   <ul class="carousel__thumbnails">
+                       <li>
+                           <label for="slide-7">
+                             <img src="featured/shadows-cast-on-an-apartment-building.jpg" alt="">
+                           </label>
+                       </li>
+                       <li>
+                           <label for="slide-8">
+                             <img src="featured/thank-you-for-staying-home.jpg" alt="">
+                           </label>
+                       </li>
+                       <li>
+                           <label for="slide-9">
+                             <img src="images/Screenshot (465).png" alt="">
+                           </label>
+                       </li>
+                      
+                   </ul>
+               </div>
+              <!-- <div class="text">
+               <div class="feature">
+                 <div class="area align-items-center">
+                   <h3>Borrowdale</h3>
+                   <p>128 Borrowdale Road</p>
+                 </div>
+                 <span class="price d-flex">
+                     <p>$3000.00</p>
+                     <a href="#">Featured <br>
+                       Listing</a>
+
+                 </span>
+
+
+               </div>
+              </div> -->
+            </div>
+            <div class="carousel-item">
+              <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-10">
+                 <input type="radio" name="slides" id="slide-11">
+                 <input type="radio" name="slides" id="slide-12">
+                
+                 <ul class="carousel__slides">
+
+
+                  <div class="overlay"></div>
+                  <div class="overlay-text">
+                   <div class="top">
+                     <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+                   </div>
+                   <p>Property Type:Apartment housing</p>
+                   <p>Agent:Pam Golding</p>
+                   <a href="#">@Propertybook.co.zw</a>
                   </div>
-                </div>
-                <a href=""class="btn" data-toggle="modal" data-target=".bd-example-modal-sm">Property Rank</a>
+
+                  <span class="ribbon">
+                    <img src="images/Harare Rentals Ribbon.png" alt="">
+                    <p>Rent</p>
+                  </span>
+                    
+                    
+                  <li class="carousel__slide shadow">
+                        <img src="images/0d.jpg" alt="">
+                            
+                  </li>
+                     <li class="carousel__slide shadow">
+                         <img src="images/property.jpg" alt="">
+                            
+                         </li>
+                     <li class="carousel__slide shadow">
+                          <img src="images/Screenshot (465).png" alt="">
+                            
+                       </li>
+                 </ul>    
+                 <ul class="carousel__thumbnails">
+                     <li>
+                         <label for="slide-10">
+                           <img src="images/0d.jpg" alt="">
+                         </label>
+                     </li>
+                     <li>
+                         <label for="slide-11">
+                           <img src="images/property.jpg" alt="">
+                         </label>
+                     </li>
+                     <li>
+                         <label for="slide-12">
+                           <img src="images/Screenshot (465).png" alt="">
+                         </label>
+                     </li>
+                    
+                 </ul>
+             </div>
+            <!-- <div class="text">
+             <div class="feature">
+               <div class="area align-items-center">
+                 <h3>Borrowdale</h3>
+                 <p>128 Borrowdale Road</p>
+               </div>
+               <span class="price d-flex">
+                   <p>$3000.00</p>
+                   <a href="#">Featured <br>
+                     Listing</a>
+
+               </span>
+
+
+             </div>
+            </div> -->
+          </div>
+            <div class="carousel-item">
+              <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-13">
+                 <input type="radio" name="slides" id="slide-14">
+                 <input type="radio" name="slides" id="slide-15">
+                
+                 <ul class="carousel__slides">
+
+                  <div class="overlay"></div>
+                  <div class="overlay-text">
+                   <div class="top">
+                     <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+                   </div>
+                   <p>Property Type:Apartment housing</p>
+                   <p>Agent:Pam Golding</p>
+                   <a href="#">@Propertybook.co.zw</a>
+                  </div>
+
+                  <span class="ribbon">
+                    <img src="images/Harare Rentals Ribbon.png" alt="">
+                    <p>Rent</p>
+                  </span>
+                    
+                    
+                  <li class="carousel__slide shadow">
+                        <img src="images/0d.jpg" alt="">
+                            
+                  </li>
+                     <li class="carousel__slide shadow">
+                         <img src="images/property.jpg" alt="">
+                            
+                         </li>
+                     <li class="carousel__slide shadow">
+                          <img src="images/Screenshot (465).png" alt="">
+                            
+                       </li>
+                 </ul>    
+                 <ul class="carousel__thumbnails">
+                     <li>
+                         <label for="slide-13">
+                           <img src="images/0d.jpg" alt="">
+                         </label>
+                     </li>
+                     <li>
+                         <label for="slide-14">
+                           <img src="images/property.jpg" alt="">
+                         </label>
+                     </li>
+                     <li>
+                         <label for="slide-15">
+                           <img src="images/Screenshot (465).png" alt="">
+                         </label>
+                     </li>
+                    
+                 </ul>
+             </div>
+            <!-- <div class="text">
+             <div class="feature">
+               <div class="area align-items-center">
+                 <h3>Borrowdale</h3>
+                 <p>128 Borrowdale Road</p>
+               </div>
+               <span class="price d-flex">
+                   <p>$3000.00</p>
+                   <a href="#">Featured <br>
+                     Listing</a>
+
+               </span>
+
+
+             </div>
+            </div> -->
+          </div>
+               
                
             </div>
+            <a class="carousel-control-prev play" href="#carouselExample" role="button" data-slide="prev">
+              <span class="fa fa-play" aria-hidden="true" style="transform:rotate(180deg);"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next play" href="#carouselExample" role="button" data-slide="next">
+              <span class="fa fa-play" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+                <div class="text">
+                 <div class="feature">
+                   <div class="area align-items-center">
+                     <h3>Borrowdale</h3>
+                     <p>128 Borrowdale Road</p>
+                   </div>
+                   <span class="price d-flex">
+                       <p>$3000.00</p>
+                       <a href="#">Featured <br>
+                         Listing</a>
 
-            
+                   </span>
+
+
+                 </div>
+ 
+               
+                 <div class="description d-flex">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, ea velit ratione, amet quis veritatis soluta est aliquid vero a repellendus iusto magni dicta totam ipsum sint? Error consectetur magni illo in.</p>
+                  <img src="images/palmgold.png" alt="">
+                </div>
+                <div class="items-available">
+
+
+                  <span class="fa fa-bed">   <a href="#">3 bed</a></span>
+                   <span class="fa fa-bath"> <a href="#"> 3 bath</a></span>
+                   <span class="fa fa-square-0"><a href="#">  3.5K SqM </a></span>
+                 </div>
+
+                <a href="#" class="submit">View Details</a>
+                 
+               
+              
+           
+           
+                 
+
+                </div>
+             
+         
+
+          
+        
+      </div>
+
+      <!-- //featured-infor ends -->
+      <!-- featured items two -->
+      <div class="featured-infor shadow">
+                
+        <div id="carouselExample2" class="carousel slide" data-ride="false" data-interval="9000"> 
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-16">
+                 <input type="radio" name="slides" id="slide-17">
+                 <input type="radio" name="slides" id="slide-18">
+               
+                 <ul class="carousel__slides">
+                  <div class="overlay"></div>
+                  <div class="overlay-text">
+                   <div class="top">
+                     <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+                   </div>
+                   <p>Property Type:Apartment housing</p>
+                   <p>Agent:Pam Golding</p>
+                   <a href="#">@Propertybook.co.zw</a>
+                  </div>
+                  <span class="ribbon">
+                    <img src="images/Harare Rentals Ribbon.png" alt="">
+                    <p>Rent</p>
+                  </span>
+                    
+                    
+                  <li class="carousel__slide shadow">
+                        <img src="images/img/brick-country-home.jpg" alt="">
+                            
+                  </li>
+                     <li class="carousel__slide shadow">
+                         <img src="images/property.jpg" alt="">
+                            
+                         </li>
+                     <li class="carousel__slide shadow">
+                          <img src="images/Screenshot (465).png" alt="">
+                            
+                       </li>
+                 </ul>    
+                 <ul class="carousel__thumbnails">
+                     <li>
+                         <label for="slide-16">
+                           <img src="images/img/brick-country-home.jpg" alt="">
+                         </label>
+                     </li>
+                     <li>
+                         <label for="slide-17">
+                           <img src="images/property.jpg" alt="">
+                         </label>
+                     </li>
+                     <li>
+                         <label for="slide-18">
+                           <img src="images/Screenshot (465).png" alt="">
+                         </label>
+                     </li>
+                    
+                 </ul>
+             </div>
+            <!-- <div class="text">
+             <div class="feature">
+               <div class="area align-items-center">
+                 <h3>Borrowdale</h3>
+                 <p>128 Borrowdale Road</p>
+               </div>
+               <span class="price d-flex">
+                   <p>$3000.00</p>
+                   <a href="#">Featured <br>
+                     Listing</a>
+
+               </span>
+
+
+             </div>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <div class="carousel">
+              <input type="radio" name="slides" checked="checked" id="slide-18">
+               <input type="radio" name="slides" id="slide-19">
+               <input type="radio" name="slides" id="slide-20">
+                
+
+               <ul class="carousel__slides">
+                <div class="overlay"></div>
+                <div class="overlay-text">
+                 <div class="top">
+                   <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+                 </div>
+                 <p>Property Type:Apartment housing</p>
+                 <p>Agent:Pam Golding</p>
+                 <a href="#">@Propertybook.co.zw</a>
+                </div>
+                <span class="ribbon">
+                  <img src="images/Harare Rentals Ribbon.png" alt="">
+                  <p>Rent</p>
+                </span>
+                  
+                  
+                <li class="carousel__slide shadow">
+                      <img src="images/0d.jpg" alt="">
+                          
+                </li>
+                   <li class="carousel__slide shadow">
+                       <img src="images/property.jpg" alt="">
+                          
+                       </li>
+                   <li class="carousel__slide shadow">
+                        <img src="images/Screenshot (465).png" alt="">
+                          
+                     </li>
+               </ul>    
+               <ul class="carousel__thumbnails">
+                   <li>
+                       <label for="slide-18">
+                         <img src="images/0d.jpg" alt="">
+                       </label>
+                   </li>
+                   <li>
+                       <label for="slide-19">
+                         <img src="images/property.jpg" alt="">
+                       </label>
+                   </li>
+                   <li>
+                       <label for="slide-20">
+                         <img src="images/Screenshot (465).png" alt="">
+                       </label>
+                   </li>
+                  
+               </ul>
+           </div>
+          <!-- <div class="text">
+           <div class="feature">
+             <div class="area align-items-center">
+               <h3>Borrowdale</h3>
+               <p>128 Borrowdale Road</p>
+             </div>
+             <span class="price d-flex">
+                 <p>$3000.00</p>
+                 <a href="#">Featured <br>
+                   Listing</a>
+
+             </span>
+
+
+           </div>
+          </div> -->
         </div>
+        <div class="carousel-item">
+          <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-21">
+             <input type="radio" name="slides" id="slide-22">
+             <input type="radio" name="slides" id="slide-24">
+            
+             <ul class="carousel__slides">
+              <div class="overlay"></div>
+              <div class="overlay-text">
+               <div class="top">
+                 <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+               </div>
+               <p>Property Type:Apartment housing</p>
+               <p>Agent:Pam Golding</p>
+               <a href="#">@Propertybook.co.zw</a>
+              </div>
+              <span class="ribbon">
+                <img src="images/Harare Rentals Ribbon.png" alt="">
+                <p>Rent</p>
+              </span>
+                
+                
+              <li class="carousel__slide shadow">
+                    <img src="images/0d.jpg" alt="">
+                        
+              </li>
+                 <li class="carousel__slide shadow">
+                     <img src="images/property.jpg" alt="">
+                        
+                     </li>
+                 <li class="carousel__slide shadow">
+                      <img src="images/Screenshot (465).png" alt="">
+                        
+                   </li>
+             </ul>    
+             <ul class="carousel__thumbnails">
+                 <li>
+                     <label for="slide-21">
+                       <img src="images/0d.jpg" alt="">
+                     </label>
+                 </li>
+                 <li>
+                     <label for="slide-22">
+                       <img src="images/property.jpg" alt="">
+                     </label>
+                 </li>
+                 <li>
+                     <label for="slide-23">
+                       <img src="images/Screenshot (465).png" alt="">
+                     </label>
+                 </li>
+                
+             </ul>
+         </div>
+        <!-- <div class="text">
+         <div class="feature">
+           <div class="area align-items-center">
+             <h3>Borrowdale</h3>
+             <p>128 Borrowdale Road</p>
+           </div>
+           <span class="price d-flex">
+               <p>$3000.00</p>
+               <a href="#">Featured <br>
+                 Listing</a>
+
+           </span>
 
 
+         </div>
+        </div> -->
+      </div>
+        <div class="carousel-item">
+          <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-24">
+             <input type="radio" name="slides" id="slide-25">
+             <input type="radio" name="slides" id="slide-26">
+            
+
+             <ul class="carousel__slides">
+              <div class="overlay"></div>
+              <div class="overlay-text">
+               <div class="top">
+                 <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+               </div>
+               <p>Property Type:Apartment housing</p>
+               <p>Agent:Pam Golding</p>
+               <a href="#">@Propertybook.co.zw</a>
+              </div>
+              <span class="ribbon">
+                <img src="images/Harare Rentals Ribbon.png" alt="">
+                <p>Rent</p>
+              </span>
+                
+                
+              <li class="carousel__slide shadow">
+                    <img src="images/0d.jpg" alt="">
+                        
+              </li>
+                 <li class="carousel__slide shadow">
+                     <img src="images/property.jpg" alt="">
+                        
+                     </li>
+                 <li class="carousel__slide shadow">
+                      <img src="images/Screenshot (465).png" alt="">
+                        
+                   </li>
+             </ul>    
+             <ul class="carousel__thumbnails">
+                 <li>
+                     <label for="slide-24">
+                       <img src="images/0d.jpg" alt="">
+                     </label>
+                 </li>
+                 <li>
+                     <label for="slide-25">
+                       <img src="images/property.jpg" alt="">
+                     </label>
+                 </li>
+                 <li>
+                     <label for="slide-26">
+                       <img src="images/Screenshot (465).png" alt="">
+                     </label>
+                 </li>
+                
+             </ul>
+         </div>
+        <!-- <div class="text">
+         <div class="feature">
+           <div class="area align-items-center">
+             <h3>Borrowdale</h3>
+             <p>128 Borrowdale Road</p>
+           </div>
+           <span class="price d-flex">
+               <p>$3000.00</p>
+               <a href="#">Featured <br>
+                 Listing</a>
+
+           </span>
+
+
+         </div>
+        </div> -->
+      </div>
+           
+           
+        </div>
+        <a class="carousel-control-prev play" href="#carouselExample2" role="button" data-slide="prev">
+          <span class="fa fa-play" aria-hidden="true" style="transform:rotate(180deg);"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next play" href="#carouselExample2" role="button" data-slide="next">
+          <span class="fa fa-play" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+            <div class="text">
+             <div class="feature">
+               <div class="area align-items-center">
+                 <h3>Greystone Park</h3>
+                 <p>160 Herman Road</p>
+               </div>
+               <span class="price d-flex">
+                   <p>$3000.00</p>
+                   <a href="#">Featured <br>
+                     Listing</a>
+
+               </span>
+
+
+             </div>
+
+           
+             <div class="description d-flex">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, ea velit ratione, amet quis veritatis soluta est aliquid vero a repellendus iusto magni dicta totam ipsum sint? Error consectetur magni illo in.</p>
+              <img src="images/agent3.png" alt="">
+            </div>
+            <div class="items-available">
+
+
+              <span class="fa fa-bed">   <a href="#">3 bed</a></span>
+               <span class="fa fa-bath"> <a href="#"> 3 bath</a></span>
+               <span class="fa fa-square-0"><a href="#">  3.5K SqM </a></span>
+             </div>
+
+            <a href="#" class="submit">View Details</a>
+             
+           
+          
        
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="information">
-                  <div class="card form">
-                      <h2>Subscribe to our newsletter</h2>
-                      <p>get notifications of our properties on rental</p>
-                      <form action="" class="form-group">
-                          <input class="form-control" type="text" placeholder="Enter Your Email">
-                          <button class="btn form-control">Submit</button>
-                      </form>
+       
+             
+
+            </div>
+         
+     
+
+      
+    
+  </div>
+      <!-- feature item 2 ends -->
+      <!-- featured -item 3 -->
+      <div class="featured-infor shadow">
+                
+        <div id="carouselExample3" class="carousel slide" data-ride="false" data-interval="9000"> 
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-27">
+                 <input type="radio" name="slides" id="slide-28">
+                 <input type="radio" name="slides" id="slide-29">
+                
+
+                 <ul class="carousel__slides">
+
+                  <div class="overlay"></div>
+                  <div class="overlay-text">
+                   <div class="top">
+                     <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+                   </div>
+                   <p>Property Type:Apartment housing</p>
+                   <p>Agent:Pam Golding</p>
+                   <a href="#">@Propertybook.co.zw</a>
                   </div>
 
-                  <div class="card searches">
-                    <h2>Related Searches</h2>
-                    <a href="">Apartments/Flats to Rent in Zimbabwe</a>
-                    <a href="">Offices to Rent in Zimbabwe</a>
-                    <a href="">Auctions to Rent in Zimbabwe</a>
-                    <a href="">Retails to Rent in Zimbabwe</a>
-                    <a href="">Commercials to Rent in Zimbabwe</a>
-                    <a href="">Rooms/Shared to Rent in Zimbabwe</a>
-                    <a href="">Cottages to Rent in Zimbabwe</a>
+                  <span class="ribbon">
+                    <img src="images/Harare Rentals Ribbon.png" alt="">
+                    <p>Rent</p>
+                  </span>
                     
+                    
+                  <li class="carousel__slide shadow">
+                        <img src="images/img/brick-country-home.jpg" alt="">
+                            
+                  </li>
+                     <li class="carousel__slide shadow">
+                         <img src="images/property.jpg" alt="">
+                            
+                         </li>
+                     <li class="carousel__slide shadow">
+                          <img src="images/Screenshot (465).png" alt="">
+                            
+                       </li>
+                 </ul>    
+                 <ul class="carousel__thumbnails">
+                     <li>
+                         <label for="slide-27">
+                           <img src="images/img/brick-country-home.jpg" alt="">
+                         </label>
+                     </li>
+                     <li>
+                         <label for="slide-28">
+                           <img src="images/property.jpg" alt="">
+                         </label>
+                     </li>
+                     <li>
+                         <label for="slide-29">
+                           <img src="images/Screenshot (465).png" alt="">
+                         </label>
+                     </li>
+                    
+                 </ul>
+             </div>
+            <!-- <div class="text">
+             <div class="feature">
+               <div class="area align-items-center">
+                 <h3>Borrowdale</h3>
+                 <p>128 Borrowdale Road</p>
+               </div>
+               <span class="price d-flex">
+                   <p>$3000.00</p>
+                   <a href="#">Featured <br>
+                     Listing</a>
+
+               </span>
+
+
+             </div>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <div class="carousel">
+              <input type="radio" name="slides" checked="checked" id="slide-30">
+               <input type="radio" name="slides" id="slide-31">
+               <input type="radio" name="slides" id="slide-32">
+              
+
+               <ul class="carousel__slides">
+
+                <div class="overlay"></div>
+                <div class="overlay-text">
+                 <div class="top">
+                   <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+                 </div>
+                 <p>Property Type:Apartment housing</p>
+                 <p>Agent:Pam Golding</p>
+                 <a href="#">@Propertybook.co.zw</a>
                 </div>
-                </div>
+                <span class="ribbon">
+                  <img src="images/Harare Rentals Ribbon.png" alt="">
+                  <p>Rent</p>
+                </span>
+                  
+                  
+                <li class="carousel__slide shadow">
+                      <img src="images/0d.jpg" alt="">
+                          
+                </li>
+                   <li class="carousel__slide shadow">
+                       <img src="images/property.jpg" alt="">
+                          
+                       </li>
+                   <li class="carousel__slide shadow">
+                        <img src="images/Screenshot (465).png" alt="">
+                          
+                     </li>
+               </ul>    
+               <ul class="carousel__thumbnails">
+                   <li>
+                       <label for="slide-30">
+                         <img src="images/0d.jpg" alt="">
+                       </label>
+                   </li>
+                   <li>
+                       <label for="slide-31">
+                         <img src="images/property.jpg" alt="">
+                       </label>
+                   </li>
+                   <li>
+                       <label for="slide-33">
+                         <img src="images/Screenshot (465).png" alt="">
+                       </label>
+                   </li>
+                  
+               </ul>
+           </div>
+          <!-- <div class="text">
+           <div class="feature">
+             <div class="area align-items-center">
+               <h3>Borrowdale</h3>
+               <p>128 Borrowdale Road</p>
+             </div>
+             <span class="price d-flex">
+                 <p>$3000.00</p>
+                 <a href="#">Featured <br>
+                   Listing</a>
+
+             </span>
+
+
+           </div>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-34">
+             <input type="radio" name="slides" id="slide-35">
+             <input type="radio" name="slides" id="slide-36">
+           
+             <ul class="carousel__slides">
+
+              <div class="overlay"></div>
+              <div class="overlay-text">
+               <div class="top">
+                 <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+               </div>
+               <p>Property Type:Apartment housing</p>
+               <p>Agent:Pam Golding</p>
+               <a href="#">@Propertybook.co.zw</a>
+              </div>
+              <span class="ribbon">
+                <img src="images/Harare Rentals Ribbon.png" alt="">
+                <p>Rent</p>
+              </span>
+                
+                
+              <li class="carousel__slide shadow">
+                    <img src="images/0d.jpg" alt="">
+                        
+              </li>
+                 <li class="carousel__slide shadow">
+                     <img src="images/property.jpg" alt="">
+                        
+                     </li>
+                 <li class="carousel__slide shadow">
+                      <img src="images/Screenshot (465).png" alt="">
+                        
+                   </li>
+             </ul>    
+             <ul class="carousel__thumbnails">
+                 <li>
+                     <label for="slide-34">
+                       <img src="images/0d.jpg" alt="">
+                     </label>
+                 </li>
+                 <li>
+                     <label for="slide-35">
+                       <img src="images/property.jpg" alt="">
+                     </label>
+                 </li>
+                 <li>
+                     <label for="slide-36">
+                       <img src="images/Screenshot (465).png" alt="">
+                     </label>
+                 </li>
+                
+             </ul>
+         </div>
+        <!-- <div class="text">
+         <div class="feature">
+           <div class="area align-items-center">
+             <h3>Borrowdale</h3>
+             <p>128 Borrowdale Road</p>
+           </div>
+           <span class="price d-flex">
+               <p>$3000.00</p>
+               <a href="#">Featured <br>
+                 Listing</a>
+
+           </span>
+
+
+         </div>
+        </div> -->
+      </div>
+        <div class="carousel-item">
+          <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-37">
+             <input type="radio" name="slides" id="slide-38">
+             <input type="radio" name="slides" id="slide-39">
+           
+
+             <ul class="carousel__slides">
+
+              <div class="overlay"></div>
+              <div class="overlay-text">
+               <div class="top">
+                 <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+               </div>
+               <p>Property Type:Apartment housing</p>
+               <p>Agent:Pam Golding</p>
+               <a href="#">@Propertybook.co.zw</a>
+              </div>
+              <span class="ribbon">
+                <img src="images/Harare Rentals Ribbon.png" alt="">
+                <p>Rent</p>
+              </span>
+                
+                
+              <li class="carousel__slide shadow">
+                    <img src="images/0d.jpg" alt="">
+                        
+              </li>
+                 <li class="carousel__slide shadow">
+                     <img src="images/property.jpg" alt="">
+                        
+                     </li>
+                 <li class="carousel__slide shadow">
+                      <img src="images/Screenshot (465).png" alt="">
+                        
+                   </li>
+             </ul>    
+             <ul class="carousel__thumbnails">
+                 <li>
+                     <label for="slide-37">
+                       <img src="images/0d.jpg" alt="">
+                     </label>
+                 </li>
+                 <li>
+                     <label for="slide-38">
+                       <img src="images/property.jpg" alt="">
+                     </label>
+                 </li>
+                 <li>
+                     <label for="slide-39">
+                       <img src="images/Screenshot (465).png" alt="">
+                     </label>
+                 </li>
+                
+             </ul>
+         </div>
+        <!-- <div class="text">
+         <div class="feature">
+           <div class="area align-items-center">
+             <h3>Borrowdale</h3>
+             <p>128 Borrowdale Road</p>
+           </div>
+           <span class="price d-flex">
+               <p>$3000.00</p>
+               <a href="#">Featured <br>
+                 Listing</a>
+
+           </span>
+
+
+         </div>
+        </div> -->
+      </div>
+           
+           
+        </div>
+        <a class="carousel-control-prev play" href="#carouselExample3" role="button" data-slide="prev">
+          <span class="fa fa-play" aria-hidden="true" style="transform:rotate(180deg);"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next play" href="#carouselExample3" role="button" data-slide="next">
+          <span class="fa fa-play" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+            <div class="text">
+             <div class="feature">
+               <div class="area align-items-center">
+                 <h3>Mt Pleasant</h3>
+                 <p>128 Borrowdale Road</p>
+               </div>
+               <span class="price d-flex">
+                   <p>$3000.00</p>
+                   <a href="#">Featured <br>
+                     Listing</a>
+
+               </span>
+
+
+             </div>
+
+           
+             <div class="description d-flex">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, ea velit ratione, amet quis veritatis soluta est aliquid vero a repellendus iusto magni dicta totam ipsum sint? Error consectetur magni illo in.</p>
+              <img src="images/agent3.png" alt="">
             </div>
-            <div class="col-lg-9 border-top pt-5 px-0">
+            <div class="items-available">
 
 
+              <span class="fa fa-bed">   <a href="#">3 bed</a></span>
+               <span class="fa fa-bath"> <a href="#"> 3 bath</a></span>
+               <span class="fa fa-square-0"><a href="#">  3.5K SqM </a></span>
+             </div>
+
+            <a href="#" class="submit">View Details</a>
+             
+           
+          
+       
+       
+             
+
+            </div>
+         
+     
+
+      
+    
+  </div>
+      <!-- featured -item 3 ends -->
+     <!-- featred item 4 -->
+     <div class="featured-infor shadow">
+                
+      <div id="carouselExample3" class="carousel slide" data-ride="false" data-interval="9000"> 
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel">
+              <input type="radio" name="slides" checked="checked" id="slide-27">
+               <input type="radio" name="slides" id="slide-28">
+               <input type="radio" name="slides" id="slide-29">
+              
+
+               <ul class="carousel__slides">
+
+                <div class="overlay"></div>
+                <div class="overlay-text">
+                 <div class="top">
+                   <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+                 </div>
+                 <p>Property Type:Apartment housing</p>
+                 <p>Agent:Pam Golding</p>
+                 <a href="#">@Propertybook.co.zw</a>
+                </div>
+
+                <span class="ribbon">
+                  <img src="images/Harare Rentals Ribbon.png" alt="">
+                  <p>Rent</p>
+                </span>
+                  
+                  
+                <li class="carousel__slide shadow">
+                      <img src="images/img/brick-country-home.jpg" alt="">
+                          
+                </li>
+                   <li class="carousel__slide shadow">
+                       <img src="images/property.jpg" alt="">
+                          
+                       </li>
+                   <li class="carousel__slide shadow">
+                        <img src="images/Screenshot (465).png" alt="">
+                          
+                     </li>
+               </ul>    
+               <ul class="carousel__thumbnails">
+                   <li>
+                       <label for="slide-27">
+                         <img src="images/img/brick-country-home.jpg" alt="">
+                       </label>
+                   </li>
+                   <li>
+                       <label for="slide-28">
+                         <img src="images/property.jpg" alt="">
+                       </label>
+                   </li>
+                   <li>
+                       <label for="slide-29">
+                         <img src="images/Screenshot (465).png" alt="">
+                       </label>
+                   </li>
+                  
+               </ul>
+           </div>
+          <!-- <div class="text">
+           <div class="feature">
+             <div class="area align-items-center">
+               <h3>Borrowdale</h3>
+               <p>128 Borrowdale Road</p>
+             </div>
+             <span class="price d-flex">
+                 <p>$3000.00</p>
+                 <a href="#">Featured <br>
+                   Listing</a>
+
+             </span>
 
 
-    <!--Carousel Wrapper-->
-    <div id="multi-item-example" class="carousel slide carousel-multi-item"  data-ride="carousel">
+           </div>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-30">
+             <input type="radio" name="slides" id="slide-31">
+             <input type="radio" name="slides" id="slide-32">
+            
+
+             <ul class="carousel__slides">
+
+              <div class="overlay"></div>
+              <div class="overlay-text">
+               <div class="top">
+                 <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+               </div>
+               <p>Property Type:Apartment housing</p>
+               <p>Agent:Pam Golding</p>
+               <a href="#">@Propertybook.co.zw</a>
+              </div>
+              <span class="ribbon">
+                <img src="images/Harare Rentals Ribbon.png" alt="">
+                <p>Rent</p>
+              </span>
+                
+                
+              <li class="carousel__slide shadow">
+                    <img src="images/0d.jpg" alt="">
+                        
+              </li>
+                 <li class="carousel__slide shadow">
+                     <img src="images/property.jpg" alt="">
+                        
+                     </li>
+                 <li class="carousel__slide shadow">
+                      <img src="images/Screenshot (465).png" alt="">
+                        
+                   </li>
+             </ul>    
+             <ul class="carousel__thumbnails">
+                 <li>
+                     <label for="slide-30">
+                       <img src="images/0d.jpg" alt="">
+                     </label>
+                 </li>
+                 <li>
+                     <label for="slide-31">
+                       <img src="images/property.jpg" alt="">
+                     </label>
+                 </li>
+                 <li>
+                     <label for="slide-33">
+                       <img src="images/Screenshot (465).png" alt="">
+                     </label>
+                 </li>
+                
+             </ul>
+         </div>
+        <!-- <div class="text">
+         <div class="feature">
+           <div class="area align-items-center">
+             <h3>Borrowdale</h3>
+             <p>128 Borrowdale Road</p>
+           </div>
+           <span class="price d-flex">
+               <p>$3000.00</p>
+               <a href="#">Featured <br>
+                 Listing</a>
+
+           </span>
 
 
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
+         </div>
+        </div> -->
+      </div>
+      <div class="carousel-item">
+        <div class="carousel">
+          <input type="radio" name="slides" checked="checked" id="slide-34">
+           <input type="radio" name="slides" id="slide-35">
+           <input type="radio" name="slides" id="slide-36">
+         
+           <ul class="carousel__slides">
 
-        <!--First slide-->
+            <div class="overlay"></div>
+            <div class="overlay-text">
+             <div class="top">
+               <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+             </div>
+             <p>Property Type:Apartment housing</p>
+             <p>Agent:Pam Golding</p>
+             <a href="#">@Propertybook.co.zw</a>
+            </div>
+            <span class="ribbon">
+              <img src="images/Harare Rentals Ribbon.png" alt="">
+              <p>Rent</p>
+            </span>
+              
+              
+            <li class="carousel__slide shadow">
+                  <img src="images/0d.jpg" alt="">
+                      
+            </li>
+               <li class="carousel__slide shadow">
+                   <img src="images/property.jpg" alt="">
+                      
+                   </li>
+               <li class="carousel__slide shadow">
+                    <img src="images/Screenshot (465).png" alt="">
+                      
+                 </li>
+           </ul>    
+           <ul class="carousel__thumbnails">
+               <li>
+                   <label for="slide-34">
+                     <img src="images/0d.jpg" alt="">
+                   </label>
+               </li>
+               <li>
+                   <label for="slide-35">
+                     <img src="images/property.jpg" alt="">
+                   </label>
+               </li>
+               <li>
+                   <label for="slide-36">
+                     <img src="images/Screenshot (465).png" alt="">
+                   </label>
+               </li>
+              
+           </ul>
+       </div>
+      <!-- <div class="text">
+       <div class="feature">
+         <div class="area align-items-center">
+           <h3>Borrowdale</h3>
+           <p>128 Borrowdale Road</p>
+         </div>
+         <span class="price d-flex">
+             <p>$3000.00</p>
+             <a href="#">Featured <br>
+               Listing</a>
+
+         </span>
+
+
+       </div>
+      </div> -->
+    </div>
+      <div class="carousel-item">
+        <div class="carousel">
+          <input type="radio" name="slides" checked="checked" id="slide-37">
+           <input type="radio" name="slides" id="slide-38">
+           <input type="radio" name="slides" id="slide-39">
+         
+
+           <ul class="carousel__slides">
+
+            <div class="overlay"></div>
+            <div class="overlay-text">
+             <div class="top">
+               <a href="" class="fa fa-camera d-flex"> <span>3</span></a>
+             </div>
+             <p>Property Type:Apartment housing</p>
+             <p>Agent:Pam Golding</p>
+             <a href="#">@Propertybook.co.zw</a>
+            </div>
+            <span class="ribbon">
+              <img src="images/Harare Rentals Ribbon.png" alt="">
+              <p>Rent</p>
+            </span>
+              
+              
+            <li class="carousel__slide shadow">
+                  <img src="images/0d.jpg" alt="">
+                      
+            </li>
+               <li class="carousel__slide shadow">
+                   <img src="images/property.jpg" alt="">
+                      
+                   </li>
+               <li class="carousel__slide shadow">
+                    <img src="images/Screenshot (465).png" alt="">
+                      
+                 </li>
+           </ul>    
+           <ul class="carousel__thumbnails">
+               <li>
+                   <label for="slide-37">
+                     <img src="images/0d.jpg" alt="">
+                   </label>
+               </li>
+               <li>
+                   <label for="slide-38">
+                     <img src="images/property.jpg" alt="">
+                   </label>
+               </li>
+               <li>
+                   <label for="slide-39">
+                     <img src="images/Screenshot (465).png" alt="">
+                   </label>
+               </li>
+              
+           </ul>
+       </div>
+      <!-- <div class="text">
+       <div class="feature">
+         <div class="area align-items-center">
+           <h3>Borrowdale</h3>
+           <p>128 Borrowdale Road</p>
+         </div>
+         <span class="price d-flex">
+             <p>$3000.00</p>
+             <a href="#">Featured <br>
+               Listing</a>
+
+         </span>
+
+
+       </div>
+      </div> -->
+    </div>
+         
+         
+      </div>
+      <a class="carousel-control-prev play" href="#carouselExample3" role="button" data-slide="prev">
+        <span class="fa fa-play" aria-hidden="true" style="transform:rotate(180deg);"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next play" href="#carouselExample3" role="button" data-slide="next">
+        <span class="fa fa-play" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+          <div class="text">
+           <div class="feature">
+             <div class="area align-items-center">
+               <h3>Mt Pleasant</h3>
+               <p>128 Borrowdale Road</p>
+             </div>
+             <span class="price d-flex">
+                 <p>$3000.00</p>
+                 <a href="#">Featured <br>
+                   Listing</a>
+
+             </span>
+
+
+           </div>
+
+         
+           <div class="description d-flex">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, ea velit ratione, amet quis veritatis soluta est aliquid vero a repellendus iusto magni dicta totam ipsum sint? Error consectetur magni illo in.</p>
+            <img src="images/agent3.png" alt="">
+          </div>
+          <div class="items-available">
+
+
+            <span class="fa fa-bed">   <a href="#">3 bed</a></span>
+             <span class="fa fa-bath"> <a href="#"> 3 bath</a></span>
+             <span class="fa fa-square-0"><a href="#">  3.5K SqM </a></span>
+           </div>
+
+          <a href="#" class="submit">View Details</a>
+           
+         
+        
+     
+     
+           
+
+          </div>
+       
+   
+
+    
+  
+</div>
+<!-- featured item 4 -->
+
+      <!-- FEATURED -->
+      <!-- Priority Listings
+       -->
+      <section class="priority-listings">
+        <div class="priority-item d-flex shadow">
+          <div class="caption">
+            <span class="ribbon">
+              <img src="images/Harare Rentals Ribbon.png" alt="">
+              <p>Rent</p>
+            </span>
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+         
+                    <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="fa fa-play" aria-hidden="true" style="transform: rotate(180deg);color: #ff0000;"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next" style="color:#ff0000;">
+                <span class="fa fa-play" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="prior-details w-100">
+            <div class="top d-flex justify-content-between">
+              <div class="area">
+                <h4>Avondale</h4>
+                <p>100 Argyle Road</p>
+              </div>
+              <div class="price">
+                <p>$2 500.00</p>
+                <span>Priority <br>Listing
+                </span>
+              </div>
+
+            </div>
+            <div class="abt-logo">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing em,
+                 in cum incidunt exercitationem ullam eligendi?</p>
+                 <img src="images/agents.png" alt="">
+            </div>
+            <div class="bottom-infor">
+             <span class="fa fa-bed">
+               <a href="#">3 beds</a>
+             </span>
+             <span class="fa fa-bath">
+              <a href="#">3 baths</a>
+            </span>
+            <span class="fa fa-bed">
+              <a href="#">3 beds</a>
+            </span>
+
+              <a href="#" class="submit">View Details</a>
+            </div>
+
+          </div>
+        </div>
+<!-- item2 -->
+<div class="priority-item d-flex shadow">
+  <div class="caption">
+    <span class="ribbon">
+      <img src="images/Harare Rentals Ribbon.png" alt="">
+      <p>Rent</p>
+    </span>
+    <div id="carousel2" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel2" data-slide-to="1"></li>
+        <li data-target="#carousel2" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
         <div class="carousel-item active">
-                <div class="properties col-12 p-0">
-                    <div class="row justify-content-between">
-                        <div class="col-lg-4 col-sm-12 col-md-6">
-                            <div class="property-cards">
-                                <div class="img-infor">
-                                  <div class="overlay">
-                                    <a href=""> <i class="fa fa-camera"></i> 19</a>
-                                  
-                                  </div>
-                                    <img class="img-fluid" src="images/feature_-_IMG_5467.jpg" alt="">
-                                    <div class="top">
-                                        <a href="">Featured</a>
-                                        <a href="">Rent</a>
-                                    </div>
-
-                                </div>
-                                <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                                <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                                <div class="items">
-                                    <a href=""><span class="fa fa-bed"></span> 4</a>
-                                    <a href=""><span class="fa fa-bath"></span> 4</a>
-                                    <a href=""><span class="fa fa-box"></span> 2019</a>
-                                    <a href=""><span class="fa fa-car"></span> 4</a>
-                                </div>
-                            </div>
-                          
-                        </div>
-                        <div class="col-lg-4 col-sm-12 col-md-6">
-                          <div class="property-cards" id="Properties">
-                              <div class="img-infor">
-                                <div class="overlay">
-                                  <a href=""> <i class="fa fa-camera"></i> 19</a>
-                                
-                                </div>
-                                  <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
-                                  <div class="top">
-                                      <a href="">Featured</a>
-                                      <a href=""> Pending </a>
-                                  </div>
-
-                              </div>
-                              <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
-                              <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                              <div class="items">
-                                  <a href=""><span class="fa fa-bed"></span> 4</a>
-                                  <a href=""><span class="fa fa-bath"></span> 4</a>
-                                  <a href=""><span class="fa fa-box"></span> 2019</a>
-                                  <a href=""><span class="fa fa-car"></span> 4</a>
-                              </div>
-                          </div>
-                        
-                      </div>
-                      <div class="col-lg-4 col-sm-12 col-md-6 ">
-                        <div class="property-cards">
-                            <div class="img-infor">
-                              <div class="overlay">
-                                <a href=""> <i class="fa fa-camera"></i> 19</a>
-                              
-                              </div>
-                                <img class="img-fluid" src="images/0d.jpg" alt="">
-                                <div class="top">
-                                    <a href="">Featured</a>
-                                    <a href="">Urgent</a>
-                                </div>
-
-                            </div>
-                            <h3>Villa in Riverside    <img src="images/agent7.png" alt="" class="logo"></h3>
-                            <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                            <div class="items">
-                                <a href=""><span class="fa fa-bed"></span> 4</a>
-                                <a href=""><span class="fa fa-bath"></span> 4</a>
-                                <a href=""><span class="fa fa-box"></span> 2019</a>
-                                <a href=""><span class="fa fa-car"></span> 4</a>
-                            </div>
-                        </div>
-                      
-                    </div>
-                    <div class="col-lg-4 col-sm-12 col-md-6">
-                      <div class="property-cards">
-                          <div class="img-infor">
-                            <div class="overlay">
-                              <a href=""> <i class="fa fa-camera"></i> 19</a>
-                            
-                            </div>
-                              <img class="img-fluid" src="images/abalina_beach_cottage_front-left-photo_01-500x333.jpg" alt="">
-                              <div class="top">
-                                  <a href="">Featured</a>
-                                  <a href="">Rent</a>
-                              </div>
-
-                          </div>
-                          <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                          <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                          <div class="items">
-                              <a href=""><span class="fa fa-bed"></span> 4</a>
-                              <a href=""><span class="fa fa-bath"></span> 4</a>
-                              <a href=""><span class="fa fa-box"></span> 2019</a>
-                              <a href=""><span class="fa fa-car"></span> 4</a>
-                          </div>
-                      </div>
-                    
-                  </div>
-                  <div class="col-lg-4 col-sm-12 col-md-6">
-                    <div class="property-cards">
-                        <div class="img-infor">
-                          <div class="overlay">
-                            <a href=""> <i class="fa fa-camera"></i> 19</a>
-                          
-                          </div>
-                            <img class="img-fluid" src="images/jacques-bopp-wtzOhxEX4WU-unsplash.jpg" alt="">
-                            <div class="top">
-                                <a href="">Featured</a>
-                                <a href="">Rent</a>
-                            </div>
-
-                        </div>
-                        <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                        <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                        <div class="items">
-                            <a href=""><span class="fa fa-bed"></span> 4</a>
-                            <a href=""><span class="fa fa-bath"></span> 4</a>
-                            <a href=""><span class="fa fa-box"></span> 2019</a>
-                            <a href=""><span class="fa fa-car"></span> 4</a>
-                        </div>
-                    </div>
-                  
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-6 ">
-                  <div class="property-cards">
-                      <div class="img-infor">
-                        <div class="overlay">
-                          <a href=""> <i class="fa fa-camera"></i> 19</a>
-                        
-                        </div>
-                          <img class="img-fluid" src="images/img/brick-country-home.jpg" alt="">
-                          <div class="top">
-                              <a href="">Featured</a>
-                              <a href="">Rent</a>
-                          </div>
-
-                      </div>
-                      <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                      <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                      <div class="items">
-                          <a href=""><span class="fa fa-bed"></span> 4</a>
-                          <a href=""><span class="fa fa-bath"></span> 4</a>
-                          <a href=""><span class="fa fa-box"></span> 2019</a>
-                          <a href=""><span class="fa fa-car"></span> 4</a>
-                      </div>
-                  </div>
-                
-              </div>
-                    <div class="col-lg-4 col-sm-12 col-md-6 ">
-                      <div class="property-cards">
-                          <div class="img-infor">
-                            <div class="overlay">
-                              <a href=""> <i class="fa fa-camera"></i> 19</a>
-                            
-                            </div>
-                              <img class="img-fluid" src="images/img/colorful-heritage-homes.jpg" alt="">
-                              <div class="top">
-                                  <a href="">Featured</a>
-                                  <a href="">Sole Mandate</a>
-                              </div>
-
-                          </div>
-                          <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                          <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                          <div class="items">
-                              <a href=""><span class="fa fa-bed"></span> 4</a>
-                              <a href=""><span class="fa fa-bath"></span> 4</a>
-                              <a href=""><span class="fa fa-box"></span> 2019</a>
-                              <a href=""><span class="fa fa-car"></span> 4</a>
-                          </div>
-                      </div>
-                    
-                  </div>
-                  <div class="col-lg-4 col-sm-12 col-md-6">
-                    <div class="property-cards">
-                        <div class="img-infor">
-                          <div class="overlay">
-                            <a href=""> <i class="fa fa-camera"></i> 19</a>
-                          
-                          </div>
-                            <img class="img-fluid" src="images/img/high-end-country-home-on-hillside.jpg" alt="">
-                            <div class="top">
-                                <a href="">Priority</a>
-                                <a href="">Rent</a>
-                            </div>
-
-                        </div>
-                        <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                        <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                        <div class="items">
-                            <a href=""><span class="fa fa-bed"></span> 4</a>
-                            <a href=""><span class="fa fa-bath"></span> 4</a>
-                            <a href=""><span class="fa fa-box"></span> 2019</a>
-                            <a href=""><span class="fa fa-car"></span> 4</a>
-                        </div>
-                    </div>
-                  
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-6 ">
-                  <div class="property-cards">
-                      <div class="img-infor">
-                        <div class="overlay">
-                          <a href=""> <i class="fa fa-camera"></i> 19</a>
-                        
-                        </div>
-                          <img class="img-fluid" src="images/img/high-end-country-home-on-hillside.jpg" alt="">
-                          <div class="top">
-                              <a href="">Priority</a>
-                              <a href="">Rent</a>
-                          </div>
-
-                      </div>
-                      <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                      <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                      <div class="items">
-                          <a href=""><span class="fa fa-bed"></span> 4</a>
-                          <a href=""><span class="fa fa-bath"></span> 4</a>
-                          <a href=""><span class="fa fa-box"></span> 2019</a>
-                          <a href=""><span class="fa fa-car"></span> 4</a>
-                      </div>
-                  </div>
-                
-              </div>
-              <div class="col-lg-4 col-sm-12 col-md-6 ">
-                <div class="property-cards">
-                    <div class="img-infor">
-                      <div class="overlay">
-                        <a href=""> <i class="fa fa-camera"></i> 19</a>
-                      
-                      </div>
-                        <img class="img-fluid" src="images/Images/HDhut.blogspot.com (6).jpeg" alt="">
-                        <div class="top">
-                            <a href="">Priority</a>
-                            <a href="">Rent</a>
-                        </div>
-
-                    </div>
-                    <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                    <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                    <div class="items">
-                        <a href=""><span class="fa fa-bed"></span> 4</a>
-                        <a href=""><span class="fa fa-bath"></span> 4</a>
-                        <a href=""><span class="fa fa-box"></span> 2019</a>
-                        <a href=""><span class="fa fa-car"></span> 4</a>
-                    </div>
-                </div>
-              
-            </div>
-            <div class="col-lg-4 col-sm-12 col-md-6">
-              <div class="property-cards">
-                  <div class="img-infor">
-                    <div class="overlay">
-                      <a href=""> <i class="fa fa-camera"></i> 19</a>
-                    
-                    </div>
-                      <img class="img-fluid" src="images/Images/HDhut.blogspot.com (6).jpeg" alt="">
-                      <div class="top">
-                          <a href="">Priority</a>
-                          <a href="">Rent</a>
-                      </div>
-
-                  </div>
-                  <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                  <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                  <div class="items">
-                      <a href=""><span class="fa fa-bed"></span> 4</a>
-                      <a href=""><span class="fa fa-bath"></span> 4</a>
-                      <a href=""><span class="fa fa-box"></span> 2019</a>
-                      <a href=""><span class="fa fa-car"></span> 4</a>
-                  </div>
-              </div>
-            
+          <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+ 
+            <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
           </div>
-          <div class="col-lg-4 col-sm-12 col-md-6 ">
-            <div class="property-cards">
-                <div class="img-infor">
-                  <div class="overlay">
-                    <a href=""> <i class="fa fa-camera"></i> 19</a>
-                  
-                  </div>
-                    <img class="img-fluid" src="images/Images/HDhut.blogspot.com (6).jpeg" alt="">
-                    <div class="top">
-                        <a href="">Ordinary</a>
-                        <a href="">Rent</a>
-                    </div>
-
-                </div>
-                <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                <div class="items">
-                    <a href=""><span class="fa fa-bed"></span> 4</a>
-                    <a href=""><span class="fa fa-bath"></span> 4</a>
-                    <a href=""><span class="fa fa-box"></span> 2019</a>
-                    <a href=""><span class="fa fa-car"></span> 4</a>
-                </div>
-            </div>
-          
         </div>
-        <div class="col-lg-4 col-sm-12 col-md-6 ">
-          <div class="property-cards">
-              <div class="img-infor">
-                <div class="overlay">
-                  <a href=""> <i class="fa fa-camera"></i> 19</a>
-                
-                </div>
-                  <img class="img-fluid" src="images/property.jpg" alt="">
-                  <div class="top">
-                      <a href="">Ordinary</a>
-                      <a href="">Rent</a>
-                  </div>
-
-              </div>
-              <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-              <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-              <div class="items">
-                  <a href=""><span class="fa fa-bed"></span> 4</a>
-                  <a href=""><span class="fa fa-bath"></span> 4</a>
-                  <a href=""><span class="fa fa-box"></span> 2019</a>
-                  <a href=""><span class="fa fa-car"></span> 4</a>
-              </div>
+        <div class="carousel-item">
+          <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
           </div>
-        
+        </div>
+        <div class="carousel-item">
+          <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-4 col-sm-12 col-md-6 ">
-        <div class="property-cards">
-            <div class="img-infor">
-              <div class="overlay">
-                <a href=""> <i class="fa fa-camera"></i> 19</a>
-              
-              </div>
-                <img class="img-fluid" src="images/property.jpg" alt="">
-                <div class="top">
-                    <a href="">Ordinary</a>
-                    <a href="">Rent</a>
-                </div>
+      <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+        <span class="fa fa-play" aria-hidden="true" style="transform: rotate(180deg);color: #ff0000;"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next" style="color:#ff0000;">
+        <span class="fa fa-play" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="prior-details w-100">
+    <div class="top d-flex justify-content-between">
+      <div class="area">
+        <h4>Avondale</h4>
+        <p>100 Argyle Road</p>
+      </div>
+      <div class="price">
+        <p>$2 500.00</p>
+        <span>Priority <br>Listing
+        </span>
+      </div>
 
-            </div>
-            <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-            <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-            <div class="items">
-                <a href=""><span class="fa fa-bed"></span> 4</a>
-                <a href=""><span class="fa fa-bath"></span> 4</a>
-                <a href=""><span class="fa fa-box"></span> 2019</a>
-                <a href=""><span class="fa fa-car"></span> 4</a>
-            </div>
+    </div>
+    <div class="abt-logo">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing em,
+         in cum incidunt exercitationem ullam eligendi?</p>
+         <img src="images/agents.png" alt="">
+    </div>
+    <div class="bottom-infor">
+     <span class="fa fa-bed">
+       <a href="#">3 beds</a>
+     </span>
+     <span class="fa fa-bath">
+      <a href="#">3 baths</a>
+    </span>
+    <span class="fa fa-bed">
+      <a href="#">3 beds</a>
+    </span>
+
+      <a href="#" class="submit">View Details</a>
+    </div>
+
+  </div>
+</div>
+<!-- item2 -->
+<!-- item3 -->
+<div class="priority-item d-flex shadow">
+  <div class="caption">
+    <span class="ribbon">
+      <img src="images/Harare Rentals Ribbon.png" alt="">
+      <p>Rent</p>
+    </span>
+    <div id="carousel3" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel3" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel3" data-slide-to="1"></li>
+        <li data-target="#carousel3" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+ 
+            <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
+          </div>
         </div>
+        <div class="carousel-item">
+          <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+        <span class="fa fa-play" aria-hidden="true" style="transform: rotate(180deg);color: #ff0000;"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next" style="color:#ff0000;">
+        <span class="fa fa-play" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="prior-details w-100">
+    <div class="top d-flex justify-content-between">
+      <div class="area">
+        <h4>Avondale</h4>
+        <p>100 Argyle Road</p>
+      </div>
+      <div class="price">
+        <p>$2 500.00</p>
+        <span>Priority <br>Listing
+        </span>
+      </div>
+
+    </div>
+    <div class="abt-logo">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing em,
+         in cum incidunt exercitationem ullam eligendi?</p>
+         <img src="images/agents.png" alt="">
+    </div>
+    <div class="bottom-infor">
+     <span class="fa fa-bed">
+       <a href="#">3 beds</a>
+     </span>
+     <span class="fa fa-bath">
+      <a href="#">3 baths</a>
+    </span>
+    <span class="fa fa-bed">
+      <a href="#">3 beds</a>
+    </span>
+
+      <a href="#" class="submit">View Details</a>
+    </div>
+
+  </div>
+</div>
+<!-- item3 -->
+<!-- item4 -->
+<div class="priority-item d-flex shadow">
+  <div class="caption">
+    <span class="ribbon">
+      <img src="images/Harare Rentals Ribbon.png" alt="">
+      <p>Rent</p>
+    </span>
+    <div id="carousel4" class="carousel slide" data-ride="carousel">
+     
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+ 
+            <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>PALM GOLDING HOMES <br>@Propertybook.co.zw</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel4" role="button" data-slide="prev">
+        <span class="fa fa-play" aria-hidden="true" style="transform: rotate(180deg);color: #ff0000;"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel4" role="button" data-slide="next" style="color:#ff0000;">
+        <span class="fa fa-play" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="prior-details w-100">
+    <div class="top d-flex justify-content-between">
+      <div class="area">
+        <h4>Avondale</h4>
+        <p>100 Argyle Road</p>
+      </div>
+      <div class="price">
+        <p>$2 500.00</p>
+        <span>Priority <br>Listing
+        </span>
+      </div>
+
+    </div>
+    <div class="abt-logo">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing em,
+         in cum incidunt exercitationem ullam eligendi?</p>
+         <img src="images/agents.png" alt="">
+    </div>
+    <div class="bottom-infor">
+     <span class="fa fa-bed">
+       <a href="#">3 beds</a>
+     </span>
+     <span class="fa fa-bath">
+      <a href="#">3 baths</a>
+    </span>
+    <span class="fa fa-bed">
+      <a href="#">3 beds</a>
+    </span>
+
+      <a href="#" class="submit">View Details</a>
+    </div>
+
+  </div>
+</div>
+<!-- item4 -->
+
+      </section>
+
+      <!-- Priorities End --------------------------------------------------------------------------------------------------------------------------------- -->
+      <section class="ordinary">
+        <div class="ordinary-items shadow">
+          
+            <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+          
+          <div class="description">
+            <div class="top">
+              <div class="area">
+                <p>Avondale</p>
+                <span>160 Harare Drive</span>
+              </div>
+             
+                <p>$5000</p>
+           
+            </div>
+            <div class="description-text">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus sint sunt quisquam corporis magni quod</p>
+              <img src="images/agent3.png" alt="">
+            </div>
+            <div class="bottom-infor">
+              <span class="fa fa-bed">
+                <a href="#">3 beds</a>
+              </span>
+              <span class="fa fa-bath">
+               <a href="#">3 baths</a>
+             </span>
+             <span class="fa fa-bed">
+               <a href="#">3 beds</a>
+             </span>
+         
+               <a href="#" class="submit">View Details</a>
+             </div>
+          </div>
+        </div>
+        <div class="ordinary-items shadow">
+          
+          <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+        
+        <div class="description">
+          <div class="top">
+            <div class="area">
+              <p>Avondale</p>
+              <span>160 Harare Drive</span>
+            </div>
+           
+              <p>$5000</p>
+         
+          </div>
+          <div class="description-text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus sint sunt quisquam corporis magni quod</p>
+            <img src="images/agent3.png" alt="">
+          </div>
+          <div class="bottom-infor">
+            <span class="fa fa-bed">
+              <a href="#">3 beds</a>
+            </span>
+            <span class="fa fa-bath">
+             <a href="#">3 baths</a>
+           </span>
+           <span class="fa fa-bed">
+             <a href="#">3 beds</a>
+           </span>
+       
+             <a href="#" class="submit">View Details</a>
+           </div>
+        </div>
+      </div>
+      <div class="ordinary-items shadow">
+          
+        <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
       
-    </div>
-    <div class="col-lg-4 col-sm-12 col-md-6 ">
-      <div class="property-cards">
-          <div class="img-infor">
-            <div class="overlay">
-              <a href=""> <i class="fa fa-camera"></i> 19</a>
-            
-            </div>
-              <img class="img-fluid" src="images/property.jpg" alt="">
-              <div class="top">
-                  <a href="">Ordinary</a>
-                  <a href="">Rent</a>
-              </div>
-
+      <div class="description">
+        <div class="top">
+          <div class="area">
+            <p>Avondale</p>
+            <span>160 Harare Drive</span>
           </div>
-          <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-          <p> <span><del>$5,000/mo</del> </span>$200/mo</p>
-          <div class="items">
-              <a href=""><span class="fa fa-bed"></span> 4</a>
-              <a href=""><span class="fa fa-bath"></span> 4</a>
-              <a href=""><span class="fa fa-box"></span> 2019</a>
-              <a href=""><span class="fa fa-car"></span> 4</a>
-          </div>
+         
+            <p>$5000</p>
+       
+        </div>
+        <div class="description-text">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus sint sunt quisquam corporis magni quod</p>
+          <img src="images/agent3.png" alt="">
+        </div>
+        <div class="bottom-infor">
+          <span class="fa fa-bed">
+            <a href="#">3 beds</a>
+          </span>
+          <span class="fa fa-bath">
+           <a href="#">3 baths</a>
+         </span>
+         <span class="fa fa-bed">
+           <a href="#">3 beds</a>
+         </span>
+     
+           <a href="#" class="submit">View Details</a>
+         </div>
       </div>
+    </div>
+    <div class="ordinary-items shadow">
+          
+      <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
     
+    <div class="description">
+      <div class="top">
+        <div class="area">
+          <p>Avondale</p>
+          <span>160 Harare Drive</span>
+        </div>
+       
+          <p>$5000</p>
+     
+      </div>
+      <div class="description-text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus sint sunt quisquam corporis magni quod</p>
+        <img src="images/agent3.png" alt="">
+      </div>
+      <div class="bottom-infor">
+        <span class="fa fa-bed">
+          <a href="#">3 beds</a>
+        </span>
+        <span class="fa fa-bath">
+         <a href="#">3 baths</a>
+       </span>
+       <span class="fa fa-bed">
+         <a href="#">3 beds</a>
+       </span>
+   
+         <a href="#" class="submit">View Details</a>
+       </div>
+    </div>
   </div>
-                    </div>
-                </div>
-
-        </div>
-
-         <!--Second slide-->
-
-         <div class="carousel-item">
-          <div class="properties col-12 p-0">
-            <div class="row justify-content-between">
-                <div class="col-lg-4 col-sm-12 col-md-6">
-                    <div class="property-cards">
-                        <div class="img-infor">
-                          <div class="overlay">
-                            <a href=""> <i class="fa fa-camera"></i> 19</a>
-                          
-                          </div>
-                            <img class="img-fluid" src="images/feature_-_IMG_5467.jpg" alt="">
-                            <div class="top">
-                                <a href="">Featured</a>
-                                <a href="">Rent</a>
-                            </div>
-
-                        </div>
-                        <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                        <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                        <div class="items">
-                            <a href=""><span class="fa fa-bed"></span> 4</a>
-                            <a href=""><span class="fa fa-bath"></span> 4</a>
-                            <a href=""><span class="fa fa-box"></span> 2019</a>
-                            <a href=""><span class="fa fa-car"></span> 4</a>
-                        </div>
-                    </div>
-                  
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-6">
-                  <div class="property-cards">
-                      <div class="img-infor">
-                        <div class="overlay">
-                          <a href=""> <i class="fa fa-camera"></i> 19</a>
-                        
-                        </div>
-                          <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
-                          <div class="top">
-                              <a href="">Featured</a>
-                              <a href=""> Pending </a>
-                          </div>
-
-                      </div>
-                      <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
-                      <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                      <div class="items">
-                          <a href=""><span class="fa fa-bed"></span> 4</a>
-                          <a href=""><span class="fa fa-bath"></span> 4</a>
-                          <a href=""><span class="fa fa-box"></span> 2019</a>
-                          <a href=""><span class="fa fa-car"></span> 4</a>
-                      </div>
-                  </div>
-                
-              </div>
-              <div class="col-lg-4 col-sm-12 col-md-6">
-                <div class="property-cards">
-                    <div class="img-infor">
-                      <div class="overlay">
-                        <a href=""> <i class="fa fa-camera"></i> 19</a>
-                      
-                      </div>
-                        <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
-                        <div class="top">
-                            <a href="">Featured</a>
-                            <a href=""> Pending </a>
-                        </div>
-
-                    </div>
-                    <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
-                    <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                    <div class="items">
-                        <a href=""><span class="fa fa-bed"></span> 4</a>
-                        <a href=""><span class="fa fa-bath"></span> 4</a>
-                        <a href=""><span class="fa fa-box"></span> 2019</a>
-                        <a href=""><span class="fa fa-car"></span> 4</a>
-                    </div>
-                </div>
-              
-            </div>
-            <div class="col-lg-4 col-sm-12 col-md-6">
-              <div class="property-cards">
-                  <div class="img-infor">
-                    <div class="overlay">
-                      <a href=""> <i class="fa fa-camera"></i> 19</a>
-                    
-                    </div>
-                      <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
-                      <div class="top">
-                          <a href="">Featured</a>
-                          <a href=""> Pending </a>
-                      </div>
-
-                  </div>
-                  <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
-                  <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                  <div class="items">
-                      <a href=""><span class="fa fa-bed"></span> 4</a>
-                      <a href=""><span class="fa fa-bath"></span> 4</a>
-                      <a href=""><span class="fa fa-box"></span> 2019</a>
-                      <a href=""><span class="fa fa-car"></span> 4</a>
-                  </div>
-              </div>
-            
-          </div>
-          <div class="col-lg-4 col-sm-12 col-md-6">
-            <div class="property-cards">
-                <div class="img-infor">
-                  <div class="overlay">
-                    <a href=""> <i class="fa fa-camera"></i> 19</a>
-                  
-                  </div>
-                    <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
-                    <div class="top">
-                        <a href="">Featured</a>
-                        <a href=""> Pending </a>
-                    </div>
-
-                </div>
-                <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
-                <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                <div class="items">
-                    <a href=""><span class="fa fa-bed"></span> 4</a>
-                    <a href=""><span class="fa fa-bath"></span> 4</a>
-                    <a href=""><span class="fa fa-box"></span> 2019</a>
-                    <a href=""><span class="fa fa-car"></span> 4</a>
-                </div>
-            </div>
-          
-        </div>
-        <div class="col-lg-4 col-sm-12 col-md-6">
-          <div class="property-cards">
-              <div class="img-infor">
-                <div class="overlay">
-                  <a href=""> <i class="fa fa-camera"></i> 19</a>
-                
-                </div>
-                  <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
-                  <div class="top">
-                      <a href="">Featured</a>
-                      <a href=""> Pending </a>
-                  </div>
-
-              </div>
-              <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
-              <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-              <div class="items">
-                  <a href=""><span class="fa fa-bed"></span> 4</a>
-                  <a href=""><span class="fa fa-bath"></span> 4</a>
-                  <a href=""><span class="fa fa-box"></span> 2019</a>
-                  <a href=""><span class="fa fa-car"></span> 4</a>
-              </div>
-          </div>
-        
-      </div>
-              <div class="col-lg-4 col-sm-12 col-md-6 ">
-                <div class="property-cards">
-                    <div class="img-infor">
-                      <div class="overlay">
-                        <a href=""> <i class="fa fa-camera"></i> 19</a>
-                      
-                      </div>
-                        <img class="img-fluid" src="images/0d.jpg" alt="">
-                        <div class="top">
-                            <a href="">Featured</a>
-                            <a href="">Urgent</a>
-                        </div>
-
-                    </div>
-                    <h3>Villa in Riverside    <img src="images/agent7.png" alt="" class="logo"></h3>
-                    <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                    <div class="items">
-                        <a href=""><span class="fa fa-bed"></span> 4</a>
-                        <a href=""><span class="fa fa-bath"></span> 4</a>
-                        <a href=""><span class="fa fa-box"></span> 2019</a>
-                        <a href=""><span class="fa fa-car"></span> 4</a>
-                    </div>
-                </div>
-              
-            </div>
-        </div>
-
-      </div>
-      <!--/.Slides-->
-
-    </div>
-    <!--/.Carousel Wrapper-->
-     <!--3rd slide-->
-
-     <div class="carousel-item">
-      <div class="properties col-12 p-0">
-        <div class="row justify-content-between">
-            <div class="col-lg-4 col-sm-12 col-md-6">
-                <div class="property-cards">
-                    <div class="img-infor">
-                      <div class="overlay">
-                        <a href=""> <i class="fa fa-camera"></i> 19</a>
-                      
-                      </div>
-                        <img class="img-fluid" src="images/feature_-_IMG_5467.jpg" alt="">
-                        <div class="top">
-                            <a href="">Featured</a>
-                            <a href="">Rent</a>
-                        </div>
-
-                    </div>
-                    <h3>Villa in Riverside    <img src="images/agent2.png" alt="" class="logo"></h3>
-                    <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                    <div class="items">
-                        <a href=""><span class="fa fa-bed"></span> 4</a>
-                        <a href=""><span class="fa fa-bath"></span> 4</a>
-                        <a href=""><span class="fa fa-box"></span> 2019</a>
-                        <a href=""><span class="fa fa-car"></span> 4</a>
-                    </div>
-                </div>
-              
-            </div>
-            <div class="col-lg-4 col-sm-12 col-md-6">
-              <div class="property-cards">
-                  <div class="img-infor">
-                    <div class="overlay">
-                      <a href=""> <i class="fa fa-camera"></i> 19</a>
-                    
-                    </div>
-                      <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
-                      <div class="top">
-                          <a href="">Featured</a>
-                          <a href=""> Pending </a>
-                      </div>
-
-                  </div>
-                  <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
-                  <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                  <div class="items">
-                      <a href=""><span class="fa fa-bed"></span> 4</a>
-                      <a href=""><span class="fa fa-bath"></span> 4</a>
-                      <a href=""><span class="fa fa-box"></span> 2019</a>
-                      <a href=""><span class="fa fa-car"></span> 4</a>
-                  </div>
-              </div>
-            
-          </div>
-          <div class="col-lg-4 col-sm-12 col-md-6">
-            <div class="property-cards">
-                <div class="img-infor">
-                  <div class="overlay">
-                    <a href=""> <i class="fa fa-camera"></i> 19</a>
-                  
-                  </div>
-                    <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
-                    <div class="top">
-                        <a href="">Featured</a>
-                        <a href=""> Pending </a>
-                    </div>
-
-                </div>
-                <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
-                <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                <div class="items">
-                    <a href=""><span class="fa fa-bed"></span> 4</a>
-                    <a href=""><span class="fa fa-bath"></span> 4</a>
-                    <a href=""><span class="fa fa-box"></span> 2019</a>
-                    <a href=""><span class="fa fa-car"></span> 4</a>
-                </div>
-            </div>
-          
-        </div>
-        <div class="col-lg-4 col-sm-12 col-md-6">
-          <div class="property-cards">
-              <div class="img-infor">
-                <div class="overlay">
-                  <a href=""> <i class="fa fa-camera"></i> 19</a>
-                
-                </div>
-                  <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
-                  <div class="top">
-                      <a href="">Featured</a>
-                      <a href=""> Pending </a>
-                  </div>
-
-              </div>
-              <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
-              <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-              <div class="items">
-                  <a href=""><span class="fa fa-bed"></span> 4</a>
-                  <a href=""><span class="fa fa-bath"></span> 4</a>
-                  <a href=""><span class="fa fa-box"></span> 2019</a>
-                  <a href=""><span class="fa fa-car"></span> 4</a>
-              </div>
-          </div>
-        
-      </div>
-      <div class="col-lg-4 col-sm-12 col-md-6">
-        <div class="property-cards">
-            <div class="img-infor">
-              <div class="overlay">
-                <a href=""> <i class="fa fa-camera"></i> 19</a>
-              
-              </div>
-                <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
-                <div class="top">
-                    <a href="">Featured</a>
-                    <a href=""> Pending </a>
-                </div>
-
-            </div>
-            <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
-            <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-            <div class="items">
-                <a href=""><span class="fa fa-bed"></span> 4</a>
-                <a href=""><span class="fa fa-bath"></span> 4</a>
-                <a href=""><span class="fa fa-box"></span> 2019</a>
-                <a href=""><span class="fa fa-car"></span> 4</a>
-            </div>
-        </div>
-      
-    </div>
-    <div class="col-lg-4 col-sm-12 col-md-6">
-      <div class="property-cards">
-          <div class="img-infor">
-            <div class="overlay">
-              <a href=""> <i class="fa fa-camera"></i> 19</a>
-            
-            </div>
-              <img class="img-fluid" src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
-              <div class="top">
-                  <a href="">Featured</a>
-                  <a href=""> Pending </a>
-              </div>
-
-          </div>
-          <h3>Villa in Riverside    <img src="images/agent3.png" alt="" class="logo"></h3>
-          <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-          <div class="items">
-              <a href=""><span class="fa fa-bed"></span> 4</a>
-              <a href=""><span class="fa fa-bath"></span> 4</a>
-              <a href=""><span class="fa fa-box"></span> 2019</a>
-              <a href=""><span class="fa fa-car"></span> 4</a>
-          </div>
-      </div>
+      </section>
     
-  </div>
-          <div class="col-lg-4 col-sm-12 col-md-6 ">
-            <div class="property-cards">
-                <div class="img-infor">
-                  <div class="overlay">
-                    <a href=""> <i class="fa fa-camera"></i> 19</a>
-                  
-                  </div>
-                    <img class="img-fluid" src="images/0d.jpg" alt="">
-                    <div class="top">
-                        <a href="">Featured</a>
-                        <a href="">Urgent</a>
-                    </div>
-
-                </div>
-                <h3>Villa in Riverside    <img src="images/agent7.png" alt="" class="logo"></h3>
-                <p> <span><del>$5,000/mo</del> </span>$4,200/mo</p>
-                <div class="items">
-                    <a href=""><span class="fa fa-bed"></span> 4</a>
-                    <a href=""><span class="fa fa-bath"></span> 4</a>
-                    <a href=""><span class="fa fa-box"></span> 2019</a>
-                    <a href=""><span class="fa fa-car"></span> 4</a>
-                </div>
-            </div>
-          
-        </div>
-    </div>
 
   </div>
-  <!--/.Slides-->
+</div>
+</div>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+
 
 </div>
 
 
+<!-- item2 ends -->
+<!-- Priority ends -->
 
 
-            </div>
 
-      <!--Controls-->
-      <div class="controls-bottom">
-        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><button>Previous Page</button> </a>
-        <a class="btn-floating" href="#multi-item-example" data-slide="next"><button>Next Page</button> </a>
-      </div>
-      <!--/.Controls-->
 
-      <!-- Indicators
-      <ol class="carousel-indicators">
-        <li data-target="#multi-item-example" data-slide-to="0" class="active">1</li>
-        <li data-target="#multi-item-example" data-slide-to="1"> 2</li>
-        <li data-target="#multi-item-example" data-slide-to="2"> 3</li>
-        <li data-target="#multi-item-example" data-slide-to="2"> 3</li>
-      </ol> -->
-      <!--/.Indicators-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="popular-areas" aos="fade" aos-duration="500">
+  <div class="container">
+    <h1>Places to rent in Harare</h1>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mt-lg-auto">
+        <div class="showcase">
+          <h5>Harare North</h5>
+          <div class="item">
+            <div class="overlay">
+              
+              <a href="#">Marlbrough</a>
+              <a href="#">Marbelreign</a>
+              <a href="#">Borrowdale</a>
+              <a href="#">Westagate</a>
+               <button class="btn">View Properties</button>
+             </div>
+            <img src="images/Images/Home-Wallpaper-7.jpg" class="" alt="">
+          </div>
         </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mt-lg-auto">
+        <div class="showcase infor">
+          <h5>Harare South</h5>
+          <div class="item">
+            <div class="overlay">
+              
+              <a href="#">Marlbrough</a>
+              <a href="#">Marbelreign</a>
+              <a href="#">Borrowdale</a>
+              <a href="#">Westagate</a>
+               <button class="btn">View Properties</button>
+             </div>
+            <img src="images/Images/House- HD-Wallpapers1391116.jpg" class="" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mt-lg-auto">
+        <div class="showcase">
+          <h5>Harare East</h5>
+          <div class="item">
+            <div class="overlay">
+              
+              <a href="#">Marlbrough</a>
+              <a href="#">Marbelreign</a>
+              <a href="#">Borrowdale</a>
+              <a href="#">Westagate</a>
+               <button class="btn">View Properties</button>
+             </div>
+            <img src="images/Images/iStock-140781367.jpg" class="" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mt-lg-auto">
+        <div class="showcase">
+         
+          <h5>Harare West</h5>
+          <div class="item">
+            <div class="overlay">
+              
+              <a href="#">Marlbrough</a>
+              <a href="#">Marbelreign</a>
+              <a href="#">Borrowdale</a>
+              <a href="#">Westagate</a>
+               <button class="btn">View Properties</button>
+             </div>
+
+            <img src="images/property.jpg" class="" alt="">
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 
-
-
-
-<!-- listed end -->
-
-
-
-
-
-
-
-
-
-
-        
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- 
 
 <section class="areas">
     <div class="container">
@@ -1119,7 +2363,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   
   <section class="submit">
     <p>Receive our property highlights</p>
@@ -1171,7 +2415,7 @@
         </div>
         
       </div>
-    </div>
+  
   </section>
   
  
