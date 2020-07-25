@@ -18,34 +18,6 @@ $(".dollar").click(function(){
 
 
 
-  var owl= $('.owl-carousel');
-
-var carouselOption={
-    items:1,
-    // loop:true,
-    margin:10,
-    autoplay:false,
-    // nav:true,
-    autoplayTimeout:500,
-    navigation:true,
-    animateOut: 'fadeOut',
-       animateIn: 'fadeIn',
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1,
-            autoplay:false
-        },
-        768:{
-            items:1,
-            autoplay:false
-        }
-       
-    }
-
-}
-owl.owlCarousel(carouselOption);
-
 
 $('.carousel').carousel({
     interval: false,
@@ -99,19 +71,19 @@ $(".tabcontent.active").show();
 
 $(".myBtn").click(function() {
     $('html,body').animate({
-        scrollTop: $("nav").offset().top},
+        scrollTop: $(".heroe").offset().top},
         'slow');
 });
 
 
 
-function myFunction(imgs) {
-    var expandImg = document.getElementById("brend");
+// function myFunction(imgs) {
+//     var expandImg = document.getElementById("brend");
 
-    expandImg.src = imgs.src ;
+//     expandImg.src = imgs.src ;
 
 
-}
+// }
 
 
 
@@ -127,3 +99,5 @@ function myFunction(imgs){
   // Show the container element (hidden with CSS)
   // expandImg.parentElement.style.display = "block";
 }
+
+
