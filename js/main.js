@@ -11,7 +11,7 @@
 // $(document).ready(function() {
 //     $(".dropdown-toggle").dropdown();
 // });
-$('.currency-container').slideToggle();
+$('.currency-container').hide();
 $(".dollar").click(function(){
     $(".currency-container").slideToggle();
   });
