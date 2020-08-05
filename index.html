@@ -15,7 +15,7 @@
     
 
   <!-- header start -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg" id="billboard">
     <div class="container">
     <a class="navbar-brand main-img" href="index.html"><img src="images/Images/Harare Rentals Logo.png" alt=""></a>
     <button class="navbar-toggler ml-auto border-none" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -196,31 +196,38 @@
 
 <section class="surbubs" aos="fade-right" aos-duration="500">
  
-    <h1>Harare Rentals</h1>
+    <h1>Featured Properties</h1>
     <p>View Properties in different Surbubs</p>
 
     
-    <div class="container">
-      <!-- Tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'South')">Harare South</button>
-  <button class="tablinks" onclick="openCity(event, 'North')">Harare North</button>
-  <button class="tablinks" onclick="openCity(event, 'East')">Harare East</button>
-  <button class="tablinks" onclick="openCity(event, 'West')">Harare West</button>
   
-</div>
 
-<!-- Tab content -->
-<div id="South" class="tabcontent active">
+<div class="container">
+ 
+  <ul class="nav nav-pills col-6">
+    <li class="active"><a data-toggle="pill" href="#South">South</a></li>
+    <li><a data-toggle="pill" href="#East">East</a></li>
+    <li><a data-toggle="pill" href="#North">North</a></li>
+    <li><a data-toggle="pill" href="#West">West</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="South" class="tab-pane fade in active show">
   <div class="row" >
     <div class="col-12 main-details">
       <div class="row">
       <div class="col-md-12 col-lg-6">
+        <div class="region-1 shadow">
+          <div class="agent">Palm Golding Trust</div>
+
+        <a href="Listings-page.html">View Properties</a>
           <img src="images/img/one-storey-home-exterior.jpg" alt="" class="top img-fluid" class="expandedImg" id="expandedImg">
+        </div>
       </div>
       <div class="col-md-12 col-lg-6 m-auto position-relative">
-          <div class="region">
-            <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="" >
+          <div class="region shadow">
+            
+            <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
             <div class="overlay">
               <h5>Harare South</h5>
               <p>Your life shouldn’t be built around your home, instead, your home should be built around your life and we get it! Our team have expert knowledge in all things home design and available land within the region.
@@ -233,25 +240,35 @@
     </div>
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
+      <div class="sub-details shadow">
+        <div class="agent">Palm Golding Trust</div>
+        <a href="Listings-page.html">View Properties</a>
+        
         <img src="featured/20200317-152057-banner-2.jpg" alt="" onclick="myFunction(this)">
       </div>
 
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
+      <div class="sub-details shadow">
+        <div class="agent">Palm Golding Trust</div>
+        <a href="Listings-page.html">View Properties</a>
         <img src="featured/woman-works-on-computer-at-home.jpg" alt=""onclick="myFunction(this)">
       </div>
 
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
+      
+      <div class="sub-details shadow">
+         <div class="agent">Palm Golding Trust</div>
         <img src="featured/white-villa-with-red-tile-roof.jpg" alt="" onclick="myFunction(this)">
       </div>
 
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
+      
+      <div class="sub-details shadow">
+         <div class="agent">Palm Golding Trust</div>
+        
         <img src="featured/Showhome-banner-5-flaxfield-fixed.jpg" alt="" onclick="myFunction(this)">
       </div>
 
@@ -260,19 +277,32 @@
   </div>
 </div>
 
-<div id="North" class="tabcontent">
+
+  
+
+<!-- Tab content -->
+
+<div id="North" class="tab-pane fade in">
   <div class="row" >
     <div class="col-12 main-details">
       <div class="row">
       <div class="col-md-12 col-lg-6">
-          <img src="images/img/high-end-country-home-on-hillside.jpg" alt="" class="top img-fluid">
+        <div class="region-1 shadow">
+          <div class="agent">Palm Golding Trust</div>
+
+        <a href="Listings-page.html">View Properties</a>
+          <img src="images/img/one-storey-home-exterior.jpg" alt="" class="top img-fluid" class="expandedImg" id="expandedImg">
+        </div>
       </div>
       <div class="col-md-12 col-lg-6 m-auto position-relative">
-          <div class="region">
-            <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+          <div class="region shadow">
+            
+            <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="" >
             <div class="overlay">
               <h5>Harare North</h5>
-              <p>We have Properties throughout Harare North in all Surbabs you can click below to view the properties we have</p>
+              <p>Your life shouldn’t be built around your home, instead, your home should be built around your life and we get it! Our team have expert knowledge in all things home design and available land within the region.
+
+              </p>
               <button>View Properties</button>
             </div>
           </div>
@@ -280,46 +310,59 @@
     </div>
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="featured/bungalow-house-exterior.jpg" alt="">
+      <div class="sub-details shadow">
+        <div class="agent">Palm Golding Trust</div>
+        <a href="Listings-page.html">View Properties</a>
+        
+        <img src="featured/20200317-152057-banner-2.jpg" alt="" onclick="myFunction(this)">
       </div>
 
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="featured/modern-white-bathroom.jpg" alt="">
+      <div class="sub-details shadow">
+        <div class="agent">Palm Golding Trust</div>
+        <a href="Listings-page.html">View Properties</a>
+        <img src="featured/woman-works-on-computer-at-home.jpg" alt=""onclick="myFunction(this)">
       </div>
 
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="featured/patterned-tiles-on-stairs.jpg" alt="">
+      <div class="sub-details shadow">
+        <img src="featured/white-villa-with-red-tile-roof.jpg" alt="" onclick="myFunction(this)">
       </div>
 
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="featured/romantic-balcony-atop-an-ivy-covered-house.jpg" alt="">
+      <div class="sub-details shadow">
+        
+        <img src="featured/Showhome-banner-5-flaxfield-fixed.jpg" alt="" onclick="myFunction(this)">
       </div>
 
     </div>
     
   </div>
 </div>
-
-<div id="East" class="tabcontent">
+<div id="East"  class="tab-pane fade in">
   <div class="row" >
     <div class="col-12 main-details">
       <div class="row">
       <div class="col-md-12 col-lg-6">
-          <img src="featured/bungalow-house-exterior.jpg" alt="" class="top img-fluid">
+        <div class="region-1 shadow">
+          <div class="agent">Palm Golding Trust</div>
+
+        <a href="Listings-page.html">View Properties</a>
+          <img src="images/img/one-storey-home-exterior.jpg" alt="" class="top img-fluid" class="expandedImg" id="expandedImg">
+        </div>
       </div>
       <div class="col-md-12 col-lg-6 m-auto position-relative">
-          <div class="region">
-            <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+          <div class="region shadow">
+            
+            <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="" >
             <div class="overlay">
               <h5>Harare East</h5>
-              <p>We have Properties throughout Harare North in all Surbabs you can click below to view the properties we have</p>
+              <p>Your life shouldn’t be built around your home, instead, your home should be built around your life and we get it! Our team have expert knowledge in all things home design and available land within the region.
+
+              </p>
               <button>View Properties</button>
             </div>
           </div>
@@ -327,26 +370,32 @@
     </div>
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="images/Images/best-dream-house-hd-wallpaper-submitted-by-stuart.jpg" alt="">
+      <div class="sub-details shadow">
+        <div class="agent">Palm Golding Trust</div>
+        <a href="Listings-page.html">View Properties</a>
+        
+        <img src="featured/20200317-152057-banner-2.jpg" alt="" onclick="myFunction(this)">
       </div>
 
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="images/0d.jpg" alt="">
+      <div class="sub-details shadow">
+        <div class="agent">Palm Golding Trust</div>
+        <a href="Listings-page.html">View Properties</a>
+        <img src="featured/woman-works-on-computer-at-home.jpg" alt=""onclick="myFunction(this)">
       </div>
 
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="images/Images/House- HD-Wallpapers1391116.jpg" alt="">
+      <div class="sub-details shadow">
+        <img src="featured/white-villa-with-red-tile-roof.jpg" alt="" onclick="myFunction(this)">
       </div>
 
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="images/abalina_beach_cottage_front-left-photo_01-500x333.jpg" alt="">
+      <div class="sub-details shadow">
+        
+        <img src="featured/Showhome-banner-5-flaxfield-fixed.jpg" alt="" onclick="myFunction(this)">
       </div>
 
     </div>
@@ -354,20 +403,27 @@
   </div>
 </div>
 
-
-<div id="West" class="tabcontent">
+<div id="West"  class="tab-pane fade in">
   <div class="row" >
     <div class="col-12 main-details">
       <div class="row">
       <div class="col-md-12 col-lg-6">
-          <img src="images/img/one-storey-home-exterior.jpg" alt="" class="top img-fluid">
+        <div class="region-1 shadow">
+          <div class="agent">Palm Golding Trust</div>
+
+        <a href="Listings-page.html">View Properties</a>
+          <img src="images/img/one-storey-home-exterior.jpg" alt="" class="top img-fluid" class="expandedImg" id="expandedImg">
+        </div>
       </div>
       <div class="col-md-12 col-lg-6 m-auto position-relative">
-          <div class="region">
-            <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+          <div class="region shadow">
+            
+            <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="" >
             <div class="overlay">
               <h5>Harare West</h5>
-              <p>We have Properties throughout Harare North in all Surbabs you can click below to view the properties we have</p>
+              <p>Your life shouldn’t be built around your home, instead, your home should be built around your life and we get it! Our team have expert knowledge in all things home design and available land within the region.
+
+              </p>
               <button>View Properties</button>
             </div>
           </div>
@@ -375,43 +431,45 @@
     </div>
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="images/Images/best-dream-house-hd-wallpaper-submitted-by-stuart.jpg" alt="">
+      <div class="sub-details shadow">
+        <div class="agent">Palm Golding Trust</div>
+        <a href="Listings-page.html">View Properties</a>
+        
+        <img src="featured/20200317-152057-banner-2.jpg" alt="" onclick="myFunction(this)">
       </div>
 
     </div>
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="images/Images/6b272ab034b7a953187123d3c76687f1.jpg" alt="">
+      <div class="sub-details shadow">
+        <div class="agent">Palm Golding Trust</div>
+        <a href="Listings-page.html">View Properties</a>
+        <img src="featured/woman-works-on-computer-at-home.jpg" alt=""onclick="myFunction(this)">
       </div>
 
     </div>
-  
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="images/abalina_beach_cottage_front-left-photo_01-500x333.jpg" alt="">
+      <div class="sub-details shadow">
+        <img src="featured/white-villa-with-red-tile-roof.jpg" alt="" onclick="myFunction(this)">
       </div>
 
     </div>
-
     <div class="col-lg-3">
-      <div class="sub-details">
-        <img src="images/Images/6b272ab034b7a953187123d3c76687f1.jpg" alt="">
+      <div class="sub-details shadow">
+        
+        <img src="featured/Showhome-banner-5-flaxfield-fixed.jpg" alt="" onclick="myFunction(this)">
       </div>
 
     </div>
     
+    
+</div>
   </div>
 </div>
-     
-             
-
-    
 </div>
 </section>
 
 
-<section class="community">
+<!-- <section class="community">
   <h2>Join Our Community</h2>
   <div class="container">
     
@@ -446,6 +504,46 @@
     </div>
   </div>
 
+</section> -->
+
+<section class="community">
+    <div class="container">
+        <h2>Join Our Community</h2>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="join-group">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#">Follow us on Facebook <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="join-group">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#">Follow us on Twitter <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="join-group">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#">Follow us on Instagram <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="card bottom">
+                    <div class="join-group">
+                        <a href="#"><i class="fa fa-users "></i></a>
+                        <h2>Join Our Official Harare Rentals Facebook</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -454,20 +552,21 @@
 
 <section class="popular-areas" aos="fade" aos-duration="500">
   <div class="container">
-    <h1>Places to rent in Harare</h1>
+    <h1>Places to rent</h1>
 
     <div class="row">
       <div class="col-md-6 col-lg-3 mt-lg-auto">
         <div class="showcase">
           <h5>Harare North</h5>
           <div class="item">
-            <div class="overlay">
+            <div class="overlay"></div>
+            <div class="overlay-text">
               
               <a href="#">Marlbrough</a>
               <a href="#">Marbelreign</a>
               <a href="#">Borrowdale</a>
               <a href="#">Westagate</a>
-               <button class="btn">View Properties</button>
+               <a  href="#" class="btn">View More</a>
              </div>
             <img src="images/Images/Home-Wallpaper-7.jpg" class="" alt="">
           </div>
@@ -477,15 +576,16 @@
         <div class="showcase infor">
           <h5>Harare South</h5>
           <div class="item">
-            <div class="overlay">
+            <div class="overlay"></div>
+            <div class="overlay-text">
               
               <a href="#">Marlbrough</a>
               <a href="#">Marbelreign</a>
               <a href="#">Borrowdale</a>
               <a href="#">Westagate</a>
-               <button class="btn">View Properties</button>
+              <a  href="#" class="btn">View More</a>
              </div>
-            <img src="images/Images/House- HD-Wallpapers1391116.jpg" class="" alt="">
+            <img src="images/Images/Home-Wallpaper-7.jpg" class="" alt="">
           </div>
         </div>
       </div>
@@ -493,77 +593,47 @@
         <div class="showcase">
           <h5>Harare East</h5>
           <div class="item">
-            <div class="overlay">
+            <div class="overlay"></div>
+            <div class="overlay-text">
               
               <a href="#">Marlbrough</a>
               <a href="#">Marbelreign</a>
               <a href="#">Borrowdale</a>
               <a href="#">Westagate</a>
-               <button class="btn">View Properties</button>
+      <a  href="#" class="btn">View More</a>
              </div>
-            <img src="images/Images/iStock-140781367.jpg" class="" alt="">
+            <img src="images/Images/Home-Wallpaper-7.jpg" class="" alt="">
+          </div>
+            
           </div>
         </div>
-      </div>
+     
       <div class="col-md-6 col-lg-3 mt-lg-auto">
-        <div class="showcase">
+        <div class="showcase infor">
          
           <h5>Harare West</h5>
           <div class="item">
-            <div class="overlay">
+            <div class="overlay"></div>
+            <div class="overlay-text">
               
               <a href="#">Marlbrough</a>
               <a href="#">Marbelreign</a>
               <a href="#">Borrowdale</a>
               <a href="#">Westagate</a>
-               <button class="btn">View Properties</button>
+              <a  href="#" class="btn">View More</a>
              </div>
-
-            <img src="images/property.jpg" class="" alt="">
+            <img src="images/Images/Home-Wallpaper-7.jpg" class="" alt="">
           </div>
         </div>
       </div>
     </div>
   </div>
+   </div>
 </section>
 
 
-    <!-- <div class="row">
-      <div class="col-md-3 col-6 col-sm-6">
-        <h2>Harare North</h2>
-
-        <a href="">Avondale</a>
-        <a href="">Mt Pleasant</a>
-        <a href="">Borrowdale</a>
-        <a href="">Greystone</a>
-      </div>
-      <div class="col-md-3 col-6 col-sm-6">
-        <h2>Harare South</h2>
-
-        <a href="">Avondale</a>
-        <a href="">Mt Pleasant</a>
-        <a href="">Borrowdale</a>
-        <a href="">Greystone</a>
-      </div>
-      <div class="col-md-3 col-6 col-sm-6">
-        <h2>Harare West</h2>
-
-        <a href="">Avondale</a>
-        <a href="">Mt Pleasant</a>
-        <a href="">Borrowdale</a>
-        <a href="">Greystone</a>
-      </div>
-      <div class="col-md-3 col-6 col-sm-6">
-        <h2>Harare East</h2>
-
-        <a href="">Avondale</a>
-        <a href="">Mt Pleasant</a>
-        <a href="">Borrowdale</a>
-        <a href="">Greystone</a>
-      </div>
-    </div> -->
-  </div>
-</section>
+   
+ 
 
 <section class="submit">
   <p>Receive our property highlights</p>
@@ -653,8 +723,9 @@
     </div>
   </div>
 </div>
-<button class="top myBtn" id="myBtn" title="Go to top" > <img src="images/img/up-arrow-png-27154.png" alt=""></button>
+
 </footer>
+<a href="#billboard" class="fixed-icon"> <i class="fas fa-angle-up"></i> </a>
 
 
        <script src="js/jquery.min.js"></script>

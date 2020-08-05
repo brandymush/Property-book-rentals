@@ -23,21 +23,23 @@ $('.carousel').carousel({
     interval: false,
   });
 
-$(".tabcontent").hide();
-$(".tabcontent.active").show();
-  function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += "active";
-  }
+// $(".tabcontent").hide();
+// $(".tabcontent.active").show();
+
+//   function openCity(evt, cityName) {
+    
+//     var i, tabcontent, tablinks;
+//     tabcontent = document.getElementsByClassName("tabcontent");
+//     for (i = 0; i < tabcontent.length; i++) {
+//       tabcontent[i].style.display = "none";
+//     }
+//     tablinks = document.getElementsByClassName("tablinks");
+//     for (i = 0; i < tablinks.length; i++) {
+//       tablinks[i].className = tablinks[i].className.replace(" active",);
+//     }
+//     document.getElementById(cityName).style.display = "block";
+//     evt.currentTarget.className += "active";
+//   }
 
 //   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 //     anchor.addEventListener('click', function (e) {
@@ -69,9 +71,25 @@ $(".tabcontent.active").show();
 //   document.documentElement.scrollTop = 0;
 // }
 
-$(".myBtn").click(function() {
+// $(".fixed-icon").hide();
+
+// function myFunction(img,id) {
+//        // card1
+//         var expandImg = $('#'+id);
+//          expandImg.src = img.src;
+// }
+document.onscroll = function() {
+        if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+          $(".fixed-icon").show();
+        }
+        else{
+          $(".fixed-icon").hide();
+        }
+    }
+
+$(".fixed-icon").click(function() {
     $('html,body').animate({
-        scrollTop: $(".heroe").offset().top},
+        scrollTop: $("#billboard").offset().top},
         'slow');
 });
 
@@ -89,7 +107,7 @@ $(".myBtn").click(function() {
 
 function myFunction(imgs){
   // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
+  var expandImg =$('[id="expandedImg"]');
   // Get the image text
 
   // Use the same src in the expanded image as the image being clicked on from the grid
@@ -97,7 +115,7 @@ function myFunction(imgs){
   // Use the value of the alt attribute of the clickable image as text inside the expanded image
 
   // Show the container element (hidden with CSS)
-  // expandImg.parentElement.style.display = "block";
+  //  expandImg.parentElement.style.display = "block";
 }
 
 
