@@ -1,20 +1,13 @@
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
 
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
-
-// $(document).ready(function() {
-//     $(".dropdown-toggle").dropdown();
-// });
 $('.currency-container').hide();
 $(".dollar").click(function(){
     $(".currency-container").slideToggle();
   });
+
+$('.showcase .item').hover(
+       function(){ $(this).addClass('hover') },
+      //  function(){ $(this).removeClass('hover') }
+)
 
 
 
@@ -23,61 +16,8 @@ $('.carousel').carousel({
     interval: false,
   });
 
-// $(".tabcontent").hide();
-// $(".tabcontent.active").show();
 
-//   function openCity(evt, cityName) {
-    
-//     var i, tabcontent, tablinks;
-//     tabcontent = document.getElementsByClassName("tabcontent");
-//     for (i = 0; i < tabcontent.length; i++) {
-//       tabcontent[i].style.display = "none";
-//     }
-//     tablinks = document.getElementsByClassName("tablinks");
-//     for (i = 0; i < tablinks.length; i++) {
-//       tablinks[i].className = tablinks[i].className.replace(" active",);
-//     }
-//     document.getElementById(cityName).style.display = "block";
-//     evt.currentTarget.className += "active";
-//   }
 
-//   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
-  
-
-// var mybutton = document.getElementById("myBtn");
-
-// // When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     mybutton.style.display = "block";
-//   } else {
-//     mybutton.style.display = "none";
-//   }
-// }
-
-// // When the user clicks on the button, scroll to the top of the document
-// function topFunction(e) {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
-
-// $(".fixed-icon").hide();
-
-// function myFunction(img,id) {
-//        // card1
-//         var expandImg = $('#'+id);
-//          expandImg.src = img.src;
-// }
 document.onscroll = function() {
         if (window.innerHeight + window.scrollY > document.body.clientHeight) {
           $(".fixed-icon").show();
@@ -89,33 +29,47 @@ document.onscroll = function() {
 
 $(".fixed-icon").click(function() {
     $('html,body').animate({
-        scrollTop: $("#billboard").offset().top},
+        scrollTop: $("#nav").offset().top},
         'slow');
 });
 
+$('.carousel').carousel();
 
+var owl= $('.owl-carousel');
 
-// function myFunction(imgs) {
-//     var expandImg = document.getElementById("brend");
+var carouselOption={
+   items:5,
+    loop:true,
+    margin:10,
+    autoplay:false,
+    autoplayTimeout:400000,
+       nav:true,
+    navigation:true,
+    navText: ['<span class="fa fa-arrow-left"></span>','<span class="fa fa-arrow-right"></span>'],
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+         
+          //  items:1,
+          //   nav:true,
+          //   navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'], 
+        },
+        768:{
+            
+        },
+        1440:{
+           
+         
+        },
+        576:{
+            // items:1,
+            // nav:true,
+            // 
+        }
+       
+    }
 
-//     expandImg.src = imgs.src ;
-
-
-// }
-
-
-
-function myFunction(imgs){
-  // Get the expanded image
-  var expandImg =$('[id="expandedImg"]');
-  // Get the image text
-
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-
-  // Show the container element (hidden with CSS)
-  //  expandImg.parentElement.style.display = "block";
 }
+owl.owlCarousel(carouselOption);
 
 
