@@ -1864,6 +1864,17 @@ a.carousel-control-prev span, a.carousel-control-next span {
   height: auto;
 }
 
+.card.agent #agent .modal-body .agent-name a.submit {
+  margin-right: 20px;
+  font-size: 14px;
+  padding: 0;
+  width: 120px;
+}
+
+.card.agent #agent .modal-body .agent-name a.submit i {
+  padding-right: 5px;
+}
+
 .card.agent #agent .expand {
   width: 100%;
   background-color: #ff0000;

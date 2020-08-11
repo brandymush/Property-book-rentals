@@ -561,6 +561,11 @@ a.carousel-control-prev,a.carousel-control-next{opacity: 1 !important;
 			p{font-size:14px;display:flex;color: #4d4d4d;padding-bottom: 10px;width:100%;align-items:center;
 				a{background-color: #fff;width: auto;height: auto;;}
 			}
+			.agent-name{
+				a.submit{margin-right:20px;font-size:14px;padding:0;width:120px;
+				   i{padding-right: 5px;}
+				}
+			}
 		}
 		.expand{width: 100%;background-color: #ff0000;
 			.card{margin-bottom: 30px;background-color: #ffc107;
