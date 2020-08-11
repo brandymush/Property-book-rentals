@@ -1431,14 +1431,26 @@ a.carousel-control-prev span, a.carousel-control-next span {
   border-bottom: 4px solid #fff;
 }
 
-.btn-primary {
+.controls {
   background-color: red;
   border: none;
   outline: 0;
   border: none;
+  padding: 10px;
 }
 
-.btn-primary:focus, .btn-primary:hover {
+.controls i {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.controls i:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+.controls:focus, .controls:hover {
   outline: 0;
   background-color: #ff0000;
   border: none;
