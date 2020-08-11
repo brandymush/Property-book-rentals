@@ -1485,7 +1485,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
 }
 
 .single-listings-page > div:first-child {
-  background-color: #4D4D4D;
+  background-color: #ff0000;
   margin-right: 5px;
   padding: 12px 20px;
 }
@@ -1513,6 +1513,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
 
 .single-description .inner h4 {
   font-size: 16px;
+  color: #4D4D4D;
 }
 
 .single-description .inner p {
@@ -1775,7 +1776,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
 
 .card.agent {
   border: none;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 0 15px;
 }
 
@@ -1799,15 +1800,14 @@ a.carousel-control-prev span, a.carousel-control-next span {
 
 .card.agent .agent-name a.submit {
   color: #fff;
-  background-color: #4d4d4d4d;
-  width: 150px;
+  background-color: #1C5FE9;
+  width: 100%;
   text-align: center;
   padding: 8px;
   height: 40px;
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-decoration: none;
-  margin-right: 10px;
   line-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1914,6 +1914,11 @@ a.carousel-control-prev span, a.carousel-control-next span {
   margin-bottom: 20px;
   border: none;
   border-bottom: 1px solid lightgray;
+  border-radius: 0;
+}
+
+.card.agent form input:focus {
+  border-bottom: 1px solid #1C5FE9;
 }
 
 .card.agent form button {
@@ -1927,15 +1932,17 @@ a.carousel-control-prev span, a.carousel-control-next span {
 
 .card.agent form a {
   text-align: center;
-  background-color: gray;
+  background-color: #ffc107;
   width: 100%;
   font-family: 'Gotham';
   color: #ff0000;
   margin-top: 10px;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .card.agent form a i {
-  padding-right: 15px;
+  padding-right: 5px;
 }
 
 .card.agent .card {

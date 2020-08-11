@@ -460,14 +460,14 @@ a.carousel-control-prev,a.carousel-control-next{opacity: 1 !important;
 		>div{padding: 0 8px;
 			>h4{color:#ff0000;font-size: 22px;padding-bottom: 5px;}
 		}
-		>div:first-child{background-color:#4D4D4D;margin-right:5px;padding: 12px 20px;
+		>div:first-child{background-color:#ff0000;margin-right:5px;padding: 12px 20px;
 			h4{color: #fff;}
 		}
 		.item{display: flex;}
 	}
 	.single-description{margin: 0px 0 20px;
 		.inner{margin-top:20px;align-items:center;
-			h4{font-size:16px;}
+			h4{font-size:16px;color:#4D4D4D;}
 			p{color: #ffc107;}
 		}
 		h4{font-size: 19px;margin: 5px 0;}
@@ -542,11 +542,11 @@ a.carousel-control-prev,a.carousel-control-next{opacity: 1 !important;
 
 	
 // .container-breadcrumb{padding:50px 0 0 0;}
-.card.agent{border:none;margin-top: 100px;padding:0 15px;
+.card.agent{border:none;margin-top: 50px;padding:0 15px;
 	img{height:150px;object-fit: cover;}
 	.agent-name{width:fit-content;
 		p{padding-bottom:10px;font-size: 18px;text-align: left;}
-		a.submit{color: #fff;background-color: #4d4d4d4d;width:150px;text-align: center;padding:8px;height: 40px;font-size: 15px;margin-bottom: 30px;text-decoration: none;;margin-right: 10px;line-height: 100%;display: flex;align-items: center;justify-content: center;font-size: 16px;
+		a.submit{color: #fff;background-color:#1C5FE9;;width:100%;text-align: center;padding:8px;height: 40px;font-size: 15px;margin-bottom:10px;text-decoration: none;line-height: 100%;display: flex;align-items: center;justify-content: center;font-size: 16px;
 		  i{padding-right: 10px;}
 		}
 	}
@@ -587,10 +587,12 @@ a.carousel-control-prev,a.carousel-control-next{opacity: 1 !important;
 	}
 
 	form{
-		input{height:40px;margin-bottom: 20px;border: none;border-bottom: 1px solid lightgray;}
+		input{height:40px;margin-bottom: 20px;border:none;border-bottom: 1px solid lightgray;border-radius:0;
+		  &:focus{border-bottom: 1px solid #1C5FE9;}
+		}
 		button{margin-top:20px;border: none;background:#ff0000;color: white;padding:12px;line-height: 100%;}
-		a{text-align: center;background-color:gray;width: 100%;font-family:'Gotham';color: #ff0000;margin-top:10px;
-		   i{padding-right:15px;}
+		a{text-align: center;background-color:#ffc107;width: 100%;font-family:'Gotham';color: #ff0000;margin-top:10px;font-size:14px;text-decoration: none;
+		   i{padding-right:5px;}
 		}
 	}
 	.card{width: 100%;background-color: #fff;
