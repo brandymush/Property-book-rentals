@@ -1491,6 +1491,11 @@ a.carousel-control-prev span, a.carousel-control-next span {
   font-size: 30px;
 }
 
+.single-listings-card a {
+  text-decoration: none;
+  color: #4D4D4D;
+}
+
 .single-listings-page {
   display: -webkit-box;
   display: -ms-flexbox;
