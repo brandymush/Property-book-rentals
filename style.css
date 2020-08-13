@@ -1196,10 +1196,11 @@ footer.main-footer .last .icons a img {
 #carousel-thumb > ol .item li {
   width: 100%;
   background: white;
+  opacity: 1;
 }
 
-#carousel-thumb > ol .item li:focus {
-  opacity: 1;
+#carousel-thumb > ol .item li:focus, #carousel-thumb > ol .item li.active {
+  opacity: .5;
 }
 
 #carousel-thumb > ol > div > div.owl-dots {

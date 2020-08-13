@@ -349,8 +349,8 @@ footer.main-footer{margin-bottom: 30px;position: relative;
 	}
 #carousel-thumb > ol{display:flex;justify-content:center;
 	.item{display: flex;
-	li{width:100%;background:white;
-	    &:focus{opacity:1;}
+	li{width:100%;background:white;opacity:1;
+	    &:focus,&.active{opacity:.5;}
 	}
 
 	}
