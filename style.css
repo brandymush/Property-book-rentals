@@ -456,7 +456,7 @@ nav.navbar #navbar ul li a .login {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   padding-bottom: 20px;
 }
 
@@ -588,7 +588,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 section.surbubs {
-  margin: 120px 0;
+  margin: 60px 0;
 }
 
 section.surbubs h1 {
@@ -620,7 +620,7 @@ section.surbubs h1::before, section.surbubs h1::after {
 section.surbubs p {
   font-size: 16px;
   text-transform: capitalize;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -932,13 +932,14 @@ section.surbubs .carousel-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
 .community > div > div > div > div > div > a > i {
   font-size: 26px;
 }
 
-.community > div > div > div > div > div > a .fab {
+.community > div > div > div > div > div > a .fa {
   color: black;
   background: white;
   height: 60px;
@@ -956,14 +957,11 @@ section.surbubs .carousel-item {
           justify-content: center;
 }
 
-.community > div > div > div > div > div > a .fas {
+.community > div > div > div > div > div > a .fa-angle-right {
   font-size: 24px;
   padding: 0 8px;
-}
-
-.community > div > div > div > div > div > a:hover {
-  color: red;
-  text-decoration: none;
+  background-color: transparent;
+  color: #fff;
 }
 
 .community > div > div > div .card.bottom {
@@ -979,8 +977,10 @@ section.surbubs .carousel-item {
   color: #fff;
 }
 
-.community > div > div > div .card.bottom a i {
+.community > div > div > div .card.bottom a i.fa {
   font-size: 80px;
+  background-color: transparent;
+  color: white;
 }
 
 section.areas {
@@ -1075,6 +1075,7 @@ section.services ul li a {
   font-size: 16px;
   color: white;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 footer.main-footer {
@@ -2258,6 +2259,10 @@ a.carousel-control-prev span, a.carousel-control-next span {
   border: none;
   outline: 0;
   color: red;
+}
+
+.rentals > div > div > div:last-child .rentals-results > div #rooms {
+  width: 155px;
 }
 
 .rentals > div > div > div:last-child > h3 {
