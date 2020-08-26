@@ -1,12 +1,15 @@
 
-$('.currency-container').hide();
+
+
+
+ $('.currency-container').hide();
 $(".dollar").click(function(){
     $(".currency-container").slideToggle();
   });
 
 $('.showcase .item').hover(
        function(){ $(this).addClass('hover') },
-      //  function(){ $(this).removeClass('hover') }
+      //  function(){ $(this).removeClass('hover')}
 )
 
 
@@ -38,14 +41,14 @@ $('.carousel').carousel();
 var owl= $('.owl-carousel');
 
 var carouselOption={
-   items:5,
+   items:6,
     loop:true,
     margin:10,
     autoplay:false,
     autoplayTimeout:400000,
        nav:true,
     navigation:true,
-    navText: ['<span class="fa fa-arrow-left"></span>','<span class="fa fa-arrow-right"></span>'],
+    navText: ['<span class="fa fa-angle-left"></span>','<span class="fa fa-angle-right"></span>'],
     autoplayHoverPause:true,
     responsive:{
         0:{
@@ -72,4 +75,6 @@ var carouselOption={
 }
 owl.owlCarousel(carouselOption);
 
-
+$(".btnn").click(function() {
+  $(".drop-menu").toggle();  
+});

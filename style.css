@@ -76,6 +76,10 @@ button, a:focus {
   box-shadow: none;
 }
 
+.pagination {
+  margin: 20px 0 !important;
+}
+
 .page-link {
   color: black;
 }
@@ -133,6 +137,10 @@ nav.navbar .main-img img {
   height: 3rem;
 }
 
+nav.navbar #navbar .nav-link {
+  padding: 0;
+}
+
 nav.navbar #navbar ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -142,6 +150,11 @@ nav.navbar #navbar ul {
 
 nav.navbar #navbar ul li {
   margin: 0px;
+  padding-right: 10px;
+}
+
+nav.navbar #navbar ul li:nth-of-type(4) {
+  padding: 0 5px;
 }
 
 nav.navbar #navbar ul li:nth-of-type(4) img {
@@ -188,7 +201,7 @@ nav.navbar #navbar ul li:last-of-type span {
 }
 
 nav.navbar #navbar ul li:last-of-type span img {
-  height: 30px;
+  height: 26px;
 }
 
 nav.navbar #navbar ul li a {
@@ -338,7 +351,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .heroe .search {
-  background-color: #e93f33;
+  background-color: #ff0000;
   height: auto;
   max-width: 800px;
   display: -webkit-box;
@@ -354,6 +367,7 @@ nav.navbar #navbar ul li a .login {
   padding: 15px 30px;
   position: relative;
   z-index: 1;
+  width: 45%;
 }
 
 .heroe .search h1 {
@@ -382,7 +396,7 @@ nav.navbar #navbar ul li a .login {
   outline: 0;
   background-color: white;
   padding-left: 60px;
-  background-position: 20px center;
+  background-position: 10px center;
 }
 
 .heroe .search form input > ::-webkit-input-placeholder {
@@ -416,19 +430,22 @@ nav.navbar #navbar ul li a .login {
   font-size: 16px;
   text-transform: uppercase;
   color: white;
-  background-color: #4D4D4D;
+  background-color: #ff0000;
+  -webkit-box-shadow: 0 0 20px #4d4d4dc0;
+          box-shadow: 0 0 20px #4d4d4dc0;
+  outline: 0;
 }
 
 .heroe .search ul {
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
 .heroe .search ul li {
-  padding-right: 40px;
+  padding-right: 10px;
 }
 
 .heroe .search ul li a {
-  font-size: 16px;
+  font-size: 12px;
   color: white;
   text-decoration: none;
 }
@@ -444,7 +461,7 @@ nav.navbar #navbar ul li a .login {
 .popular-areas h1 {
   text-align: center;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,19 +485,24 @@ nav.navbar #navbar ul li a .login {
   margin: 0 15px;
 }
 
+.popular-areas p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 .popular-areas .showcase {
   margin-top: auto;
   width: 100%;
 }
 
 .popular-areas .showcase h5 {
-  font-size: 26px;
+  font-size: 18px;
   font-weight: bolder;
-  margin: 30px 0;
+  margin: 12px 0;
 }
 
 .popular-areas .showcase .item {
-  height: 240px;
+  height: 300px;
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -523,8 +545,9 @@ nav.navbar #navbar ul li a .login {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  width: 100px;
-  height: 25px;
+  width: 150px;
+  height: 37px;
+  margin-top: 20px;
 }
 
 .popular-areas .showcase .item .overlay {
@@ -558,6 +581,20 @@ nav.navbar #navbar ul li a .login {
 
 .popular-areas .showcase .item.hover .overlay {
   opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.popular-areas .showcase.infor .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .popular-areas .showcase.infor .item a.btn {
@@ -565,10 +602,26 @@ nav.navbar #navbar ul li a .login {
   color: #000;
 }
 
+.popular-areas .showcase.infor .overlay-text {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .popular-areas .showcase.infor:hover .overlay-text {
   background-color: #000;
   opacity: .5;
-  padding: 7px 40px;
+  padding: 0 20px;
 }
 
 .fixed-icon {
@@ -588,7 +641,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 section.surbubs {
-  margin: 60px 0;
+  margin: 100px 0;
 }
 
 section.surbubs h1 {
@@ -632,11 +685,11 @@ section.surbubs ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 7px;
 }
 
 section.surbubs ul li {
-  padding-right: 0px;
-  background: #efefef;
+  background: #4d4d4d;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -644,15 +697,16 @@ section.surbubs ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 25%;
+  width: 24%;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 5px;
 }
 
 section.surbubs ul li a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -666,6 +720,7 @@ section.surbubs ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 5px;
 }
 
 section.surbubs ul li a.active {
@@ -696,7 +751,7 @@ section.surbubs .main-details .region-1 {
 section.surbubs .main-details .region-1 .agent {
   position: absolute;
   z-index: 9;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.59);
   height: 40px;
   width: 100%;
   display: -webkit-box;
@@ -719,12 +774,13 @@ section.surbubs .main-details .region-1 a {
   background-color: #ff0000;
   position: absolute;
   z-index: 3;
-  bottom: 20px;
-  right: 20px;
+  bottom: 0;
+  right: 0;
   color: white;
   font-weight: bold;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
+  font-size: 12px;
 }
 
 section.surbubs .main-details .region-1 img {
@@ -751,7 +807,7 @@ section.surbubs .main-details .region .overlay {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.123);
+  background-color: rgba(255, 255, 255, 0.493);
   top: 65%;
   left: 0;
   text-align: center;
@@ -809,19 +865,19 @@ section.surbubs .sub-details a {
   background-color: #ff0000;
   position: absolute;
   z-index: 3;
-  bottom: 20px;
-  right: 20px;
+  bottom: 0;
+  right: 0;
   color: white;
   font-weight: bold;
   padding: 8px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 section.surbubs .sub-details .agent {
   position: absolute;
   z-index: 9;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.59);
   height: 40px;
   width: 100%;
   display: -webkit-box;
@@ -878,28 +934,49 @@ section.surbubs .carousel-item {
 }
 
 .community > div > h2 {
-  margin: 15px 0 30px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 38px;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 30px;
+  padding-bottom: 25px;
 }
 
 .community > div > h2::after {
   content: '';
   background: black;
-  width: 20%;
+  width: 10%;
   height: 2px;
   margin: 0 15px;
+}
+
+.community > div > h2::before {
+  content: '';
+  background: black;
+  width: 10%;
+  height: 2px;
+  margin: 0 15px;
+}
+
+.community > div p {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px;
 }
 
 .community > div > div > div > div {
   background-image: url(images/shutterstock_520261186.jpg);
   background-size: cover;
-  height: 280px;
+  height: 200px;
   border: none;
   border-radius: 5px;
 }
@@ -939,13 +1016,13 @@ section.surbubs .carousel-item {
   font-size: 26px;
 }
 
-.community > div > div > div > div > div > a .fa {
+.community > div > div > div > div > div > a .fab {
   color: black;
   background: white;
   height: 60px;
   width: 60px;
   padding: 15px;
-  border-radius: 100%;
+  border-radius: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -959,9 +1036,9 @@ section.surbubs .carousel-item {
 
 .community > div > div > div > div > div > a .fa-angle-right {
   font-size: 24px;
-  padding: 0 8px;
   background-color: transparent;
   color: #fff;
+  margin-left: 10px;
 }
 
 .community > div > div > div .card.bottom {
@@ -970,15 +1047,16 @@ section.surbubs .carousel-item {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  height: 200px;
 }
 
 .community > div > div > div .card.bottom h2 {
-  font-size: 38px;
+  font-size: 28px;
   color: #fff;
 }
 
 .community > div > div > div .card.bottom a i.fa {
-  font-size: 80px;
+  font-size: 60px;
   background-color: transparent;
   color: white;
 }
@@ -1142,6 +1220,17 @@ footer.main-footer .last .icons a {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   text-decoration: none;
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer.main-footer .last .icons a i {
@@ -1160,7 +1249,7 @@ footer.main-footer .last .icons a img {
 
 #carousel-thumb > ol > div > div.owl-nav {
   position: absolute;
-  top: 120%;
+  top: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1172,6 +1261,16 @@ footer.main-footer .last .icons a img {
 
 #carousel-thumb > ol > div > div.owl-nav button {
   outline: 0;
+  background-color: #fff;
+  position: relative;
+}
+
+#carousel-thumb > ol > div > div.owl-nav button:nth-of-type(1) {
+  left: -10px;
+}
+
+#carousel-thumb > ol > div > div.owl-nav button:nth-of-type(2) {
+  right: -10px;
 }
 
 #carousel-thumb > ol > div > div.owl-nav button span {
@@ -2236,9 +2335,30 @@ a.carousel-control-prev span, a.carousel-control-next span {
   padding: 40px 0;
 }
 
+.rentals > div > div > div:first-child > h3 {
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rentals > div > div > div:first-child > h3::after {
+  content: '';
+  background: #4D4D4D;
+  width: 10%;
+  height: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+}
+
 .rentals > div > div > div:last-child {
   background: whitesmoke;
-  padding-top: 30px;
+  padding-top: 42px;
 }
 
 .rentals > div > div > div:last-child .rentals-results {
@@ -2258,35 +2378,71 @@ a.carousel-control-prev span, a.carousel-control-next span {
 }
 
 .rentals > div > div > div:last-child .rentals-results > div > p {
-  font-size: 15px;
+  font-size: 16px;
 }
 
-.rentals > div > div > div:last-child .rentals-results > div > select {
-  border: none;
-  outline: 0;
-  color: red;
-}
-
-.rentals > div > div > div:last-child .rentals-results > div #rooms {
-  width: 155px;
-}
-
-.rentals > div > div > div:last-child > h3 {
-  margin-bottom: 10px;
+.rentals > div > div > div:last-child .rentals-results > div .user-id {
+  position: relative;
+  border: .5px solid #ff0000;
+  height: 47px;
+  width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-radius: 4px;
+  margin-right: 15px;
 }
 
-.rentals > div > div > div:last-child > h3::after {
-  content: '';
-  background: #4D4D4D;
-  width: 20%;
-  height: 1.5px;
-  margin: 0 20px;
+.rentals > div > div > div:last-child .rentals-results > div .user-id .user-name {
+  height: 100%;
+  font-size: 16px;
+  float: left;
+  padding: 12px 0 0 12px;
+}
+
+.rentals > div > div > div:last-child .rentals-results > div .user-id .dropdown-arrow {
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ff0000;
+  position: relative;
+  top: 19px;
+  left: 140px;
+  padding: 0;
+}
+
+.rentals > div > div > div:last-child .rentals-results > div .user-id .dropdown-menu {
+  top: 50px;
+  height: 148px;
+  width: 260px;
+  border: .5px solid #ff0000;
+  border-radius: 4px;
+}
+
+.rentals > div > div > div:last-child .rentals-results > div .user-id .dropdown-menu > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.rentals > div > div > div:last-child .rentals-results > div .user-id .dropdown-menu > div > a {
+  color: black;
+  font-size: 17px;
+  padding: 5px 0;
+}
+
+.rentals > div > div > div:last-child .rentals-results > div .user-id .Text {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .rentals > div > div > div:last-child .card {
@@ -2406,7 +2562,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
 }
 
 .rentals > div > div > div:last-child .card > div > div > div:last-child > span {
-  margin-right: 20px;
+  margin-right: 9px;
   font-size: 10px;
   color: black;
 }
@@ -2414,47 +2570,48 @@ a.carousel-control-prev span, a.carousel-control-next span {
 .rentals > div > div > div:last-child .card > div > div > div:last-child > a {
   border: 1px solid gold;
   border-radius: 3px;
-  padding: 6px 12px;
+  padding: 5px 10px;
   color: black;
   margin-left: auto;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
 }
 
-.rentals > div > div > div:first-child > div {
+.rentals > div > div > div:nth-child(2) > div {
   text-align: center;
 }
 
-.rentals > div > div > div:first-child > div > div:nth-child(2) {
-  height: 300px;
+.rentals > div > div > div:nth-child(2) > div > div:nth-child(2) {
+  height: 100%;
   -webkit-box-shadow: 2px 2px 30px whitesmoke;
           box-shadow: 2px 2px 30px whitesmoke;
   border: none;
   padding: 15px 0;
 }
 
-.rentals > div > div > div:first-child > div > div:nth-child(2) > h3 {
+.rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > h3 {
   line-height: 1.3;
 }
 
-.rentals > div > div > div:first-child > div > div:nth-child(2) > p {
+.rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > p {
   margin: 20px 0;
   color: #4D4D4D;
 }
 
-.rentals > div > div > div:first-child > div > div:nth-child(2) > div {
+.rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div {
   margin: 30px 10px 0;
 }
 
-.rentals > div > div > div:first-child > div > div:nth-child(2) > div > input {
+.rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > input {
   height: 40px;
   width: 100%;
   border: 1px solid rgba(255, 0, 0, 0.507);
   margin-bottom: 15px;
+  padding-left: 20px;
 }
 
-.rentals > div > div > div:first-child > div > div:nth-child(2) > div > a {
+.rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > a {
   height: 40px;
   width: 100%;
   background-color: red;
@@ -2471,26 +2628,27 @@ a.carousel-control-prev span, a.carousel-control-next span {
   text-decoration: none;
 }
 
-.rentals > div > div > div:first-child > div .related-search {
+.rentals > div > div > div:nth-child(2) > div .related-search {
   margin-top: 50px;
   text-align: left;
 }
 
-.rentals > div > div > div:first-child > div .related-search > h3 {
+.rentals > div > div > div:nth-child(2) > div .related-search > h3 {
   font-size: 24px;
+  color: #ff0000;
 }
 
-.rentals > div > div > div:first-child > div .related-search > a {
-  color: red;
-  font-size: 158x;
+.rentals > div > div > div:nth-child(2) > div .related-search > a {
+  font-size: 15px;
   text-decoration: none;
+  color: #000000;
 }
 
-.rentals > div > div > div:first-child > div > div:first-child {
+.rentals > div > div > div:nth-child(2) > div > div:first-child {
   margin: 40px 0;
 }
 
-.rentals > div > div > div:first-child > div > div:first-child .card {
+.rentals > div > div > div:nth-child(2) > div > div:first-child .card {
   -webkit-box-shadow: 2px 2px 30px whitesmoke;
           box-shadow: 2px 2px 30px whitesmoke;
   border: none;
@@ -2498,12 +2656,12 @@ a.carousel-control-prev span, a.carousel-control-next span {
   margin-top: 20px;
 }
 
-.rentals > div > div > div:first-child > div > div:first-child .card h4 {
+.rentals > div > div > div:nth-child(2) > div > div:first-child .card h4 {
   margin: 15px;
   line-height: 1.4;
 }
 
-.rentals > div > div > div:first-child > div > div:first-child .card > div {
+.rentals > div > div > div:nth-child(2) > div > div:first-child .card > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2516,12 +2674,15 @@ a.carousel-control-prev span, a.carousel-control-next span {
           align-items: center;
 }
 
-.rentals > div > div > div:first-child > div > div:first-child .card > div > img {
+.rentals > div > div > div:nth-child(2) > div > div:first-child .card > div > img {
   width: 80%;
   border-radius: 5px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.rentals > div > div > div:first-child > div > div:first-child .card > div > a {
+.rentals > div > div > div:nth-child(2) > div > div:first-child .card > div > a {
   border-radius: 2px;
   padding: 6px 12px;
   color: white;
@@ -2652,7 +2813,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
 }
 
 .large-img {
-  width: 100%;
+  width: 50%;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2660,7 +2821,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
 
 .featured {
   background-color: white;
-  border-right: 1px solid #004f1e;
+  border-right: 1px solid #004a1e;
   margin-top: 50px;
   position: relative;
   padding-bottom: 15px;
@@ -2669,7 +2830,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
 .featured .ribbon {
   position: absolute;
   background-color: white;
-  color: #004f1e;
+  color: #004a1e;
   padding: 6px 12px;
   top: 97px;
   left: 5px;
@@ -2682,7 +2843,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #004f1e;
+  background-color: #004a1e;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2724,7 +2885,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
   display: flex;
 }
 
-.featured .second > div:last-child {
+.featured .second > div:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2732,46 +2893,92 @@ a.carousel-control-prev span, a.carousel-control-next span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 30%;
 }
 
-.featured .second > div:last-child .small-img {
+.featured .second > div:nth-child(2) .small-img {
   margin: 0 0 8px 8px;
-  width: 235px;
+  width: 100%;
   height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .featured .second > div > a > span {
-  background-color: #004f1e;
+  background-color: #004a1e;
   text-decoration: none;
   text-decoration: none;
 }
 
-.featured .last {
+.featured .second > div:last-child {
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 55px;
+}
+
+.featured .second > div:last-child > hr {
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.featured .second > div:last-child h5 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.featured .second > div:last-child > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65%;
+  margin-bottom: 50px;
 }
 
-.featured .last > div:first-child {
+.featured .second > div:last-child > div > span {
+  font-size: 10px;
+  color: #004f1e;
+}
+
+.featured .second > div:last-child > a {
+  border: 1px solid #004a1e;
+  border-radius: 3px;
+  padding: 6px 12px;
+  color: black;
+  margin-left: auto;
+  text-align: center;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.featured .last > div {
   padding: 15px;
 }
 
-.featured .last > div:first-child > h3 {
+.featured .last > div > h3 {
   font-size: 22px;
 }
 
-.featured .last > div:first-child > p {
+.featured .last > div > p {
   font-size: 13px;
   margin: 12px 0;
 }
 
 .featured .last > div:last-child {
-  text-align: center;
   position: relative;
-  height: 130px;
-  width: 493px;
+  width: 600px;
+  text-align: left;
 }
 
 .featured .last > div:last-child > hr {
@@ -2790,11 +2997,11 @@ a.carousel-control-prev span, a.carousel-control-next span {
 
 .featured .last > div:last-child > div > span {
   font-size: 10px;
-  color: #004f1e;
+  color: #004a1e;
 }
 
 .featured .last > div:last-child > a {
-  border: 1px solid #004f1e;
+  border: 1px solid #004a1e;
   border-radius: 3px;
   padding: 6px 12px;
   color: black;
@@ -2802,6 +3009,11 @@ a.carousel-control-prev span, a.carousel-control-next span {
   text-align: center;
   font-size: 13px;
   text-decoration: none;
+}
+
+#bg-white {
+  background-color: #fff;
+  color: #004a1e;
 }
 
 .FEATURED {
@@ -2865,9 +3077,9 @@ a.carousel-control-prev span, a.carousel-control-next span {
 }
 
 .FEATURED .priority-list .last .prio-icons > span {
-  margin-right: 25px;
+  margin-right: 15px;
   color: black;
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .FEATURED .priority-list .last .prio-icons > a {
@@ -2875,7 +3087,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
   border: 1px solid gold;
   border-radius: 2px;
   padding: 5px 12px;
-  font-size: 13px;
+  font-size: 10px;
   margin-right: auto;
   text-decoration: none;
 }
@@ -2960,7 +3172,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding-bottom: 15px;
-  color: white;
+  color: #fff;
 }
 
 .hero .search form {
@@ -2977,7 +3189,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
   background: url(./images/iconmonstr-search-thin-240.png);
   background-size: 20px;
   background-repeat: no-repeat;
-  background-color: white;
+  background-color: #fff;
   padding-left: 60px;
   background-position: 20px center;
   font-size: 15px;
@@ -3013,7 +3225,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
   padding: 10px;
   font-size: 16px;
   text-transform: uppercase;
-  color: white;
+  color: #fff;
   background-color: #4D4D4D;
 }
 
@@ -3027,7 +3239,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
 
 .hero .search ul li a {
   font-size: 15px;
-  color: white;
+  color: #fff;
   text-decoration: none;
   text-decoration: none;
 }
@@ -3048,23 +3260,41 @@ a.carousel-control-prev span, a.carousel-control-next span {
 }
 
 .listings-hero .search {
-  height: 140px;
+  height: 100px;
   width: 100%;
   top: 0;
   background-color: whitesmoke;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .listings-hero .search form {
   width: 50%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .listings-hero .search form > input {
   height: 35px;
   width: 100%;
+  outline: 0;
 }
 
 .listings-hero .search form button {
   height: 40px;
+  outline: 0;
+}
+
+.listings-hero .search > ul > li {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .listings-hero .search > ul > li > div > a {
