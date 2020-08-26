@@ -89,7 +89,7 @@ button, a:focus {
 }
 
 .active-1 {
-  background-color: red;
+  background-color: #ff0000;
   color: white;
 }
 
@@ -302,7 +302,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .modal-content .modal-body form button {
-  background: #e93f33;
+  background: #ff0000;
   width: 80%;
   margin: auto;
   color: white;
@@ -316,7 +316,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .modal-content .modal-body p a {
-  color: #e93f33;
+  color: #ff0000;
   text-decoration: none;
   padding: 10px;
 }
@@ -532,7 +532,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .popular-areas .showcase .item .overlay-text a.btn {
-  background-color: red;
+  background-color: #ff0000;
   font-size: 12px;
   text-decoration: none;
   display: -webkit-box;
@@ -628,7 +628,7 @@ nav.navbar #navbar ul li a .login {
   font-size: 30px;
   padding: 8px 16px;
   color: white;
-  background-color: red;
+  background-color: #ff0000;
   border-radius: 100%;
   position: fixed;
   top: 92%;
@@ -1129,12 +1129,12 @@ section.submit form button {
   height: 40px;
   width: 150px;
   border: none;
-  background: #e93f33;
+  background: #ff0000;
   color: white;
 }
 
 section.services {
-  background-color: #e93f33;
+  background-color: #ff0000;
   padding: 50px;
 }
 
@@ -1176,7 +1176,7 @@ footer.main-footer .footer-inner ul li {
 }
 
 footer.main-footer .footer-inner ul li a {
-  color: #e93f33;
+  color: #ff0000;
   text-transform: capitalize;
   font-size: 16px;
   text-decoration: none;
@@ -1239,7 +1239,7 @@ footer.main-footer .last .icons a i {
 }
 
 footer.main-footer .last .icons a:hover {
-  background-color: #e93f33;
+  background-color: #ff0000;
 }
 
 footer.main-footer .last .icons a img {
@@ -1547,7 +1547,7 @@ a.carousel-control-prev span, a.carousel-control-next span {
 }
 
 .controls {
-  background-color: red;
+  background-color: #ff0000;
   border: none;
   outline: 0;
   border: none;
@@ -1805,7 +1805,7 @@ a.btn1 {
 }
 
 .agent-details > button {
-  background-color: red;
+  background-color: #ff0000;
   color: white;
   width: 100%;
   border: none;
@@ -1834,7 +1834,7 @@ a.btn1 {
 .agent-details > form > a {
   height: 35px;
   width: 100%;
-  background-color: red;
+  background-color: #ff0000;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1879,7 +1879,7 @@ a.btn1 {
 .myText > div > a {
   width: 49%;
   color: white;
-  background-color: red;
+  background-color: #ff0000;
   height: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2412,7 +2412,7 @@ a.btn1 {
           justify-content: space-between;
   background-color: white;
   padding: 15px;
-  color: red;
+  color: #ff0000;
   margin: 0px 0 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2648,7 +2648,7 @@ a.btn1 {
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > input {
   height: 40px;
   width: 100%;
-  border: 1px solid rgba(255, 0, 0, 0.507);
+  border: 1px solid #ff0000;
   margin-bottom: 15px;
   padding-left: 20px;
 }
@@ -2656,7 +2656,7 @@ a.btn1 {
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > a {
   height: 40px;
   width: 100%;
-  background-color: red;
+  background-color: #ff0000;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2843,7 +2843,7 @@ a.btn1 {
 }
 
 .priority-listings > div > div > div:last-child > a {
-  border: 1px solid rgba(255, 0, 0, 0.733);
+  border: 1px solid #ff0000;
   border-radius: 3px;
   padding: 6px 12px;
   color: black;
@@ -3194,7 +3194,7 @@ a.btn1 {
 }
 
 .hero .search {
-  background-color: red;
+  background-color: #ff0000;
   height: 150px;
   width: 50%;
   display: -webkit-box;
