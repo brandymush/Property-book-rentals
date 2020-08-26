@@ -112,7 +112,7 @@ nav.navbar{padding:15px 0px;min-height:3.75rem;background-color:white;-webkit-bo
 .modal-content{z-index:2;
 	.modal-header{display: block;height:70px;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-item-align:center;align-self:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;
 		button{-ms-flex-item-align: end;-ms-grid-row-align: end;align-self: end;position: absolute;right: 20px;}
-		h5{color: rgb(233,63,51);font-size: 20px;}
+		h5{color: #ff0000;font-size: 20px;}
 	}
 	.modal-body{
 		form{
@@ -572,6 +572,10 @@ a.carousel-control-prev,a.carousel-control-next{opacity: 1 !important;
 				   i{padding-right: 5px;}
 				}
 			}
+			.quote{border:1px solid #000000;padding:20px 5px;margin-bottom:10px;
+				p{font-size:16px; }
+				em{color: #ff0000;padding:0 3px;}
+			}
 		}
 		.expand{width: 100%;background-color: #ff0000;
 			.card{margin-bottom: 30px;background-color: #ffc107;
@@ -584,6 +588,7 @@ a.carousel-control-prev,a.carousel-control-next{opacity: 1 !important;
 					}
 				}
 				.card-body{
+					
 					.app{padding:0 20px;
 						a{font-size:60px;color:green;padding-bottom: 20px;
 						   i{padding-right:10px;}

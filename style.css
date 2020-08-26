@@ -286,7 +286,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .modal-content .modal-header h5 {
-  color: #e93f33;
+  color: #ff0000;
   font-size: 20px;
 }
 
@@ -2035,6 +2035,21 @@ a.btn1 {
 
 .card.agent #agent .modal-body .agent-name a.submit i {
   padding-right: 5px;
+}
+
+.card.agent #agent .modal-body .quote {
+  border: 1px solid #000000;
+  padding: 20px 5px;
+  margin-bottom: 10px;
+}
+
+.card.agent #agent .modal-body .quote p {
+  font-size: 16px;
+}
+
+.card.agent #agent .modal-body .quote em {
+  color: #ff0000;
+  padding: 0 3px;
 }
 
 .card.agent #agent .expand {
