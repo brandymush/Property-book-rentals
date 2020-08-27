@@ -351,6 +351,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .heroe .search {
+  width: 100%;
   background-color: #ff0000;
   height: auto;
   max-width: 800px;
@@ -367,7 +368,7 @@ nav.navbar #navbar ul li a .login {
   padding: 15px 30px;
   position: relative;
   z-index: 1;
-  width: 45%;
+  margin: 0 auto;
 }
 
 .heroe .search h1 {
@@ -441,11 +442,11 @@ nav.navbar #navbar ul li a .login {
 }
 
 .heroe .search ul li {
-  padding-right: 10px;
+  padding-right: 30px;
 }
 
 .heroe .search ul li a {
-  font-size: 12px;
+  font-size: .8rem;
   color: white;
   text-decoration: none;
 }
