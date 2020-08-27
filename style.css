@@ -93,6 +93,11 @@ button, a:focus {
   color: white;
 }
 
+.hr-red {
+  color: #ff0000;
+  background-color: #ff0000;
+}
+
 nav.navbar {
   padding: 15px 0px;
   min-height: 3.75rem;
@@ -323,7 +328,7 @@ nav.navbar #navbar ul li a .login {
 
 .heroe {
   background: url(./images/shutterstock_520261186.jpg);
-  height: 400px;
+  height: 500px;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -365,7 +370,7 @@ nav.navbar #navbar ul li a .login {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 15px 30px;
+  padding: 35px 30px;
   position: relative;
   z-index: 1;
   margin: 0 auto;
@@ -375,7 +380,7 @@ nav.navbar #navbar ul li a .login {
   font-size: 30px;
   -ms-flex-item-align: start;
   align-self: flex-start;
-  margin: 0 0 .5rem 0;
+  margin: 0 0 .6rem 0;
   color: white;
   text-transform: capitalize;
 }
@@ -442,7 +447,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .heroe .search ul li {
-  padding-right: 30px;
+  padding-right: 50px;
 }
 
 .heroe .search ul li a {
@@ -575,15 +580,14 @@ nav.navbar #navbar ul li a .login {
   transition: all 1s ease-in-out;
 }
 
+.popular-areas .showcase .item:hover .overlay {
+  opacity: 0;
+  opacity: 0;
+}
+
 .popular-areas .showcase .item.hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.popular-areas .showcase .item.hover .overlay {
-  opacity: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
 }
 
 .popular-areas .showcase.infor .item {
@@ -752,7 +756,7 @@ section.surbubs .main-details .region-1 {
 section.surbubs .main-details .region-1 .agent {
   position: absolute;
   z-index: 9;
-  background-color: rgba(0, 0, 0, 0.59);
+  background-color: rgba(255, 255, 255, 0.493);
   height: 40px;
   width: 100%;
   display: -webkit-box;
@@ -772,7 +776,7 @@ section.surbubs .main-details .region-1 .agent {
 }
 
 section.surbubs .main-details .region-1 a {
-  background-color: #ff0000;
+  background-color: #ff00008c;
   position: absolute;
   z-index: 3;
   bottom: 0;
@@ -845,7 +849,7 @@ section.surbubs .main-details .region .overlay p {
 
 section.surbubs .main-details .region .overlay button {
   height: 37px;
-  background-color: #ff0000;
+  background-color: #ff00008c;
   border: none;
   color: white;
   border-radius: 5px;
@@ -863,7 +867,7 @@ section.surbubs .sub-details {
 }
 
 section.surbubs .sub-details a {
-  background-color: #ff0000;
+  background-color: #ff00008c;
   position: absolute;
   z-index: 3;
   bottom: 0;
@@ -878,7 +882,7 @@ section.surbubs .sub-details a {
 section.surbubs .sub-details .agent {
   position: absolute;
   z-index: 9;
-  background-color: rgba(0, 0, 0, 0.59);
+  background-color: rgba(0, 0, 0, 0.562);
   height: 40px;
   width: 100%;
   display: -webkit-box;
@@ -892,7 +896,15 @@ section.surbubs .sub-details .agent {
       -ms-flex-pack: center;
           justify-content: center;
   top: 0;
-  color: #fff;
+  color: white;
+}
+
+section.surbubs .sub-details .agent-1 {
+  background-color: rgba(255, 255, 255, 0.493);
+}
+
+section.surbubs .sub-details .agent-2 {
+  background-color: rgba(255, 255, 255, 0.144);
 }
 
 section.surbubs .sub-details img {
@@ -903,7 +915,7 @@ section.surbubs .sub-details img {
 }
 
 section.surbubs button.control {
-  background-color: #e93f33;
+  background-color: #ff0000;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1653,7 +1665,7 @@ a.btn1 {
 }
 
 .single-description .inner h4 {
-  font-size: 14px;
+  font-size: 0.8rem;
   color: lightgray;
   font-weight: bold;
   font-family: 'Gotham';
@@ -1662,6 +1674,7 @@ a.btn1 {
 .single-description .inner p {
   color: #ffc107;
   margin: 0;
+  font-size: .8rem;
 }
 
 .single-description h4 {
@@ -1967,10 +1980,10 @@ a.btn1 {
 }
 
 .card.agent .agent-name p b {
-  color: black;
   font-weight: bold;
   font-size: 18px;
   padding-right: 12px;
+  font-family: "Gotham";
 }
 
 .card.agent .agent-name a.submit {
@@ -2620,7 +2633,7 @@ a.btn1 {
 }
 
 .rentals > div > div > div:last-child .card > div > div > div:last-child > span {
-  margin-right: 9px;
+  margin-right: 5px;
   font-size: 10px;
   color: black;
 }
@@ -3018,6 +3031,8 @@ a.btn1 {
   text-align: center;
   font-size: 13px;
   text-decoration: none;
+  position: relative;
+  top: 30px;
 }
 
 .featured .last > div {
@@ -3139,7 +3154,7 @@ a.btn1 {
 }
 
 .FEATURED .priority-list .last .prio-icons > span {
-  margin-right: 15px;
+  margin-right: 10px;
   color: black;
   font-size: 9px;
 }

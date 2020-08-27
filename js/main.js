@@ -13,7 +13,9 @@ $('.showcase .item').hover(
 )
 
 
-
+// $(".showcase .item").hover(function(){
+//   $('.showcase .overlay').css("transform", "scale(1.1)");
+// });
 
 $('.carousel').carousel({
     interval: false,
