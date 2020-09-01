@@ -206,7 +206,7 @@ nav.navbar #navbar ul li:last-of-type span {
 }
 
 nav.navbar #navbar ul li:last-of-type span img {
-  height: 26px;
+  height: 30px;
 }
 
 nav.navbar #navbar ul li a {
@@ -223,7 +223,7 @@ nav.navbar #navbar ul li a {
 }
 
 nav.navbar #navbar ul li a img {
-  height: 30px;
+  height: 37px;
 }
 
 nav.navbar #navbar ul li a .fa {
@@ -344,17 +344,6 @@ nav.navbar #navbar ul li a .login {
   position: relative;
 }
 
-.heroe .overlay {
-  background-color: black;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: .5;
-  height: 100%;
-  z-index: 1;
-}
-
 .heroe .search {
   width: 100%;
   background-color: #ff0000;
@@ -397,12 +386,12 @@ nav.navbar #navbar ul li a .login {
   padding: 10px;
   border: none;
   background: url(./featured/search.png);
-  background-size: 30px;
+  background-size: 25px;
   background-repeat: no-repeat;
   outline: 0;
   background-color: white;
-  padding-left: 60px;
-  background-position: 10px center;
+  padding-left: 28px;
+  background-position: 1px center;
 }
 
 .heroe .search form input > ::-webkit-input-placeholder {
@@ -436,9 +425,7 @@ nav.navbar #navbar ul li a .login {
   font-size: 16px;
   text-transform: uppercase;
   color: white;
-  background-color: #ff0000;
-  -webkit-box-shadow: 0 0 20px #4d4d4dc0;
-          box-shadow: 0 0 20px #4d4d4dc0;
+  background-color: #808080;
   outline: 0;
 }
 
@@ -447,11 +434,11 @@ nav.navbar #navbar ul li a .login {
 }
 
 .heroe .search ul li {
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
 .heroe .search ul li a {
-  font-size: .8rem;
+  font-size: .9rem;
   color: white;
   text-decoration: none;
 }
@@ -467,7 +454,7 @@ nav.navbar #navbar ul li a .login {
 .popular-areas h1 {
   text-align: center;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 30px;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,7 +467,7 @@ nav.navbar #navbar ul li a .login {
   justify-content: center;
   margin: 0 20px;
   padding-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .popular-areas h1::before, .popular-areas h1::after {
@@ -510,35 +497,43 @@ nav.navbar #navbar ul li a .login {
 .popular-areas .showcase .item {
   height: 300px;
   width: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   overflow: hidden;
+  -webkit-box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
+  box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);
+  border-radius: 5px;
+  position: relative;
 }
 
 .popular-areas .showcase .item .overlay-text {
   position: absolute;
   z-index: 99;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px;
+  line-height: 30px;
+  width: 100%;
 }
 
 .popular-areas .showcase .item .overlay-text a {
   text-align: center;
   display: block;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   padding: 10px 0;
   text-decoration: none;
+  font-family: 'Gotham';
 }
 
 .popular-areas .showcase .item .overlay-text a.btn {
-  background-color: #ff0000;
+  background-color: #fff;
   font-size: 12px;
   text-decoration: none;
   display: -webkit-box;
@@ -551,9 +546,10 @@ nav.navbar #navbar ul li a .login {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  width: 150px;
-  height: 37px;
-  margin-top: 20px;
+  height: 30px;
+  padding: .375rem .75rem;
+  color: #212;
+  width: 120px;
 }
 
 .popular-areas .showcase .item .overlay {
@@ -563,11 +559,10 @@ nav.navbar #navbar ul li a .login {
   height: 100%;
   width: 100%;
   left: 0;
-  background-color: #000;
-  opacity: .5;
+  background-color: #4d4d4dc9;
   z-index: 9;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -webkit-transition: all 2s ease-in;
+  transition: all 2s ease-in;
 }
 
 .popular-areas .showcase .item img {
@@ -581,52 +576,13 @@ nav.navbar #navbar ul li a .login {
 }
 
 .popular-areas .showcase .item:hover .overlay {
-  opacity: 0;
-  opacity: 0;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
 .popular-areas .showcase .item.hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.popular-areas .showcase.infor .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.popular-areas .showcase.infor .item a.btn {
-  background-color: #fff;
-  color: #000;
-}
-
-.popular-areas .showcase.infor .overlay-text {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.popular-areas .showcase.infor:hover .overlay-text {
-  background-color: #000;
-  opacity: .5;
-  padding: 0 20px;
 }
 
 .fixed-icon {
@@ -646,13 +602,13 @@ nav.navbar #navbar ul li a .login {
 }
 
 section.surbubs {
-  margin: 100px 0;
+  margin: 80px 0;
 }
 
 section.surbubs h1 {
   text-align: center;
   font-weight: 900;
-  font-size: 38px;
+  font-size: 30px;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,12 +620,12 @@ section.surbubs h1 {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 20px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 section.surbubs h1::before, section.surbubs h1::after {
   content: '';
-  background: #4D4D4D;
+  background: #808080;
   width: 10%;
   height: 2px;
   margin: 0 15px;
@@ -694,7 +650,7 @@ section.surbubs ul {
 }
 
 section.surbubs ul li {
-  background: #4d4d4d;
+  background: #808080;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -756,7 +712,7 @@ section.surbubs .main-details .region-1 {
 section.surbubs .main-details .region-1 .agent {
   position: absolute;
   z-index: 9;
-  background-color: rgba(255, 255, 255, 0.493);
+  background-color: #808080b0;
   height: 40px;
   width: 100%;
   display: -webkit-box;
@@ -773,19 +729,21 @@ section.surbubs .main-details .region-1 .agent {
   left: 0;
   right: 0;
   color: #fff;
+  font-weight: bold;
 }
 
 section.surbubs .main-details .region-1 a {
   background-color: #ff00008c;
   position: absolute;
   z-index: 3;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
   color: white;
   font-weight: bold;
   padding: 10px;
   text-decoration: none;
   font-size: 12px;
+  border-radius: 6px;
 }
 
 section.surbubs .main-details .region-1 img {
@@ -812,7 +770,7 @@ section.surbubs .main-details .region .overlay {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.493);
+  background-color: #808080b0;
   top: 65%;
   left: 0;
   text-align: center;
@@ -845,6 +803,7 @@ section.surbubs .main-details .region .overlay p {
   font-size: 20px;
   line-height: 30px;
   padding: 0 35px;
+  color: #fff;
 }
 
 section.surbubs .main-details .region .overlay button {
@@ -852,7 +811,6 @@ section.surbubs .main-details .region .overlay button {
   background-color: #ff00008c;
   border: none;
   color: white;
-  border-radius: 5px;
   margin-top: 12px;
 }
 
@@ -870,19 +828,20 @@ section.surbubs .sub-details a {
   background-color: #ff00008c;
   position: absolute;
   z-index: 3;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
   color: white;
   font-weight: bold;
   padding: 8px;
   text-decoration: none;
   font-size: 10px;
+  border-radius: 6px;
 }
 
 section.surbubs .sub-details .agent {
   position: absolute;
   z-index: 9;
-  background-color: rgba(0, 0, 0, 0.562);
+  background-color: #808080b0;
   height: 40px;
   width: 100%;
   display: -webkit-box;
@@ -897,14 +856,7 @@ section.surbubs .sub-details .agent {
           justify-content: center;
   top: 0;
   color: white;
-}
-
-section.surbubs .sub-details .agent-1 {
-  background-color: rgba(255, 255, 255, 0.493);
-}
-
-section.surbubs .sub-details .agent-2 {
-  background-color: rgba(255, 255, 255, 0.144);
+  font-weight: bold;
 }
 
 section.surbubs .sub-details img {
@@ -961,7 +913,7 @@ section.surbubs .carousel-item {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 30px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 .community > div > h2::after {
@@ -983,7 +935,7 @@ section.surbubs .carousel-item {
 .community > div p {
   text-align: center;
   font-size: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .community > div > div > div > div {
@@ -1189,7 +1141,7 @@ footer.main-footer .footer-inner ul li {
 }
 
 footer.main-footer .footer-inner ul li a {
-  color: #ff0000;
+  color: #212529;
   text-transform: capitalize;
   font-size: 16px;
   text-decoration: none;
@@ -1252,7 +1204,12 @@ footer.main-footer .last .icons a i {
 }
 
 footer.main-footer .last .icons a:hover {
-  background-color: #ff0000;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+}
+
+footer.main-footer .last .icons a:hover i {
+  color: #ff0000;
 }
 
 footer.main-footer .last .icons a img {
@@ -1274,20 +1231,21 @@ footer.main-footer .last .icons a img {
 
 #carousel-thumb > ol > div > div.owl-nav button {
   outline: 0;
-  background-color: #fff;
   position: relative;
+  top: -10px;
 }
 
 #carousel-thumb > ol > div > div.owl-nav button:nth-of-type(1) {
-  left: -8px;
+  left: -10px;
 }
 
 #carousel-thumb > ol > div > div.owl-nav button:nth-of-type(2) {
-  right: -8px;
+  right: -10px;
 }
 
 #carousel-thumb > ol > div > div.owl-nav button span {
-  font-size: 20px;
+  font-size: 30px;
+  color: white;
 }
 
 #carousel-thumb > ol {
@@ -1484,6 +1442,57 @@ section.single-item > div > div .main section.description p {
   font-size: 16px;
 }
 
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 14px 10px;
+}
+
+.social-media h4 {
+  font-size: 16px;
+  padding-right: 12px;
+}
+
+.social-media a {
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.social-media a i {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: transparent 2px solid;
+  cursor: pointer;
+  color: #fff;
+}
+
+.social-media a:nth-of-type(1) {
+  background-color: #0dc143;
+}
+
+.social-media a:nth-of-type(2) {
+  background-color: #3a589e;
+}
+
+.social-media a:nth-of-type(3) {
+  background-color: #1da1f2;
+}
+
+.social-media a:nth-of-type(4) {
+  background-color: #1C5FE9;
+}
+
 #carouselExampleIndicators2 > div > div.carousel-item.active > div > div > div > img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1539,12 +1548,27 @@ a.carousel-control-prev span, a.carousel-control-next span {
 }
 
 .carousel-caption {
-  top: 40%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  right: auto !important;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 .carousel-caption > h1 {
   color: #fff;
-  font-size: 42px;
+  font-size: 36px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .carousel-thumbnails .carousel-indicators li {
@@ -1625,6 +1649,7 @@ a.btn1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 20px;
 }
 
 .single-listings-page > div {
@@ -1632,7 +1657,7 @@ a.btn1 {
 }
 
 .single-listings-page > div > h4 {
-  color: #ff0000;
+  color: #4d4d4d;
   font-size: 22px;
   padding-bottom: 5px;
 }
@@ -1645,6 +1670,7 @@ a.btn1 {
 
 .single-listings-page > div:first-child h4 {
   color: #fff;
+  margin: 0 auto;
 }
 
 .single-listings-page .item {
@@ -1658,14 +1684,15 @@ a.btn1 {
 }
 
 .single-description .inner {
-  margin-top: 0px;
+  margin-top: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
 
-.single-description .inner h4 {
-  font-size: 0.8rem;
+.single-description .inner p.first {
+  font-size: 1rem;
   color: lightgray;
   font-weight: bold;
   font-family: 'Gotham';
@@ -1674,7 +1701,7 @@ a.btn1 {
 .single-description .inner p {
   color: #ffc107;
   margin: 0;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .single-description h4 {
@@ -1726,6 +1753,7 @@ a.btn1 {
   font-size: 15px;
   border-bottom: .1px solid lightgrey;
   padding-bottom: 12px;
+  margin: 0 10px;
 }
 
 .single-description .property-types > div > div .item-1 ul {
@@ -1764,7 +1792,7 @@ a.btn1 {
 }
 
 .single-description .property-types > div > div:nth-of-type(2) .item-1 h6 {
-  margin: 0 10px;
+  margin: 0px;
 }
 
 .single-description .property-types > div > div:nth-of-type(2) .item-1 ul {
@@ -1957,7 +1985,7 @@ a.btn1 {
 
 .card.agent {
   border: none;
-  margin-top: 50px;
+  margin-top: 0px;
   padding: 0 15px;
 }
 
@@ -1976,7 +2004,7 @@ a.btn1 {
 .card.agent .agent-name p {
   padding-bottom: 10px;
   font-size: 18px;
-  text-align: left;
+  text-align: center;
 }
 
 .card.agent .agent-name p b {
@@ -2032,6 +2060,9 @@ a.btn1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card.agent #agent .modal-body p a {
@@ -2044,15 +2075,18 @@ a.btn1 {
   margin-right: 20px;
   font-size: 14px;
   padding: 0;
-  width: 120px;
+  width: 150px;
 }
 
 .card.agent #agent .modal-body .agent-name a.submit i {
   padding-right: 5px;
 }
 
+.card.agent #agent .modal-body .agent-name p {
+  text-align: center;
+}
+
 .card.agent #agent .modal-body .quote {
-  border: 1px solid #000000;
   padding: 20px 5px;
   margin-bottom: 10px;
 }
@@ -2088,6 +2122,7 @@ a.btn1 {
 .card.agent #agent .expand .card .card-header h2 p {
   color: black;
   font-size: 18px;
+  text-align: center;
 }
 
 .card.agent #agent .expand .card .card-header h2 button {
@@ -2123,7 +2158,7 @@ a.btn1 {
   color: #ff0000;
 }
 
-.card.agent form input {
+.card.agent form input, .card.agent form textarea {
   height: 40px;
   margin-bottom: 20px;
   border: none;
@@ -2131,8 +2166,12 @@ a.btn1 {
   border-radius: 0;
 }
 
-.card.agent form input:focus {
+.card.agent form input:focus, .card.agent form textarea:focus {
   border-bottom: 1px solid #1C5FE9;
+}
+
+.card.agent form textarea {
+  height: 150px;
 }
 
 .card.agent form button {
@@ -2181,7 +2220,7 @@ a.btn1 {
 }
 
 .card.agent .card .card-header h2 button {
-  color: #4d4d4d;
+  color: #808080;
   font-size: 20px;
 }
 
@@ -2407,24 +2446,13 @@ a.btn1 {
 }
 
 .rentals > div > div > div:first-child > h3 {
-  font-size: 22px;
+  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.rentals > div > div > div:first-child > h3::after {
-  content: '';
-  background: #4D4D4D;
-  width: 10%;
-  height: 2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 10px;
 }
 
 .rentals > div > div > div:last-child {
@@ -2441,7 +2469,7 @@ a.btn1 {
           justify-content: space-between;
   background-color: white;
   padding: 15px;
-  color: #ff0000;
+  color: #4D4D4D;
   margin: 0px 0 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2450,11 +2478,11 @@ a.btn1 {
 
 .rentals > div > div > div:last-child .rentals-results > div > p {
   font-size: 16px;
+  color: #4D4D4D;
 }
 
 .rentals > div > div > div:last-child .rentals-results > div .user-id {
   position: relative;
-  border: .5px solid #ff0000;
   height: 47px;
   width: 260px;
   display: -webkit-box;
@@ -2475,12 +2503,12 @@ a.btn1 {
   cursor: pointer;
   height: 0;
   width: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #ff0000;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #4d4d4d;
   position: relative;
-  top: 19px;
-  left: 140px;
+  top: 16px;
+  left: 10px;
   padding: 0;
 }
 
@@ -2488,7 +2516,7 @@ a.btn1 {
   top: 50px;
   height: 148px;
   width: 260px;
-  border: .5px solid #ff0000;
+  border: .5px solid #4d4d4d;
   border-radius: 4px;
 }
 
@@ -2544,8 +2572,8 @@ a.btn1 {
 }
 
 .rentals > div > div > div:last-child .card > div > img {
-  width: 360px;
-  height: 230px;
+  width: 380px;
+  height: 200px;
 }
 
 .rentals > div > div > div:last-child .card > div hr {
@@ -2567,21 +2595,22 @@ a.btn1 {
   padding: 0 15px;
 }
 
-.rentals > div > div > div:last-child .card > div > div > div > h4 {
+.rentals > div > div > div:last-child .card > div > div > div > div > h4 {
   font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div > div > h5 {
+  font-size: 20px;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div > h4 {
+  font-size: 30px;
 }
 
 .rentals > div > div > div:last-child .card > div > div > div > p {
   margin: 0 10px 18px 0;
   line-height: 1.4;
-}
-
-.rentals > div > div > div:last-child .card > div > div > div > img {
-  width: 80px;
-  height: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 3px;
 }
 
 .rentals > div > div > div:last-child .card > div > div > div.prio {
@@ -2633,20 +2662,20 @@ a.btn1 {
 }
 
 .rentals > div > div > div:last-child .card > div > div > div:last-child > span {
-  margin-right: 5px;
-  font-size: 10px;
+  margin-right: 20px;
+  font-size: 14px;
   color: black;
 }
 
 .rentals > div > div > div:last-child .card > div > div > div:last-child > a {
-  border: 1px solid gold;
   border-radius: 3px;
-  padding: 5px 10px;
-  color: black;
+  padding: 6px 10px;
+  color: #fff;
   margin-left: auto;
   text-align: center;
   font-size: 12px;
   text-decoration: none;
+  background-color: #808080;
 }
 
 .rentals > div > div > div:nth-child(2) > div {
@@ -2658,7 +2687,8 @@ a.btn1 {
   -webkit-box-shadow: 2px 2px 30px whitesmoke;
           box-shadow: 2px 2px 30px whitesmoke;
   border: none;
-  padding: 15px 0;
+  padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > h3 {
@@ -2670,13 +2700,20 @@ a.btn1 {
   color: #4D4D4D;
 }
 
+.rentals > div > div > div:nth-child(2) > div > div:nth-child(2) img {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  padding-top: 20px;
+}
+
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div {
   margin: 30px 10px 0;
 }
 
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > input {
   height: 40px;
-  width: 100%;
+  width: 150px;
   border: 1px solid #ff0000;
   margin-bottom: 15px;
   padding-left: 20px;
@@ -2684,7 +2721,7 @@ a.btn1 {
 
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > a {
   height: 40px;
-  width: 100%;
+  width: 150px;
   background-color: #ff0000;
   color: white;
   display: -webkit-box;
@@ -2697,6 +2734,7 @@ a.btn1 {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
+  margin: auto;
 }
 
 .rentals > div > div > div:nth-child(2) > div .related-search {
@@ -2705,25 +2743,25 @@ a.btn1 {
 }
 
 .rentals > div > div > div:nth-child(2) > div .related-search > h3 {
-  font-size: 24px;
+  font-size: 20px;
   color: #ff0000;
 }
 
 .rentals > div > div > div:nth-child(2) > div .related-search > a {
-  font-size: 15px;
+  font-size: .9rem;
   text-decoration: none;
   color: #000000;
 }
 
 .rentals > div > div > div:nth-child(2) > div > div:first-child {
-  margin: 40px 0;
+  margin: 40px 0 20px;
 }
 
 .rentals > div > div > div:nth-child(2) > div > div:first-child .card {
   -webkit-box-shadow: 2px 2px 30px whitesmoke;
           box-shadow: 2px 2px 30px whitesmoke;
   border: none;
-  padding: 15px 0;
+  padding: 20px 0 10px;
   margin-top: 20px;
 }
 
@@ -2751,6 +2789,7 @@ a.btn1 {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 20px 0 10px;
 }
 
 .rentals > div > div > div:nth-child(2) > div > div:first-child .card > div > a {
@@ -2761,6 +2800,16 @@ a.btn1 {
   width: 150px;
   background-color: red;
   text-decoration: none;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .priority-listings {
@@ -2892,16 +2941,14 @@ a.btn1 {
 
 .featured {
   background-color: white;
-  border-right: 1px solid #004a1e;
-  margin-top: 50px;
+  margin-top: 20px;
   position: relative;
-  padding-bottom: 15px;
 }
 
 .featured .ribbon {
   position: absolute;
   background-color: white;
-  color: #004a1e;
+  color: #212529;
   padding: 6px 12px;
   top: 97px;
   left: 5px;
@@ -3023,20 +3070,20 @@ a.btn1 {
 }
 
 .featured .second > div:last-child > a {
-  border: 1px solid #004a1e;
   border-radius: 3px;
   padding: 6px 12px;
-  color: black;
+  color: #fff;
   margin-left: auto;
   text-align: center;
   font-size: 13px;
   text-decoration: none;
   position: relative;
   top: 30px;
+  background-color: #808080;
 }
 
 .featured .last > div {
-  padding: 15px;
+  padding: 10px;
 }
 
 .featured .last > div > h3 {
@@ -3045,7 +3092,8 @@ a.btn1 {
 
 .featured .last > div > p {
   font-size: 13px;
-  margin: 12px 0;
+  margin: 12px 0 20px;
+  line-height: 1.4;
 }
 
 .featured .last > div:last-child {
@@ -3074,7 +3122,6 @@ a.btn1 {
 }
 
 .featured .last > div:last-child > a {
-  border: 1px solid #004a1e;
   border-radius: 3px;
   padding: 6px 12px;
   color: black;
@@ -3082,6 +3129,7 @@ a.btn1 {
   text-align: center;
   font-size: 13px;
   text-decoration: none;
+  background-color: #808080;
 }
 
 #bg-grey {
@@ -3094,7 +3142,6 @@ a.btn1 {
 }
 
 .FEATURED {
-  border-right: 1px solid gold;
   padding-bottom: 0;
 }
 
@@ -3149,31 +3196,30 @@ a.btn1 {
 
 .FEATURED .priority-list .last .prio-icons {
   text-align: left;
-  padding: 0 15px;
+  padding: 0 10px;
   height: 20px;
 }
 
 .FEATURED .priority-list .last .prio-icons > span {
   margin-right: 10px;
   color: black;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .FEATURED .priority-list .last .prio-icons > a {
-  color: black;
-  border: 1px solid gold;
+  color: #fff;
   border-radius: 2px;
-  padding: 5px 12px;
+  padding: 8px 10px;
   font-size: 10px;
-  margin-right: auto;
   text-decoration: none;
+  border: none;
 }
 
 .FEATURED .priority-list .last > div:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 15px;
+  padding: 0 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3348,13 +3394,13 @@ a.btn1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .listings-hero .search form {
   width: 50%;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
 }
 
 .listings-hero .search form > input {
@@ -3366,12 +3412,6 @@ a.btn1 {
 .listings-hero .search form button {
   height: 40px;
   outline: 0;
-}
-
-.listings-hero .search > ul > li {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
 }
 
 .listings-hero .search > ul > li > div > a {

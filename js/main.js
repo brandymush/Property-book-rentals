@@ -1,5 +1,46 @@
+$(document).ready(function() {
+  $(".showcase .pop1").hover(function(){
+   
+  
+  // Hide the div
+  $(".pop1 .overlay").hide();
 
+  // Show the div in 5s
+  $(".pop1 .overlay").delay(1000).fadeIn(3000);
 
+});
+$(".showcase .pop2").hover(function(){
+   
+  
+  // Hide the div
+  $(".pop2 .overlay").hide();
+
+  // Show the div in 5s
+  $(".pop2 .overlay").delay(1000).fadeIn(3000);
+
+});
+$(".showcase .pop3").hover(function(){
+   
+  
+  // Hide the div
+  $(".pop3 .overlay").hide();
+
+  // Show the div in 5s
+  $(".pop3 .overlay").delay(1000).fadeIn(3000);
+
+});
+$(".showcase .pop4").hover(function(){
+   
+  
+  // Hide the div
+  $(".pop4 .overlay").hide();
+
+  // Show the div in 5s
+  $(".pop4 .overlay").delay(1000).fadeIn(3000);
+
+});
+
+});
 
 
  $('.currency-container').hide();
