@@ -104,7 +104,7 @@ nav.navbar{padding:15px 0px;min-height:3.75rem;background-color:white;-webkit-bo
 
 // currency exchange
 
-.currency-container{position: absolute;right: 200px;top:50px;background-color: white;height: 100px;width:330px;-webkit-box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;border-radius: 5px;z-index: 9999;
+.currency-container{position: absolute;right: 200px;top:50px;background-color: white;-webkit-box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;border-radius: 5px;z-index: 9999;display:none;padding:20px;
 	li:hover{background-color: white;
 	}
 }
