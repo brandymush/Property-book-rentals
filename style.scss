@@ -742,7 +742,65 @@ a.carousel-control-prev,a.carousel-control-next{opacity: 1 !important;
 		z-index: 2;
 	}
 
-	
+	/* The container must be positioned relative: */
+.custom-select {border: none;padding:0;
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display:none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color:#fff;color:#000000;border: none;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+//  
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #000;
+  padding: 8px 16px;
+
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color:#ff0000;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 // single--TANYA
 .facebook-link{
 	>img{width: 100%;}
@@ -898,7 +956,7 @@ a.carousel-control-prev,a.carousel-control-next{opacity: 1 !important;
 #bg-grey{background-color:rgb(147, 147, 152);}
 #bg-white{background-color: #fff;color: rgb(0,74,30);}
 .FEATURED{padding-bottom: 0;
-	>div:first-child{background-color: gold;padding: 0 10px;color:#4D4D4D ;}
+	>div:first-child{background-color: gold;padding: 0 10px;color:#4D4D4D;}
      .priority-list{display: flex;border:none;
 	     .second{
 	          .prio-img{width:360px;height: 100%;}
@@ -925,6 +983,7 @@ a.carousel-control-prev,a.carousel-control-next{opacity: 1 !important;
 
 	}
 }}
+
 
 // BILLBOARD
 .hero{background: url(./images/Images/iStock-140781367.jpg);height: 50vh;background-position: center 10%;background-repeat: no-repeat;background-size: cover;display:flex;align-items:center;justify-content:center;position:relative;
