@@ -1649,7 +1649,7 @@ a.btn1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .single-listings-page > div {
