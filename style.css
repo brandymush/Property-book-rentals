@@ -3200,6 +3200,16 @@ a.btn1 {
   text-align: left;
   padding: 0 10px;
   height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.FEATURED .priority-list .last .prio-icons .icons .left {
+  margin-bottom: 10px;
 }
 
 .FEATURED .priority-list .last .prio-icons > span {

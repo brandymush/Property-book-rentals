@@ -904,11 +904,17 @@ a.carousel-control-prev,a.carousel-control-next{opacity: 1 !important;
 	          .prio-img{width:360px;height: 100%;}
 				}
 		  .last{flex-direction: column;
-			.west{display: flex;justify-content: space-between;align-items: center;;
+			.west{display: flex;justify-content: space-between;align-items: center;
 				h3{font-size: 19px;}
 				>img{width: 80px;height: 50px;object-fit: cover;border-radius: 3px;}
 			}
-	        .prio-icons{text-align: left;padding: 0 10px;height:20px;
+	        .prio-icons{text-align: left;padding: 0 10px;height:20px;display:flex;align-items:center;
+			   .icons{
+			       .left{margin-bottom:10px;
+
+				   }
+			   
+			   }
 			>span{margin-right: 10px;color: black;font-size: 10px;}
 			>a{color: #fff;border-radius: 2px;padding: 8px 10px;font-size: 10px;text-decoration: none;border: none;}
 		}
