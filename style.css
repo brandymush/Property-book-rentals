@@ -95,7 +95,7 @@ button, a:focus {
 
 .hr-red {
   color: #ff0000;
-  background-color: #ff0000;
+  background-color: #808080;
 }
 
 nav.navbar {
@@ -232,7 +232,7 @@ nav.navbar #navbar ul li a .fa {
 }
 
 nav.navbar #navbar ul li a .login {
-  border: 1px solid #4D4D4D;
+  border: 1px solid #808080;
   padding: 20px;
   border-radius: 20px;
   margin-right: 12px;
@@ -359,7 +359,7 @@ nav.navbar #navbar ul li a .login {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 35px 30px;
+  padding: 15px 30px;
   position: relative;
   z-index: 1;
   margin: 0 auto;
@@ -423,7 +423,7 @@ nav.navbar #navbar ul li a .login {
   border: none;
   padding: 10px;
   font-size: 16px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: white;
   background-color: #808080;
   outline: 0;
@@ -448,7 +448,7 @@ nav.navbar #navbar ul li a .login {
 }
 
 .popular-areas {
-  margin: 80px 30px;
+  margin: 50px 30px;
 }
 
 .popular-areas h1 {
@@ -472,7 +472,7 @@ nav.navbar #navbar ul li a .login {
 
 .popular-areas h1::before, .popular-areas h1::after {
   content: '';
-  background: #4D4D4D;
+  background: #808080;
   width: 10%;
   height: 2px;
   margin: 0 15px;
@@ -585,9 +585,8 @@ nav.navbar #navbar ul li a .login {
           transform: scale(1.1);
 }
 
-.fixed-icon {
+a.fixed-icon {
   font-size: 30px;
-  padding: 8px 16px;
   color: white;
   background-color: #ff0000;
   border-radius: 100%;
@@ -595,14 +594,27 @@ nav.navbar #navbar ul li a .login {
   top: 92%;
   left: 94%;
   z-index: 9999999;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
 }
 
-.fixed-icon:hover {
-  color: #4D4D4D;
+a.fixed-icon:hover {
+  color: #808080;
+  text-decoration: none;
 }
 
 section.surbubs {
-  margin: 80px 0;
+  margin: 50px 0;
 }
 
 section.surbubs h1 {
@@ -812,6 +824,7 @@ section.surbubs .main-details .region .overlay button {
   border: none;
   color: white;
   margin-top: 12px;
+  border-radius: 6px;
 }
 
 section.surbubs .main-details .region:hover .overlay {
@@ -1044,7 +1057,7 @@ section.areas h2 {
 }
 
 section.areas a {
-  color: #4D4D4D;
+  color: #808080;
   display: block;
   padding-bottom: 12px;
   font-size: 20px;
@@ -1178,7 +1191,7 @@ footer.main-footer .last .icons {
 }
 
 footer.main-footer .last .icons a {
-  border: 2px solid #4D4D4D;
+  border: 2px solid #808080;
   padding: 10px;
   text-align: center;
   margin: 10px;
@@ -1231,8 +1244,10 @@ footer.main-footer .last .icons a img {
 
 #carousel-thumb > ol > div > div.owl-nav button {
   outline: 0;
-  position: relative;
-  top: -10px;
+  position: absolute;
+  top: 20%;
+  -webkit-transform: translate(0%, -20%);
+          transform: translate(0%, -20%);
 }
 
 #carousel-thumb > ol > div > div.owl-nav button:nth-of-type(1) {
@@ -1244,7 +1259,7 @@ footer.main-footer .last .icons a img {
 }
 
 #carousel-thumb > ol > div > div.owl-nav button span {
-  font-size: 30px;
+  font-size: 25px;
   color: white;
 }
 
@@ -1290,7 +1305,7 @@ section.single-item > div .property-name h2 {
 
 section.single-item > div .property-name h2 span {
   font-size: 14px;
-  color: #4D4D4D;
+  color: #808080;
 }
 
 section.single-item > div .property-name p {
@@ -1300,7 +1315,7 @@ section.single-item > div .property-name p {
 
 section.single-item > div .property-name p span {
   font-size: 14px;
-  color: #4D4D4D;
+  color: #808080;
 }
 
 section.single-item > div > div .main {
@@ -1383,11 +1398,11 @@ section.single-item > div > div .main .items-available {
 }
 
 section.single-item > div > div .main .items-available a {
-  color: #4D4D4D;
+  color: #808080;
 }
 
 section.single-item > div > div .main .items-available span {
-  color: #4D4D4D;
+  color: #808080;
 }
 
 section.single-item > div > div .main .service-items {
@@ -1438,7 +1453,7 @@ section.single-item > div > div .main section.description h3:after {
 section.single-item > div > div .main section.description p {
   text-align: left;
   line-height: 2;
-  color: #4D4D4D;
+  color: #808080;
   font-size: 16px;
 }
 
@@ -1638,7 +1653,7 @@ a.btn1 {
 
 .single-listings-card a {
   text-decoration: none;
-  color: #4D4D4D;
+  color: #808080;
 }
 
 .single-listings-page {
@@ -1650,6 +1665,7 @@ a.btn1 {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 0px;
+  height: 80px;
 }
 
 .single-listings-page > div {
@@ -1657,8 +1673,8 @@ a.btn1 {
 }
 
 .single-listings-page > div > h4 {
-  color: #4d4d4d;
-  font-size: 22px;
+  color: #808080;
+  font-size: 18px;
   padding-bottom: 5px;
 }
 
@@ -1666,6 +1682,16 @@ a.btn1 {
   background-color: #ff0000;
   margin-right: 5px;
   padding: 12px 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .single-listings-page > div:first-child h4 {
@@ -1692,16 +1718,16 @@ a.btn1 {
 }
 
 .single-description .inner p.first {
-  font-size: 1rem;
-  color: lightgray;
+  font-size: 12px;
+  color: #808080;
   font-weight: bold;
   font-family: 'Gotham';
 }
 
 .single-description .inner p {
-  color: #ffc107;
+  color: #808080;
   margin: 0;
-  font-size: 1rem;
+  font-size: 12px;
 }
 
 .single-description h4 {
@@ -1711,7 +1737,7 @@ a.btn1 {
 
 .single-description > p {
   font-size: 13px;
-  color: gold;
+  color: #ffd900;
 }
 
 .single-description > div {
@@ -1722,7 +1748,7 @@ a.btn1 {
   font-size: 15px;
   line-height: 1.4;
   margin: 10px 0;
-  color: #4D4D4D;
+  color: #808080;
 }
 
 .single-description > div > img {
@@ -1751,7 +1777,7 @@ a.btn1 {
 
 .single-description .property-types > div > div .item-1 h6 {
   font-size: 15px;
-  border-bottom: .1px solid lightgrey;
+  border-bottom: .1px solid #808080;
   padding-bottom: 12px;
   margin: 0 10px;
 }
@@ -1759,6 +1785,7 @@ a.btn1 {
 .single-description .property-types > div > div .item-1 ul {
   text-align: left;
   margin: 12px 0;
+  padding-left: 7px;
 }
 
 .single-description .property-types > div > div .item-1 ul li {
@@ -1773,7 +1800,7 @@ a.btn1 {
 }
 
 .single-description .property-types > div > div .item-1 ul li span {
-  background: #4d4d4d;
+  background: #808080;
   border-radius: 5px;
   color: #fff;
   height: 1.5rem;
@@ -1793,11 +1820,13 @@ a.btn1 {
 
 .single-description .property-types > div > div:nth-of-type(2) .item-1 h6 {
   margin: 0px;
+  width: 228px;
+  margin: auto;
 }
 
 .single-description .property-types > div > div:nth-of-type(2) .item-1 ul {
-  border-left: .11px solid lightgrey;
-  border-right: .11px solid lightgrey;
+  border-left: .11px solid #808080;
+  border-right: .11px solid #808080;
 }
 
 .single-description #map {
@@ -1810,7 +1839,7 @@ a.btn1 {
 
 .single-description #map h5 {
   font-size: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .single-description #map h5::after {
@@ -1824,15 +1853,15 @@ a.btn1 {
 .single-description #map .mapouter {
   width: 100%;
   height: 300px;
-  background-color: gray;
+  background-color: #808080;
   padding: 0;
 }
 
 .agent-details {
   margin-top: 150px;
   border: none;
-  -webkit-box-shadow: 1px 1px 20px #b6b6b6;
-          box-shadow: 1px 1px 20px #b6b6b6;
+  -webkit-box-shadow: 1px 1px 20px #808080;
+          box-shadow: 1px 1px 20px #808080;
   padding: 15px;
 }
 
@@ -1978,7 +2007,7 @@ a.btn1 {
 }
 
 .single-listings-card .carousel-inner .card > div > div > a {
-  border: 1px solid #4d4d4d;
+  border: 1px solid #808080;
   padding: 4px 8px;
   font-size: 12px;
 }
@@ -2035,10 +2064,17 @@ a.btn1 {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 16px;
+  border-radius: 5px;
 }
 
 .card.agent .agent-name a.submit i {
   padding-right: 10px;
+}
+
+.card.agent #agent .btn {
+  background: #808080;
+  outline: 0;
+  color: #fff;
 }
 
 .card.agent #agent .modal-body {
@@ -2054,7 +2090,7 @@ a.btn1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #4d4d4d;
+  color: #808080;
   padding-bottom: 10px;
   width: 100%;
   -webkit-box-align: center;
@@ -2315,11 +2351,11 @@ a.btn1 {
   display: flex;
   border-radius: 6px;
   overflow: hidden;
-  margin: auto;
+  margin: 10px auto;
   text-align: center;
   top: 50%;
   width: 100%;
-  height: 50px;
+  height: 30px;
   z-index: 1;
   font-size: 11px;
   background-color: transparent;
@@ -2346,7 +2382,7 @@ a.btn1 {
 }
 
 .breadcrumb a span {
-  color: #4D4D4D;
+  color: #808080;
   font-size: 14px;
 }
 
@@ -2505,22 +2541,23 @@ a.btn1 {
 }
 
 .rentals > div {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .rentals > div > div > div:first-child > h3 {
-  font-size: 30px;
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 0px;
 }
 
 .rentals > div > div > div:last-child {
   background: whitesmoke;
-  padding-top: 42px;
+  padding-top: 20px;
 }
 
 .rentals > div > div > div:last-child .rentals-results {
@@ -2532,7 +2569,7 @@ a.btn1 {
           justify-content: space-between;
   background-color: white;
   padding: 15px;
-  color: #4D4D4D;
+  color: #808080;
   margin: 0px 0 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2541,7 +2578,7 @@ a.btn1 {
 
 .rentals > div > div > div:last-child .rentals-results > div > p {
   font-size: 16px;
-  color: #4D4D4D;
+  color: #808080;
 }
 
 .rentals > div > div > div:last-child .rentals-results > div .user-id {
@@ -2568,7 +2605,7 @@ a.btn1 {
   width: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 8px solid #4d4d4d;
+  border-top: 8px solid #808080;
   position: relative;
   top: 16px;
   left: 10px;
@@ -2579,7 +2616,7 @@ a.btn1 {
   top: 50px;
   height: 148px;
   width: 260px;
-  border: .5px solid #4d4d4d;
+  border: .5px solid #808080;
   border-radius: 4px;
 }
 
@@ -2615,7 +2652,7 @@ a.btn1 {
 
 .rentals > div > div > div:last-child .card > a {
   position: absolute;
-  background-color: #4D4D4D;
+  background-color: #808080;
   color: gold;
   padding: 6px 12px;
   top: 5px;
@@ -2635,8 +2672,8 @@ a.btn1 {
 }
 
 .rentals > div > div > div:last-child .card > div > img {
-  width: 380px;
-  height: 200px;
+  width: 360px;
+  height: 175px;
 }
 
 .rentals > div > div > div:last-child .card > div hr {
@@ -2710,7 +2747,7 @@ a.btn1 {
 }
 
 .rentals > div > div > div:last-child .card > div > div > div.prio > div:nth-child(2) .priority {
-  background-color: #4D4D4D;
+  background-color: #808080;
   color: white;
   z-index: 999999;
 }
@@ -2760,16 +2797,14 @@ a.btn1 {
 
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > p {
   margin: 20px 0;
-  color: #4D4D4D;
+  color: #808080;
 }
 
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) img {
-  height: 165px;
+  height: auto;
   width: 300px;
   margin: auto;
   padding-top: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div {
@@ -2779,7 +2814,7 @@ a.btn1 {
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > input {
   height: 40px;
   width: 100%;
-  border: 1px solid #ff0000;
+  border: 1px solid #808080;
   margin-bottom: 15px;
   padding-left: 20px;
 }
@@ -2800,6 +2835,7 @@ a.btn1 {
           justify-content: center;
   text-decoration: none;
   margin: auto;
+  border-radius: 2px;
 }
 
 .rentals > div > div > div:nth-child(2) > div .related-search {
@@ -2819,7 +2855,7 @@ a.btn1 {
 }
 
 .rentals > div > div > div:nth-child(2) > div > div:first-child {
-  margin: 40px 0 20px;
+  margin: 0px 0 20px;
 }
 
 .rentals > div > div > div:nth-child(2) > div > div:first-child .card {
@@ -2885,8 +2921,8 @@ a.btn1 {
 
 .priority-listings > a {
   position: absolute;
-  background-color: #4D4D4D;
-  color: gold;
+  background-color: #808080;
+  color: #ffd900;
   padding: 6px 12px;
   top: 5px;
   left: 5px;
@@ -2939,7 +2975,7 @@ a.btn1 {
 
 .priority-listings > div > div > div.prio > div > a {
   font-size: 12px;
-  color: gold;
+  color: #ffd900;
   letter-spacing: 1.5px;
   text-decoration: none;
 }
@@ -2960,13 +2996,13 @@ a.btn1 {
 
 .priority-listings > div > div > div.prio > div:nth-child(2) > p {
   width: 80px;
-  background: gold;
+  background: #ffd900;
   text-align: center;
   padding: 5px;
 }
 
 .priority-listings > div > div > div.prio > div:nth-child(2) .priority {
-  background-color: #4D4D4D;
+  background-color: #808080;
   color: white;
   z-index: 999999;
 }
@@ -3048,8 +3084,8 @@ a.btn1 {
 }
 
 .featured > div:first-child .feature {
-  color: gold;
-  background-color: #4D4D4D;
+  color: #ffd900;
+  background-color: #808080;
   padding: 10px;
   font-size: 12px;
   z-index: 99;
@@ -3143,7 +3179,7 @@ a.btn1 {
   font-size: 13px;
   text-decoration: none;
   position: relative;
-  top: 30px;
+  top: 43px;
   background-color: #808080;
 }
 
@@ -3157,7 +3193,7 @@ a.btn1 {
 
 .featured .last > div > p {
   font-size: 13px;
-  margin: 12px 0 20px;
+  margin: 12px 0 10px;
   line-height: 1.4;
 }
 
@@ -3198,7 +3234,7 @@ a.btn1 {
 }
 
 #bg-grey {
-  background-color: #939398;
+  background-color: #808080;
 }
 
 #bg-white {
@@ -3211,9 +3247,9 @@ a.btn1 {
 }
 
 .FEATURED > div:first-child {
-  background-color: gold;
+  background-color: #ffd900;
   padding: 0 10px;
-  color: #4D4D4D;
+  color: #808080;
 }
 
 .FEATURED .priority-list {
@@ -3225,7 +3261,7 @@ a.btn1 {
 
 .FEATURED .priority-list .second .prio-img {
   width: 360px;
-  height: 100%;
+  height: 220px;
 }
 
 .FEATURED .priority-list .last {
@@ -3233,6 +3269,10 @@ a.btn1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.FEATURED .priority-list .last p {
+  margin: 0;
 }
 
 .FEATURED .priority-list .last .west {
@@ -3269,10 +3309,18 @@ a.btn1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 50px;
 }
 
-.FEATURED .priority-list .last .prio-icons .icons .left {
+.FEATURED .priority-list .last .prio-icons .icons .left, .FEATURED .priority-list .last .prio-icons .icons .right {
   margin-bottom: 10px;
+}
+
+.FEATURED .priority-list .last .prio-icons .icons .left span, .FEATURED .priority-list .last .prio-icons .icons .right span {
+  width: 92px;
+  font-size: 12px;
+  margin-right: 12px;
+  display: inline-block;
 }
 
 .FEATURED .priority-list .last .prio-icons > span {
@@ -3288,6 +3336,9 @@ a.btn1 {
   font-size: 10px;
   text-decoration: none;
   border: none;
+  background: #808080;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .FEATURED .priority-list .last > div:last-child {
@@ -3422,9 +3473,9 @@ a.btn1 {
   border: none;
   padding: 10px;
   font-size: 16px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #fff;
-  background-color: #4D4D4D;
+  background-color: #808080;
 }
 
 .hero .search ul {
@@ -3442,8 +3493,13 @@ a.btn1 {
   text-decoration: none;
 }
 
+.hero .search ul li .dropdown-menu {
+  min-width: auto;
+}
+
 .hero .search ul li .dropdown-item {
   color: #000000;
+  padding: 10px 20px;
 }
 
 .listings-hero {
@@ -3482,11 +3538,18 @@ a.btn1 {
   height: 35px;
   width: 100%;
   outline: 0;
+  background-position: 10px center;
+  padding-left: 38px;
 }
 
 .listings-hero .search form button {
   height: 40px;
   outline: 0;
+  background-color: #808080;
+}
+
+.listings-hero .search > ul > li {
+  padding-right: 15px;
 }
 
 .listings-hero .search > ul > li > div > a {

@@ -93,80 +93,113 @@
   <div class="overlay"> </div> 
    <div class="search container">
      <form action="post" class="d-flex">
-     <input  type="text" placeholder="Search For a Rental in Harare" role="combobox" autocomplete="none"><button>search</button>
+     <input  type="text" placeholder="Search For a Rental in Harare" role="combobox" autocomplete="none"><button>Search</button>
    </form>
    <span class="dropdown-wrapper" aria-hidden="true"></span>
    <!-- Example split danger button -->
-   <ul class="nav"> 
-     <li>
-       <div class="dropdown">
-         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Property type
-         </a>
+  <ul class="nav"> 
+    <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         Property Type
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#" > <input type="checkbox" value="1"> Apartment/Flat</a>
+          <a class="dropdown-item" href="#" > <input type="checkbox" value="2"> Commercial</a>
+          <a class="dropdown-item" href="#" > <input type="checkbox" value="3"> Cottage</a>
+          <a class="dropdown-item" href="#" > <input type="checkbox" value="4"> Developments</a>
+          <a class="dropdown-item" href="#" > <input type="checkbox" value="5"> Farm/Smallholding</a>
+          <a class="dropdown-item" href="#" > <input type="checkbox" value="5"> Hospitality </a>
+          <a class="dropdown-item" href="#" > <input type="checkbox" value="5"> House </a>
+        
+          
        
-         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-           <a class="dropdown-item" href="#" >5</a>
-           <a class="dropdown-item" href="#" >10</a>
-           <a class="dropdown-item" href="#" >28</a>
-           <a class="dropdown-item" href="#" >28</a>
-           <a class="dropdown-item" href="#" >28</a>
-           <a class="dropdown-item" href="#" >28</a>
-         </div>
-       </div>
-     </li>
-     <li>
-       <div class="dropdown">
-         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        
+
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           Min Price
-         </a>
-       
-         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-           <a class="dropdown-item" href="#">Flat</a>
-           <a class="dropdown-item" href="#">Full house</a>
-           <a class="dropdown-item" href="#">Something else here</a>
-         </div>
-       </div>
-     </li>
-     <li>
-       <div class="dropdown">
-         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Max Price
-         </a>
-       
-         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-           <a class="dropdown-item" href="#">1</a>
-           <a class="dropdown-item" href="#">4</a>
-           <a class="dropdown-item" href="#">Full house</a>
-         </div>
-       </div>
-     </li>
-     <li>
-       <div class="dropdown">
-         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-           Beds
-         </a>
-       
-         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-           <a class="dropdown-item" href="#">Action</a>
-           <a class="dropdown-item" href="#">Another action</a>
-           <a class="dropdown-item" href="#">Something else here</a>
-         </div>
-       </div>
-     </li>
-     <li>
-       <div class="dropdown">
-         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Bathrooms
-         </a>
-       
-         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-           <a class="dropdown-item" href="#">Action</a>
-           <a class="dropdown-item" href="#">Another action</a>
-           <a class="dropdown-item" href="#">Something else here</a>
-         </div>
-       </div>
-     </li>
-   </ul>
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">$15,000</a>
+          <a class="dropdown-item" href="#">$25,000</a>
+          <a class="dropdown-item" href="#">$50,000</a>
+          <a class="dropdown-item" href="#">$75,000</a>
+          <a class="dropdown-item" href="#">$100,000</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         Max Price
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">$15,000</a>
+          <a class="dropdown-item" href="#">$25,000</a>
+          <a class="dropdown-item" href="#">$50,000</a>
+          <a class="dropdown-item" href="#">$75,000</a>
+          <a class="dropdown-item" href="#">$100,000</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Beds
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">1+</a>
+          <a class="dropdown-item" href="#">2+</a>
+          <a class="dropdown-item" href="#">3+</a>
+          <a class="dropdown-item" href="#">4+</a>
+          <a class="dropdown-item" href="#">5+</a>
+          <a class="dropdown-item" href="#">6+</a>
+
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         Baths
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">1+</a>
+          <a class="dropdown-item" href="#">2+</a>
+          <a class="dropdown-item" href="#">3+</a>
+          <a class="dropdown-item" href="#">4+</a>
+          <a class="dropdown-item" href="#">5+</a>
+          <a class="dropdown-item" href="#">6+</a>
+        </div>
+      </div>
+    </li>
+   <li>
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         Area
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">1+</a>
+          <a class="dropdown-item" href="#">2+</a>
+          <a class="dropdown-item" href="#">3+</a>
+          <a class="dropdown-item" href="#">4+</a>
+          <a class="dropdown-item" href="#">5+</a>
+          <a class="dropdown-item" href="#">6+</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+
    </div>
  </section>
 
@@ -177,7 +210,7 @@
           <h3>Rentals in Harare</h3>
           <!-- start breadcrumb -->
             <div class="container-breadcrumb">
-               <div class="breadcrumb ">
+               <div class="breadcrumb m-0">
                 
                  <a href="#">
                    <span class="breadcrumb__inner">
@@ -216,7 +249,7 @@
               </div>
               <div class="card">
                   <h3>Join Our Mailing List</h3>
-                  <img src="images/mail-blast.jpg" alt="">
+                  <img src="featured/mail-blast-2.jpg" alt="">
                   <div>
                       <input type="text" placeholder="Email Address">
                       <a href="#">Subscribe</a>
@@ -262,7 +295,7 @@
             <div class="col-md-12 col-sm-12 col-lg-8 col-12">
                 <div class="rentals-results">
                   <div>
-                    <p>Properties Showing 1 out of 3</p> 
+                    <p>500 Results</p> 
                  </div>
                     <div>
                       <!-- <div class="user-id">
@@ -277,7 +310,7 @@
                             </div>
                           </div>
                       </div> -->
-                      <div class="custom-select d-flex align-items-center" style="width:300px;">
+                      <div class="custom-select d-flex align-items-center" style="width:200px;">
                             <p>Sort by:</p>
                               <select>
                               <option value="0">Default:</option>
@@ -534,7 +567,7 @@
                    <p>Harare West, Harare</p>
                </div>    
                 <div>
-                    <h5>$1,000</h5>
+                    <h5>$1,000/pm</h5>
                 </div>
 
             </div>
@@ -564,7 +597,7 @@
                    <p>Harare West, Harare</p>
                </div>    
                 <div>
-                    <h5>$1,000</h5>
+                    <h5>$1,000/pm</h5>
                 </div>
             </div>
             <hr>
@@ -592,7 +625,7 @@
                  <p>Harare West, Harare</p>
              </div>    
               <div>
-                  <h5>$1,000</h5>
+                  <h5>$1,000/pm</h5>
               </div>
 
           </div>
