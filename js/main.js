@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".showcase .pop1").hover(function(){
+  $(".showcase .pop1").on("mouseover",function(){
    
   
   // Hide the div

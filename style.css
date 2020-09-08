@@ -1598,26 +1598,34 @@ a.carousel-control-prev span, a.carousel-control-next span {
   border-bottom: 4px solid #fff;
 }
 
-.controls {
+button.controls {
   background-color: #ff0000;
   border: none;
   outline: 0;
   border: none;
   padding: 10px;
+  height: 40px;
+  width: 40px;
 }
 
-.controls i {
+button.controls i {
   font-size: 20px;
   color: #fff;
   text-decoration: none;
+  padding: 0;
 }
 
-.controls i:focus {
+button.controls i:focus {
   text-decoration: none;
   color: #fff;
 }
 
-.controls:focus, .controls:hover {
+button.controls:nth-of-type(1) {
+  position: relative;
+  right: 5px;
+}
+
+button.controls:focus, button.controls:hover {
   outline: 0;
   background-color: #ff0000;
   border: none;
