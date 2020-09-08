@@ -835,6 +835,7 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 				   }
 				.card{border: none;position: relative;margin-top: 40px;
 					>a{position:absolute;background-color:#808080;color:gold;padding: 6px 12px;top: 5px;left: 5px;border-radius: 3px;z-index: 99;text-decoration: none;}
+					a.single{position: absolute;height:100%;width:100%;top:0;bottom: 0;left: 0;right: 0;z-index:999;background-color: transparent;}
 					>div{display: flex;align-items: center;
 						>img{width: 360px;height:175px;}
 						hr{width: 95%;margin:12px auto;}
@@ -922,7 +923,9 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 	}
 }
 .large-img{width:50%;height: 250px;object-fit: cover;}
+
 .featured{background-color: white;margin-top: 20px;position: relative;
+    a.single{position: absolute;height:100%;width:100%;top:0;bottom: 0;left: 0;right: 0;z-index:999;}
 	.ribbon{position:absolute;background-color:white;color:#212529;padding: 6px 12px;top: 97px;left:5px;border-radius: 1px;z-index: 99;text-decoration: none;}
 	>div:first-child{display: flex;background-color: rgb(0,74,30);justify-content:space-between;align-items: center;width: 100%;height: 90px;color: white;padding-left: 15px;
 		>h3{font-size: 24px;}

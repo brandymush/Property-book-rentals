@@ -2670,6 +2670,18 @@ a.btn1 {
   text-decoration: none;
 }
 
+.rentals > div > div > div:last-child .card a.single {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: transparent;
+}
+
 .rentals > div > div > div:last-child .card > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3052,6 +3064,17 @@ a.btn1 {
   background-color: white;
   margin-top: 20px;
   position: relative;
+}
+
+.featured a.single {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 
 .featured .ribbon {
