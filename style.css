@@ -3398,6 +3398,10 @@ a.btn1 {
   height: 60%;
 }
 
+body > section.heroe > div.search > ul > li > div > div {
+  min-width: auto;
+}
+
 .hero {
   background: url(./images/Images/iStock-140781367.jpg);
   height: 50vh;
@@ -3587,6 +3591,16 @@ a.btn1 {
   font-size: 12px;
   color: black;
   text-decoration: none;
+  min-width: auto;
+}
+
+.listings-hero .search > ul > li > div > a .dropdown-menu {
+  min-width: auto;
+}
+
+.listings-hero .search > ul > li > div > a .dropdown-item {
+  color: #000000;
+  padding: 10px 20px;
 }
 
 nav.single-page {

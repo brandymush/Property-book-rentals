@@ -996,7 +996,7 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 	}
 }}
 
-
+body > section.heroe > div.search > ul > li > div > div{min-width:auto;}
 // BILLBOARD
 .hero{background: url(./images/Images/iStock-140781367.jpg);height: 50vh;background-position: center 10%;background-repeat: no-repeat;background-size: cover;display:flex;align-items:center;justify-content:center;position:relative;
 	.overlay{background-color: rgb(0, 0, 0);position: absolute;left:0;right: 0;bottom: 0;opacity: .3;height: 100%;z-index: 1;}
@@ -1029,7 +1029,10 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 			button{height: 40px;outline:0;background-color: #808080;}
 		}
 		>ul >li{padding-right:15px;
-			>div >a{font-size:12px;color: black;text-decoration: none;}
+			>div >a{font-size:12px;color: black;text-decoration: none;min-width:auto;
+			      .dropdown-menu{min-width:auto;}
+				  .dropdown-item{color: #000000;padding:10px 20px;}
+			}
 		}
 	}
 }
