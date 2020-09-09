@@ -206,7 +206,7 @@ nav.navbar #navbar ul li:last-of-type span {
 }
 
 nav.navbar #navbar ul li:last-of-type span img {
-  height: 30px;
+  height: 38px;
 }
 
 nav.navbar #navbar ul li a {
@@ -223,7 +223,7 @@ nav.navbar #navbar ul li a {
 }
 
 nav.navbar #navbar ul li a img {
-  height: 37px;
+  height: 47px;
 }
 
 nav.navbar #navbar ul li a .fa {
@@ -258,6 +258,7 @@ nav.navbar #navbar ul li a .login {
   z-index: 9999;
   display: none;
   padding: 20px;
+  display: none;
 }
 
 .currency-container li:hover {

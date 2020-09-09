@@ -89,10 +89,10 @@ nav.navbar{padding:15px 0px;min-height:3.75rem;background-color:white;-webkit-bo
 					}}
 				&:last-of-type{
 					span{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:20px;margin-right: 10px;;
-						img{height:30px;}
+						img{height:38px;}
 					}}
 				a{font-size:.875rem;;color: #000000;padding-right:10px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-transform: capitalize;
-				   img{height: 37px;}
+				   img{height: 47px;}
 				   .fa{color: white;margin-right: 5px;}
 				   .login{border: 1px solid #808080;padding:20px;border-radius: 20px;margin-right: 12px;}
 				  }}}
@@ -104,7 +104,7 @@ nav.navbar{padding:15px 0px;min-height:3.75rem;background-color:white;-webkit-bo
 
 // currency exchange
 
-.currency-container{position: absolute;right: 200px;top:50px;background-color: white;-webkit-box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;border-radius: 5px;z-index: 9999;display:none;padding:20px;
+.currency-container{position: absolute;right: 200px;top:50px;background-color: white;-webkit-box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;border-radius: 5px;z-index: 9999;display:none;padding:20px;display:none;
 	li:hover{background-color: white;
 	}
 }
