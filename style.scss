@@ -1038,4 +1038,11 @@ body > section.heroe > div.search > ul > li > div > div{min-width:auto;}
 }
 nav.single-page{background-color:white;}
 	
-	
+	.tab-pane.active {
+    animation: slide-down .6s ease-out;
+}
+
+@keyframes slide-down {
+    0% { opacity: 0; transform: translateX(100%); }
+    100% { opacity: 1; transform: translateX(0); }
+}
