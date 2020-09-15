@@ -120,6 +120,6 @@ var carouselOption={
 }
 owl.owlCarousel(carouselOption);
 
-$(".btnn").click(function() {
-  $(".drop-menu").toggle();  
+$(".you").click(function() {
+  $(".me").toggle();  
 });

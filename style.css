@@ -455,10 +455,11 @@ nav.navbar #navbar ul li a .login {
 
 .heroe .search ul li .dropdown-item {
   color: #000000;
+  padding: 5px 5px;
 }
 
 .popular-areas {
-  margin: 50px 30px;
+  margin: 0 30px 50px;
 }
 
 .popular-areas h1 {
@@ -1255,7 +1256,7 @@ footer.main-footer .last .icons a img {
 #carousel-thumb > ol > div > div.owl-nav button {
   outline: 0;
   position: absolute;
-  top: -3px;
+  top: -1.5px;
 }
 
 #carousel-thumb > ol > div > div.owl-nav button:nth-of-type(1) {
@@ -1713,6 +1714,7 @@ a.btn1 {
 .single-listings-page > div:first-child h4 {
   color: #fff;
   margin: 0 auto;
+  font-size: 25px;
 }
 
 .single-listings-page .item {
@@ -1736,7 +1738,6 @@ a.btn1 {
 .single-description .inner p.first {
   font-size: 12px;
   color: #808080;
-  font-weight: bold;
   font-family: 'Gotham';
 }
 
@@ -1744,6 +1745,7 @@ a.btn1 {
   color: #808080;
   margin: 0;
   font-size: 12px;
+  font-family: 'Gotham';
 }
 
 .single-description h4 {
@@ -2223,7 +2225,8 @@ a.btn1 {
 }
 
 .card.agent form textarea {
-  height: 150px;
+  height: auto;
+  padding: .375rem .75rem;
 }
 
 .card.agent form button {
@@ -2458,8 +2461,17 @@ a.btn1 {
 .custom-select {
   border: none;
   padding: 0;
+  z-index: 9999999999;
+  margin-right: 4px;
   position: relative;
   font-family: Arial;
+  font-size: 14px;
+}
+
+.custom-select a {
+  position: absolute;
+  right: 0;
+  color: #212529;
 }
 
 .custom-select select {
@@ -2471,29 +2483,22 @@ a.btn1 {
   background-color: #fff;
   color: #000000;
   border: none;
+  background-image: none;
 }
 
 /* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-}
-
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #000 transparent;
   top: 7px;
+  font-size: 14px;
 }
 
 /* style the items (options), including the selected item: */
 .select-items div, .select-selected {
-  color: #000;
-  padding: 8px 16px;
+  color: #212529;
+  padding: 8px 8px;
+  font-size: 14px;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
 }
@@ -2501,7 +2506,7 @@ a.btn1 {
 /* Style items (options): */
 .select-items {
   position: absolute;
-  background-color: #ff0000;
+  background-color: #fff;
   top: 100%;
   left: 0;
   right: 0;
@@ -2515,6 +2520,7 @@ a.btn1 {
 
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+  color: #212529;
 }
 
 .facebook-link > img {
@@ -2553,7 +2559,6 @@ a.btn1 {
 
 .rentals {
   background-color: whitesmoke;
-  padding-bottom: 40px;
 }
 
 .rentals > div {
@@ -2720,7 +2725,7 @@ a.btn1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .rentals > div > div > div:last-child .card > div > div > div > div > h4 {
@@ -2798,11 +2803,11 @@ a.btn1 {
 
 .rentals > div > div > div:last-child .card > div > div > div:last-child > a {
   border-radius: 3px;
-  padding: 6px 10px;
+  padding: 8px 10px;
   color: #fff;
   margin-left: auto;
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   text-decoration: none;
   background-color: #808080;
 }
@@ -3216,7 +3221,7 @@ a.btn1 {
   color: #fff;
   margin-left: auto;
   text-align: center;
-  font-size: 13px;
+  font-size: 10px;
   text-decoration: none;
   position: relative;
   top: 43px;
@@ -3292,6 +3297,10 @@ a.btn1 {
   color: #808080;
 }
 
+.FEATURED > div:first-child h4, .FEATURED > div:first-child h3 {
+  color: #212529;
+}
+
 .FEATURED .priority-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3329,6 +3338,7 @@ a.btn1 {
 
 .FEATURED .priority-list .last .west h3 {
   font-size: 19px;
+  color: #212529;
 }
 
 .FEATURED .priority-list .last .west > img {
@@ -3543,7 +3553,7 @@ body > section.heroe > div.search > ul > li > div > div {
 
 .hero .search ul li .dropdown-item {
   color: #000000;
-  padding: 10px 20px;
+  padding: 5px 10px;
 }
 
 .listings-hero {
@@ -3572,6 +3582,7 @@ body > section.heroe > div.search > ul > li > div > div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 5px 18px;
 }
 
 .listings-hero .search form {
@@ -3593,11 +3604,11 @@ body > section.heroe > div.search > ul > li > div > div {
 }
 
 .listings-hero .search > ul > li {
-  padding-right: 15px;
+  padding-right: 14px;
 }
 
 .listings-hero .search > ul > li > div > a {
-  font-size: 12px;
+  font-size: 14px;
   color: black;
   text-decoration: none;
   min-width: auto;
@@ -3609,7 +3620,7 @@ body > section.heroe > div.search > ul > li > div > div {
 
 .listings-hero .search > ul > li > div > a .dropdown-item {
   color: #000000;
-  padding: 10px 20px;
+  padding: 0px 20px;
 }
 
 nav.single-page {
