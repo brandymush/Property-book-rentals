@@ -428,6 +428,15 @@ nav.navbar #navbar ul li a .login {
   color: white;
   background-color: #808080;
   outline: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .heroe .search ul {
@@ -1246,9 +1255,7 @@ footer.main-footer .last .icons a img {
 #carousel-thumb > ol > div > div.owl-nav button {
   outline: 0;
   position: absolute;
-  top: 16%;
-  -webkit-transform: translate(0%, -16%);
-          transform: translate(0%, -16%);
+  top: -3px;
 }
 
 #carousel-thumb > ol > div > div.owl-nav button:nth-of-type(1) {
@@ -2693,8 +2700,8 @@ a.btn1 {
 }
 
 .rentals > div > div > div:last-child .card > div > img {
-  width: 360px;
-  height: 175px;
+  width: 300px;
+  height: 190px;
 }
 
 .rentals > div > div > div:last-child .card > div hr {
@@ -2780,6 +2787,7 @@ a.btn1 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  padding-top: 16px;
 }
 
 .rentals > div > div > div:last-child .card > div > div > div:last-child > span {

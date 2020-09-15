@@ -140,7 +140,7 @@ nav.navbar{padding:15px 0px;min-height:3.75rem;background-color:white;-webkit-bo
 				>::-ms-input-placeholder{padding-left: 100px;text-transform: uppercase;text-align: center;}
 				>::placeholder{padding-left: 100px;text-transform: uppercase;text-align: center;}
 			}
-			button{height:2rem;border: none;padding: 10px;font-size: 16px;text-transform:capitalize;color:white;background-color:#808080;;outline:0;}
+			button{height:2rem;border: none;padding: 10px;font-size: 16px;text-transform:capitalize;color:white;background-color:#808080;;outline:0;display: flex;justify-content: center;align-items: center;}
 		}
 		ul{padding:8px 0 ;
 			li{padding-right:30px;
@@ -340,7 +340,7 @@ footer.main-footer{margin-bottom: 30px;position: relative;
 //   single listing ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////section.single
 #carousel-thumb > ol > div > div.owl-nav{position: absolute;top:30%;display: flex;justify-content:space-between;width: 100%;
-		button{outline: 0;position: absolute;top:16%;transform:translate(0%,-16%);
+		button{outline: 0;position: absolute;top:-3px;
 			&:nth-of-type(1){left:-10px;}
 			&:nth-of-type(2){right:-10px;}
 			span{font-size:25px;color: white;}
@@ -837,7 +837,7 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 					>a{position:absolute;background-color:#808080;color:rgb(255, 217, 0);padding: 6px 12px;top: 5px;left: 5px;border-radius: 3px;z-index: 99;text-decoration: none;}
 					a.single{position: absolute;height:100%;width:100%;top:0;bottom: 0;left: 0;right: 0;z-index:999;background-color: transparent;}
 					>div{display: flex;align-items: center;
-						>img{width: 360px;height:175px;}
+						>img{width: 300px;height:190px;}
 						hr{width: 95%;margin:12px auto;}
 						p{font-size: 13px;}
 				       >div{
@@ -857,7 +857,7 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 									.priority{background-color:#808080;color: white;z-index: 999999;;}
 								}
 							}
-							>div:last-child{align-items: center;justify-content: start;
+							>div:last-child{align-items: center;justify-content: start;padding-top:16px;
 								>span{margin-right: 20px;font-size: 12px;color: black;}
 								>a{border-radius: 3px;padding: 6px 10px;color: #fff;margin-left: auto;text-align: center;font-size: 12px;text-decoration: none;background-color: #808080;}
 								
