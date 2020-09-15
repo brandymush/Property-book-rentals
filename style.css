@@ -1256,7 +1256,6 @@ footer.main-footer .last .icons a img {
 #carousel-thumb > ol > div > div.owl-nav button {
   outline: 0;
   position: absolute;
-  top: -1.5px;
 }
 
 #carousel-thumb > ol > div > div.owl-nav button:nth-of-type(1) {
@@ -1714,7 +1713,6 @@ a.btn1 {
 .single-listings-page > div:first-child h4 {
   color: #fff;
   margin: 0 auto;
-  font-size: 25px;
 }
 
 .single-listings-page .item {

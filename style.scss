@@ -340,7 +340,7 @@ footer.main-footer{margin-bottom: 30px;position: relative;
 //   single listing ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////section.single
 #carousel-thumb > ol > div > div.owl-nav{position: absolute;top:30%;display: flex;justify-content:space-between;width: 100%;
-		button{outline: 0;position: absolute;top:-1.5px;
+		button{outline: 0;position: absolute;
 			&:nth-of-type(1){left:-10px;}
 			&:nth-of-type(2){right:-10px;}
 			span{font-size:25px;color: white;}
@@ -480,9 +480,11 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 		>div{padding: 0 8px;
 		
 			>h4{color:#808080;font-size:18px;padding-bottom: 5px;}
+			
 		}
 		>div:first-child{background-color:#ff0000;margin-right:5px;padding: 12px 20px;height:100%;display:flex;align-items:center;justify-content:center;
-			h4{color: #fff;margin: 0 auto;font-size: 25px;}
+			h4{color: #fff;margin: 0 auto;;}
+			
 		}
 		.item{display: flex;}
 	}
