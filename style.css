@@ -1786,9 +1786,14 @@ a.btn1 {
   font-size: 14px;
 }
 
+.single-description .property-types > div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .single-description .property-types > div > div .item-1 {
   text-align: center;
-  width: 100%;
 }
 
 .single-description .property-types > div > div .item-1 h6 {
@@ -1834,15 +1839,24 @@ a.btn1 {
   margin-right: 10px;
 }
 
+.single-description .property-types > div > div:nth-of-type(2) .item-1 {
+  margin: 0 auto;
+}
+
 .single-description .property-types > div > div:nth-of-type(2) .item-1 h6 {
   margin: 0px;
-  width: 228px;
+  width: 221px;
   margin: auto;
 }
 
 .single-description .property-types > div > div:nth-of-type(2) .item-1 ul {
   border-left: .11px solid #808080;
   border-right: .11px solid #808080;
+}
+
+.single-description .property-types > div > div:nth-of-type(2) .item-1 ul {
+  border-left: .11px solid #808080;
+  border-left: .11px solid #808080;
 }
 
 .single-description #map {
@@ -2461,6 +2475,15 @@ a.btn1 {
   padding: 0;
   z-index: 9999999999;
   margin-right: 4px;
+  width: auto;
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-right: 12px;
   position: relative;
   font-family: Arial;
   font-size: 14px;
@@ -2470,6 +2493,9 @@ a.btn1 {
   position: absolute;
   right: 0;
   color: #212529;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .custom-select select {
@@ -2496,7 +2522,7 @@ a.btn1 {
 .select-items div, .select-selected {
   color: #212529;
   padding: 8px 8px;
-  font-size: 14px;
+  font-size: 12px;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
 }
@@ -2676,7 +2702,6 @@ a.btn1 {
   padding: 6px 12px;
   top: 5px;
   left: 5px;
-  border-radius: 3px;
   z-index: 99;
   text-decoration: none;
 }
@@ -2703,7 +2728,7 @@ a.btn1 {
 }
 
 .rentals > div > div > div:last-child .card > div > img {
-  width: 300px;
+  width: 40%;
   height: 190px;
 }
 
@@ -2714,6 +2739,10 @@ a.btn1 {
 
 .rentals > div > div > div:last-child .card > div p {
   font-size: 13px;
+}
+
+.rentals > div > div > div:last-child .card > div > div {
+  width: 60%;
 }
 
 .rentals > div > div > div:last-child .card > div > div > div {
@@ -3175,14 +3204,6 @@ a.btn1 {
 .featured .second > div:last-child {
   text-align: center;
   position: relative;
-  padding-top: 10px;
-  margin-bottom: 55px;
-}
-
-.featured .second > div:last-child > hr {
-  margin-top: 0;
-  margin-bottom: 10px;
-  width: 80%;
 }
 
 .featured .second > div:last-child h5 {
@@ -3201,29 +3222,33 @@ a.btn1 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 65%;
-  margin-bottom: 50px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .featured .second > div:last-child > div > span {
   font-size: 10px;
   color: #004f1e;
+  padding-bottom: 10px;
 }
 
 .featured .second > div:last-child > a {
   border-radius: 3px;
-  padding: 6px 12px;
+  padding: 8px 10px;
   color: #fff;
   margin-left: auto;
   text-align: center;
   font-size: 10px;
   text-decoration: none;
-  position: relative;
-  top: 43px;
   background-color: #808080;
+  top: 80px;
+  background-color: #808080;
+  position: relative;
+  left: -40px;
 }
 
 .featured .last > div {
@@ -3256,6 +3281,10 @@ a.btn1 {
   margin-bottom: 8px;
 }
 
+.featured .last > div:last-child .top {
+  height: 70px;
+}
+
 .featured .last > div:last-child > div {
   height: 40px;
 }
@@ -3274,6 +3303,44 @@ a.btn1 {
   font-size: 13px;
   text-decoration: none;
   background-color: #808080;
+}
+
+.featured .featured-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featured .featured-details .head {
+  height: 120px;
+  border-bottom: 1px solid lightgray;
+  margin: 5px 18px;
+}
+
+.featured .featured-details .fearture-items {
+  text-align: left;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  height: 110px;
+  padding-top: 15px;
+}
+
+.featured .features-border {
+  height: .2px;
+  background-color: rgba(211, 211, 211, 0.404);
+  width: 80%;
+  margin: 6px;
 }
 
 #bg-grey {

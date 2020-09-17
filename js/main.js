@@ -1,45 +1,12 @@
-$(document).ready(function() {
-  $(".showcase .pop1").on("mouseover",function(){
-   
-  
-  // Hide the div
-  $(".pop1 .overlay").hide();
-
-  // Show the div in 5s
-  $(".pop1 .overlay").delay(1000).fadeIn(3000);
-
-});
-$(".showcase .pop2").hover(function(){
-   
-  
-  // Hide the div
-  $(".pop2 .overlay").hide();
-
-  // Show the div in 5s
-  $(".pop2 .overlay").delay(1000).fadeIn(3000);
-
-});
-$(".showcase .pop3").hover(function(){
-   
-  
-  // Hide the div
-  $(".pop3 .overlay").hide();
-
-  // Show the div in 5s
-  $(".pop3 .overlay").delay(1000).fadeIn(3000);
-
-});
-$(".showcase .pop4").hover(function(){
-   
-  
-  // Hide the div
-  $(".pop4 .overlay").hide();
-
-  // Show the div in 5s
-  $(".pop4 .overlay").delay(1000).fadeIn(3000);
-
+$('.showcase .item').hover(function (){
+    $(this).addClass('hover');
+    $(this).find('.overlay').hide().delay(1000).fadeIn(3000);
+}).mouseleave(function (){
+    $(this).find('.overlay').show();
 });
 
+$('.you i,.select-selected').on('click',function (){
+   $('.select-items').slideToggle();
 });
 
 
@@ -47,11 +14,6 @@ $(".showcase .pop4").hover(function(){
 $(".dollar").click(function(){
     $(".currency-container").slideToggle();
   });
-
-$('.showcase .item').hover(
-       function(){ $(this).addClass('hover') },
-      //  function(){ $(this).removeClass('hover')}
-)
 
 
 // $(".showcase .item").hover(function(){
