@@ -3238,11 +3238,11 @@ a.btn1 {
 
 .featured .second > div:last-child > a {
   border-radius: 3px;
-  padding: 8px 10px;
+  padding: 12px 12px;
   color: #fff;
   margin-left: auto;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   text-decoration: none;
   background-color: #808080;
   top: 80px;
