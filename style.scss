@@ -327,7 +327,7 @@ footer.main-footer{margin-bottom: 30px;position: relative;
 		p{font-size:10px;text-transform: capitalize;}
 		.icons{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;
 			a{border:2px solid #808080;padding:10px;text-align:center;margin:10px;-webkit-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;text-decoration: none;height:40px;width:40px;display:flex;justify-content:center;align-items:center;
-				i{color: #000000;font-size: 24px;}
+				i{color: #808080;font-size: 24px;}
 				&:hover{color:#ff0000;border:2px solid #ff0000;
 					 i{color:#ff0000;}
 				}
@@ -339,7 +339,7 @@ footer.main-footer{margin-bottom: 30px;position: relative;
 
 //   single listing ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////section.single
-#carousel-thumb > ol > div > div.owl-nav{position: absolute;top:30%;display: flex;justify-content:space-between;width: 100%;
+#carousel-thumb > ol > div > div.owl-nav{position: absolute;top:25%;display: flex;justify-content:space-between;width: 100%;
 		button{outline: 0;position: absolute;
 			&:nth-of-type(1){left:-10px;}
 			&:nth-of-type(2){right:-10px;}
@@ -962,10 +962,11 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 					>a{border-radius: 3px;padding:12px 12px;;color: #fff;margin-left: auto;text-align: center;font-size: 12px;text-decoration: none;background-color: #808080;top:80px;background-color: #808080;position: relative;left:-40px;}	   
 			}
 		}
-	.last{
+	.last{display: flex;align-items:center;justify-content:space-between;
 		>div{padding: 10px;
 			>h3{font-size: 22px;}
-			>p{font-size: 13px;margin: 12px 0 10px;line-height: 1.4;}
+			>p{font-size: 13px;margin: 12px 0 10px;line-height: 1.4;padding-right:35px;}
+				   
 			
 		}
 		>div:last-child{position: relative;width: 600px;text-align: left;
@@ -973,13 +974,14 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 			//    >div{position: absolute;color:rgb(0,79,30);;top: 0;height: 100%;width: 100%;;display: flex;flex-direction: column;justify-content: center;align-items: center;
 				h5{font-size: 20px;margin-bottom: 8px;}
 				.top{height:70px;}
-				>div{height: 40px;>span{font-size: 10px;color: rgb(0,74,30);}}
-				>a{border-radius: 3px;padding: 6px 12px;color: black;margin-left: auto;text-align: center;font-size: 13px;text-decoration: none;background-color: #808080;}	   
+				>div{height: 40px;
+				 >span{font-size: 10px;color: rgb(0,74,30);}}
+				
 		}
 	}
-	.featured-details{display: flex;flex-direction: column;align-items: center;justify-content: center;
-	.head{height:120px;border-bottom:1px solid rgb(211, 211, 211);margin:5px 18px;}
-	.fearture-items{text-align: left;align-items: baseline;height:110px;padding-top:15px;}
+	.featured-details{display: flex;flex-direction: column;align-items: center;justify-content: space-between;;
+	.head{height:auto;border-bottom:1px solid rgb(211, 211, 211);margin:5px 18px;padding:35px 0;}
+	.fearture-items{text-align: left;align-items: baseline;height:110px;padding-top:15px;padding-bottom:10px;}
 	 
 	}
 	.features-border{height:.2px;background-color: rgba(211, 211, 211, 0.404);width:80%;margin: 6px;}
@@ -987,6 +989,7 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 }
 #bg-grey{background-color:rgba(128, 128, 128, 0.801);}
 #bg-white{background-color: #fff;color: rgb(0,74,30);}
+a.button{border-radius: 3px;padding: 6px 5px;color: black;margin-left: auto;text-align: center;font-size: 13px;text-decoration: none;background-color: #808080;margin-right:20px;width:160px;height:30px;display: flex;align-items: center;justify-content: center;color: #fff;}
 
 .FEATURED{padding-bottom: 0;
 	>div:first-child{background-color: rgb(255, 217, 0);padding: 0 10px;color:#808080;
@@ -995,9 +998,9 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 	}
      .priority-list{display: flex;border:none;
 	     .second{
-	          .prio-img{width:360px;height:220px;}
+	          .prio-img{width:360px;height:250px;}
 				}
-		  .last{flex-direction: column;
+		  .last{flex-direction: column;padding-bottom:12px;;
 		   p{margin:0;}
 			.west{display: flex;justify-content: space-between;align-items: center;
 				h3{font-size: 19px;color: #212529;}
