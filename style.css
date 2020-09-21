@@ -3348,7 +3348,7 @@ a.btn1 {
 }
 
 #bg-grey {
-  background-color: rgba(128, 128, 128, 0.801);
+  background-color: #3471b5;
 }
 
 #bg-white {
@@ -3749,6 +3749,552 @@ nav.single-page {
     opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+
+@media (max-width: 576px) {
+  nav.navbar {
+    padding: 0 15px;
+  }
+  nav.navbar .navbar-toggler span {
+    display: block;
+    height: 8px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 5px;
+  }
+  nav.navbar .navbar-toggler span:nth-of-type(2) {
+    margin: 5px 0;
+  }
+  nav.navbar .navbar-toggler:focus {
+    border: none;
+    outline: none;
+  }
+  nav.navbar .main-img img {
+    height: 1.5rem;
+  }
+  nav.navbar #navbar .nav-link {
+    padding: 0;
+  }
+  nav.navbar #navbar ul {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 15px;
+  }
+  nav.navbar #navbar ul li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #808080;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  nav.navbar #navbar ul li:nth-of-type(4) {
+    padding: 0 0px;
+  }
+  nav.navbar #navbar ul li:nth-of-type(4) img {
+    position: relative;
+  }
+  nav.navbar #navbar ul li a img {
+    height: 47px;
+  }
+  nav.navbar #navbar ul li a .fa {
+    color: white;
+    margin-right: 5px;
+  }
+  section.submit {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.submit p {
+    font-size: 25px;
+  }
+  section.submit img {
+    height: 60px;
+    padding: 0 10px;
+    margin-bottom: 22px;
+  }
+  section.submit form {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.submit form input {
+    height: 40px;
+    border: 1px solid #000000;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.submit form button {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background: #ff0000;
+    color: white;
+  }
+  .community > div > h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .community > div p {
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 20px;
+  }
+  .community > div > div > div > div {
+    margin-bottom: 10px;
+  }
+  .community > div > div .card.bottom {
+    margin-top: 24px;
+    background: url(./images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+  }
+  .community > div > div .card.bottom h2 {
+    font-size: 20px !important;
+    color: #fff;
+    text-align: center;
+  }
+  .community > div > div .card.bottom a i.fa {
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+  }
+  section.surbubs {
+    margin: 20px 0;
+  }
+  section.surbubs h1 {
+    margin: 0;
+    font-size: 18px;
+  }
+  section.surbubs p {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  section.surbubs ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 4px;
+  }
+  section.surbubs ul li {
+    width: 25%;
+    margin-right: -15px;
+  }
+  section.surbubs ul li a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 5px;
+  }
+  section.surbubs ul li a.active {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  section.surbubs .tab-pane.active {
+    display: block;
+  }
+  section.surbubs .main-details {
+    padding-bottom: 20px;
+  }
+  section.surbubs .main-details img.img-fluid {
+    height: 320px;
+  }
+  section.surbubs .main-details .region-1 {
+    height: 320px;
+    margin-bottom: 20px;
+  }
+  section.surbubs .main-details .region-1 a {
+    font-size: 12px;
+  }
+  section.surbubs .main-details .region-1 img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.surbubs .main-details .region {
+    height: 320px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  section.surbubs .main-details .region img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.surbubs .main-details .region .overlay {
+    top: 0;
+  }
+  section.surbubs .main-details .region .overlay h5 {
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  section.surbubs .main-details .region .overlay p {
+    font-size: 13px;
+    padding: 12px 5px;
+    color: #fff;
+    line-height: 20px;
+  }
+  section.surbubs .main-details .region:hover .overlay {
+    top: 0;
+  }
+  section.surbubs .sub-details {
+    margin-bottom: 20px;
+  }
+  section.surbubs button.control {
+    background-color: #ff0000;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 80px;
+    height: 40px;
+    width: 150px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Gotham';
+    border: none;
+    border-radius: 3px;
+  }
+  section.surbubs .carousel-item {
+    -webkit-transition: -webkit-transform 2s ease;
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+    opacity: .5s ease-out;
+    left: 0;
+    right: 0;
+  }
+  .popular-areas {
+    margin: 20px 0px;
+  }
+  .popular-areas h1 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .popular-areas p {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .popular-areas .showcase {
+    margin-top: auto;
+    width: 100%;
+  }
+  .popular-areas .showcase h5 {
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 12px 0;
+  }
+  footer.main-footer .footer-inner ul li {
+    padding-right: 8px;
+    padding-bottom: 10px;
+  }
+  footer.main-footer .footer-inner ul li a {
+    color: #212529;
+    text-transform: capitalize;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  footer.main-footer .footer-inner img {
+    height: 30px;
+  }
+  footer.main-footer .last {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer.main-footer .last p {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 20px;
+  }
+  a.fixed-icon {
+    left: 10px;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  section.submit p {
+    font-size: 25px;
+  }
+  section.submit img {
+    height: 0px;
+    padding: 0 10px;
+    margin-bottom: 22px;
+  }
+  section.submit form {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.submit form input {
+    height: 40px;
+    border: 1px solid #000000;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.submit form button {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background: #ff0000;
+    color: white;
+  }
+  a.fixed-icon {
+    left: 90%;
+    top: 77%;
+  }
+  .community > div > h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .community > div p {
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 20px;
+  }
+  .community > div > div > div > div {
+    margin-bottom: 10px;
+  }
+  .community > div > div .card.bottom {
+    margin-top: 0px !important;
+    background: url(./images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+  }
+  .community > div > div .card.bottom h2 {
+    font-size: 20px !important;
+    color: #fff;
+    text-align: center;
+  }
+  .community > div > div .card.bottom a i.fa {
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+  }
+  section.surbubs {
+    margin: 20px 0;
+  }
+  section.surbubs h1 {
+    margin: 0;
+    font-size: 18px;
+  }
+  section.surbubs p {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  section.surbubs ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 4px;
+  }
+  section.surbubs ul li {
+    width: 25%;
+    margin-right: -15px;
+  }
+  section.surbubs ul li a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 5px;
+  }
+  section.surbubs ul li a.active {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  section.surbubs .tab-pane.active {
+    display: block;
+  }
+  section.surbubs .main-details {
+    padding-bottom: 15px;
+  }
+  section.surbubs .main-details img.img-fluid {
+    height: 320px;
+  }
+  section.surbubs .main-details .region-1 {
+    height: 320px;
+    margin-bottom: 20px;
+  }
+  section.surbubs .main-details .region-1 a {
+    font-size: 12px;
+  }
+  section.surbubs .main-details .region-1 img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.surbubs .main-details .region {
+    height: 320px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  section.surbubs .main-details .region img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  section.surbubs .main-details .region .overlay {
+    top: 0;
+  }
+  section.surbubs .main-details .region .overlay h5 {
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  section.surbubs .main-details .region .overlay p {
+    font-size: 13px;
+    padding: 12px 5px;
+    color: #fff;
+    line-height: 20px;
+  }
+  section.surbubs .main-details .region:hover .overlay {
+    top: 0;
+  }
+  section.surbubs .sub-details {
+    margin-bottom: 0px;
+    height: 120px;
+  }
+  section.surbubs .sub-details .agent {
+    height: 20px;
+    font-size: 11px;
+  }
+  section.surbubs button.control {
+    background-color: #ff0000;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 80px;
+    height: 40px;
+    width: 150px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Gotham';
+    border: none;
+    border-radius: 3px;
+  }
+  section.surbubs .carousel-item {
+    -webkit-transition: -webkit-transform 2s ease;
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+    opacity: .5s ease-out;
+    left: 0;
+    right: 0;
+  }
+  section.heroe {
+    height: 300px;
+  }
+  nav.navbar {
+    padding: 0 15px;
+  }
+  nav.navbar .navbar-toggler span {
+    display: block;
+    height: 8px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 5px;
+  }
+  nav.navbar .navbar-toggler span:nth-of-type(2) {
+    margin: 5px 0;
+  }
+  nav.navbar .navbar-toggler:focus {
+    border: none;
+    outline: none;
+  }
+  nav.navbar .main-img img {
+    height: 1.5rem;
+  }
+  nav.navbar #navbar .nav-link {
+    padding: 0;
+  }
+  nav.navbar #navbar ul {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 15px;
+  }
+  nav.navbar #navbar ul li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #808080;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  nav.navbar #navbar ul li:nth-of-type(4) {
+    padding: 0 0px;
+  }
+  nav.navbar #navbar ul li:nth-of-type(4) img {
+    position: relative;
+  }
+  nav.navbar #navbar ul li a img {
+    height: 47px;
+  }
+  nav.navbar #navbar ul li a .fa {
+    color: white;
+    margin-right: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

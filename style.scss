@@ -987,7 +987,7 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 	.features-border{height:.2px;background-color: rgba(211, 211, 211, 0.404);width:80%;margin: 6px;}
 	 
 }
-#bg-grey{background-color:rgba(128, 128, 128, 0.801);}
+#bg-grey{background-color:rgb( 52, 113, 181);}
 #bg-white{background-color: #fff;color: rgb(0,74,30);}
 a.button{border-radius: 3px;padding: 6px 5px;color: black;margin-left: auto;text-align: center;font-size: 13px;text-decoration: none;background-color: #808080;margin-right:20px;width:160px;height:30px;display: flex;align-items: center;justify-content: center;color: #fff;}
 
@@ -1076,4 +1076,280 @@ nav.single-page{background-color:white;}
 @keyframes slide-down {
     0% { opacity: 0; transform: translateX(100%); }
     100% { opacity: 1; transform: translateX(0); }
+}
+
+
+
+
+
+
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  //navbar styling
+nav.navbar{padding:0 15px;
+	.navbar-toggler{
+		span{display: block;height: 8px;width:100% ;background-color: #000000;border-radius:5px;
+			&:nth-of-type(2){margin:5px 0;}
+		}
+		&:focus{border: none;outline: none;}
+	}
+	.main-img{
+		img{height: 1.5rem;}
+	}
+	#navbar{
+		.nav-link{padding:0;}
+		ul{align-items: flex-start;padding-left:15px;
+			li{padding-bottom:10px;border-bottom:1px solid #808080;width:100%;margin-bottom:20px;
+				&:nth-of-type(4){padding:0 0px ;
+					img{position: relative;}
+				}
+				
+				
+				a{
+				   img{height: 47px;}
+				   .fa{color: white;margin-right: 5px;}
+				   
+				  }}}
+	}
+	
+
+}
+//nav ends
+// submit form starts
+section.submit{flex-wrap: wrap;justify-content:center;
+	p{font-size: 25px;}
+	img{height: 60px;padding:0 10px;margin-bottom: 22px;}
+	form{margin: 0;display: -webkit-box;display: -ms-flexbox;display: flex;
+		input{height: 40px;border:1px solid #000000;width:100%;justify-content: center;;}
+		button{height: 40px;width: 150px;border: none;background: #ff0000;color: white;}
+	}
+	
+}
+// submit form ends
+  // COMMUNITY
+.community{
+	>div{
+		>h2{font-size:18px;margin:0;}
+		p{text-align: center;font-size:13px;padding-bottom:20px;}
+		>div{
+			>div{
+				>div{margin-bottom:10px;
+				   
+					}
+				}
+				.card.bottom{margin-top:24px;background:url(./images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;height: 200px;;
+				   h2{font-size:20px !important;color:#fff;text-align: center;}
+				   a{
+					   i.fa{font-size:20px;background-color: transparent;color: white;}}
+				}
+			}
+		}
+	
+}   
+  //surbubs search section
+
+section.surbubs{margin:20px 0;
+	h1{margin: 0;font-size:18px;}
+	p{font-size: 16px;padding-bottom:20px;}
+	ul{width:100%;display:flex;justify-content:space-between;padding-bottom:4px;
+		li{width:25%;margin-right:-15px;;
+			a{color:#fff;text-decoration: none;width:100%;height:100%;line-height: 100%;display:flex;align-items:center;justify-content: center;border-radius:5px;
+			&.active{background-color:#ff0000;color:#fff;}
+			}
+		}
+	}
+	
+	.tab-pane.active{display:block;}
+	
+	.main-details{padding-bottom:20px;
+		img.img-fluid{height: 320px;} 
+		.region-1{height:320px;margin-bottom:20px;
+		
+			a{font-size: 12px;}
+			img{height:100%;width: 100%;object-fit: cover;}
+		}
+		.region{height:320px;width:100%;position:relative;overflow: hidden;
+			img{height:100%;object-fit:cover;}
+			.overlay{top:0;
+				h5{padding-bottom:10px;font-size:20px;}
+				p{font-size: 13px;padding:12px 5px;color: #fff;line-height:20px;}
+			
+				
+			}
+			&:hover .overlay{top:0;}
+			
+		}
+	}
+	.sub-details{margin-bottom:20px;
+	
+
+	
+
+	}
+	button.control{background-color: #ff0000;margin: 0 auto;display: -webkit-box;display: -ms-flexbox;display: flex;margin-top: 80px;height: 40px;width: 150px;-webkit-box-align: center;-ms-flex-align: center;align-items: center;text-align: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;color: white;font-family: 'Gotham';border:none;border-radius: 3px;}
+   .carousel-item{ -webkit-transition: -webkit-transform 2s ease; transition: -webkit-transform 2s ease; -o-transition: transform 2s ease; transition: transform 2s ease; transition: transform 2s ease, -webkit-transform 2s ease; opacity :.5s ease-out;left:0;right:0;}
+}  
+//popular areas starts
+.popular-areas{margin:20px 0px;
+	h1{margin:0;font-size:18px;}
+	p{text-align: center;padding-bottom: 10px;}
+	  .showcase{margin-top: auto;width:100%;
+			h5{font-size:18px;font-weight: bolder;margin:12px 0;}
+			
+		
+				
+			}
+		
+}
+//popular areas ends
+
+footer.main-footer{
+	.footer-inner{
+		ul{
+			li{padding-right:8px;padding-bottom:10px;;
+				a{color:#212529;text-transform: capitalize;font-size:16px;text-decoration: none;}
+			}
+		}
+		img{height:30px;}
+
+	}
+	.last{justify-content: center;flex-wrap:wrap;
+		p{font-size:16px;text-transform: capitalize;text-align: center;padding-bottom:20px;line-height:20px;}
+	
+		}
+	}
+	a.fixed-icon{left:10px;}
+
+}
+
+// Small devices ( up to 767px)
+@media (min-width:568px)  and (max-width:767px){
+  // submit form starts
+section.submit{
+	p{font-size: 25px;}
+	img{height:0px;padding:0 10px;margin-bottom: 22px;}
+	form{margin: 0;display: -webkit-box;display: -ms-flexbox;display: flex;
+		input{height: 40px;border:1px solid #000000;width:100%;justify-content: center;;}
+		button{height: 40px;width: 150px;border: none;background: #ff0000;color: white;}
+	}
+	
+}
+	a.fixed-icon{left:90%;top:77%;}
+// submit form ends
+.community{
+	>div{
+		>h2{font-size:18px;margin:0;}
+		p{text-align: center;font-size:13px;padding-bottom:20px;}
+		>div{
+			>div{
+				>div{margin-bottom:10px;
+				   
+					}
+				}
+				.card.bottom{margin-top:0px !important;background:url(./images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;height: 200px;;
+				   h2{font-size:20px !important;color:#fff;text-align: center;}
+				   a{
+					   i.fa{font-size:20px;background-color: transparent;color: white;}}
+				}
+			}
+		}
+	
+}   
+  //surbubs search section
+
+section.surbubs{margin:20px 0;
+	h1{margin: 0;font-size:18px;}
+	p{font-size: 16px;padding-bottom:20px;}
+	ul{width:100%;display:flex;justify-content:space-between;padding-bottom:4px;
+		li{width:25%;margin-right:-15px;;
+			a{color:#fff;text-decoration: none;width:100%;height:100%;line-height: 100%;display:flex;align-items:center;justify-content: center;border-radius:5px;
+			&.active{background-color:#ff0000;color:#fff;}
+			}
+		}
+	}
+	
+	.tab-pane.active{display:block;}
+	
+	.main-details{padding-bottom:15px;
+		img.img-fluid{height: 320px;} 
+		.region-1{height:320px;margin-bottom:20px;
+		
+			a{font-size: 12px;}
+			img{height:100%;width: 100%;object-fit: cover;}
+		}
+		.region{height:320px;width:100%;position:relative;overflow: hidden;
+			img{height:100%;object-fit:cover;width: 100%;}
+			.overlay{top:0;
+				h5{padding-bottom:10px;font-size:20px;}
+				p{font-size: 13px;padding:12px 5px;color: #fff;line-height:20px;}
+			
+				
+			}
+			&:hover .overlay{top:0;}
+			
+		}
+	}
+	.sub-details{margin-bottom:0px;height:120px;
+	    .agent{height:20px;font-size:11px;}
+	
+
+	
+
+	}
+	button.control{background-color: #ff0000;margin: 0 auto;display: -webkit-box;display: -ms-flexbox;display: flex;margin-top: 80px;height: 40px;width: 150px;-webkit-box-align: center;-ms-flex-align: center;align-items: center;text-align: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;color: white;font-family: 'Gotham';border:none;border-radius: 3px;}
+   .carousel-item{ -webkit-transition: -webkit-transform 2s ease; transition: -webkit-transform 2s ease; -o-transition: transform 2s ease; transition: transform 2s ease; transition: transform 2s ease, -webkit-transform 2s ease; opacity :.5s ease-out;left:0;right:0;}
+}  
+section.heroe{height:300px;}
+  //navbar styling
+nav.navbar{padding:0 15px;
+	.navbar-toggler{
+		span{display: block;height: 8px;width:100% ;background-color: #000000;border-radius:5px;
+			&:nth-of-type(2){margin:5px 0;}
+		}
+		&:focus{border: none;outline: none;}
+	}
+	.main-img{
+		img{height: 1.5rem;}
+	}
+	#navbar{
+		.nav-link{padding:0;}
+		ul{align-items: flex-start;padding-left:15px;
+			li{padding-bottom:10px;border-bottom:1px solid #808080;width:100%;margin-bottom:20px;
+				&:nth-of-type(4){padding:0 0px ;
+					img{position: relative;}
+				}
+				
+				
+				a{
+				   img{height: 47px;}
+				   .fa{color: white;margin-right: 5px;}
+				   
+				  }}}
+	}
+	
+
+}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width:768px)  and (max-width:991px){
+  
+
+}
+// Large devices (Desktops  and up)
+@media (min-width:992px)  and (max-width:1199px){
+  
+
+}
+
+
+//Extra Large DEvices 
+
+// Medium devices (tablets, 768px and up)
+@media (min-width:1200px){
+  
+
 }
