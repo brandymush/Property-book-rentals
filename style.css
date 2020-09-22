@@ -99,7 +99,7 @@ button, a:focus {
 }
 
 nav.navbar {
-  padding: 15px 0px;
+  padding: 15px 50px;
   min-height: 3.75rem;
   background-color: white;
   -webkit-box-align: center;
