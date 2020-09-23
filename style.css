@@ -2698,7 +2698,7 @@ a.btn1 {
 .rentals > div > div > div:last-child .card > a {
   position: absolute;
   background-color: #808080;
-  color: #fff;
+  color: #ffd900;
   padding: 6px 12px;
   top: 5px;
   left: 5px;
@@ -3144,7 +3144,7 @@ a.btn1 {
   width: 100%;
   height: 90px;
   color: white;
-  padding: 0 18px;
+  padding-left: 15px;
 }
 
 .featured > div:first-child > h3 {
@@ -3156,7 +3156,7 @@ a.btn1 {
 }
 
 .featured > div:first-child .feature {
-  color: #fff;
+  color: #ffd900;
   background-color: #808080;
   padding: 10px;
   font-size: 12px;
@@ -3185,16 +3185,10 @@ a.btn1 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 30%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 10px;
 }
 
 .featured .second > div:nth-child(2) .small-img {
+  margin: 0 0 8px 8px;
   width: 100%;
   height: 120px;
   -o-object-fit: cover;
@@ -3267,7 +3261,6 @@ a.btn1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 18px;
 }
 
 .featured .last > div {
@@ -3372,6 +3365,7 @@ a.button {
   font-size: 13px;
   text-decoration: none;
   background-color: #808080;
+  margin-right: 20px;
   width: 160px;
   height: 30px;
   display: -webkit-box;
@@ -3418,8 +3412,6 @@ a.button {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-bottom: 12px;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .FEATURED .priority-list .last p {
