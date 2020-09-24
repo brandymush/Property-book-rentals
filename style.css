@@ -3856,6 +3856,9 @@ nav.single-page {
     display: -ms-flexbox;
     display: flex;
   }
+  .listings-hero {
+    height: auto;
+  }
   .listings-hero .search {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
