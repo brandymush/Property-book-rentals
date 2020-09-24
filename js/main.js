@@ -15,6 +15,9 @@ $(".dollar").click(function(){
     $(".currency-container").slideToggle();
   });
 
+$(".btnn").click(function() {
+  $(".drop-menu").toggle();  
+});
 
 // $(".showcase .item").hover(function(){
 //   $('.showcase .overlay').css("transform", "scale(1.1)");
@@ -48,7 +51,7 @@ $('.carousel').carousel();
 var owl= $('.owl-carousel');
 
 var carouselOption={
-   items:6,
+  
     loop:true,
     margin:10,
     autoplay:false,
@@ -59,22 +62,22 @@ var carouselOption={
     autoplayHoverPause:true,
     responsive:{
         0:{
-         
+          items:4,
           //  items:1,
           //   nav:true,
           //   navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'], 
         },
         768:{
-            
+          items:5,   
         },
         1440:{
-           
+           items:6, 
          
         },
         576:{
-            // items:1,
-            // nav:true,
-            // 
+            items:3,
+            nav:true,
+            
         }
        
     }
@@ -82,6 +85,3 @@ var carouselOption={
 }
 owl.owlCarousel(carouselOption);
 
-$(".btnn").click(function() {
-  $(".drop-menu").toggle();  
-});

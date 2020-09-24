@@ -2583,6 +2583,8 @@ a.btn1 {
 
 .rentals {
   background-color: whitesmoke;
+  overflow: hidden;
+  padding: 0px 15px;
 }
 
 .rentals > div {
@@ -2698,7 +2700,7 @@ a.btn1 {
 .rentals > div > div > div:last-child .card > a {
   position: absolute;
   background-color: #808080;
-  color: #ffd900;
+  color: #fff;
   padding: 6px 12px;
   top: 5px;
   left: 5px;
@@ -3156,7 +3158,7 @@ a.btn1 {
 }
 
 .featured > div:first-child .feature {
-  color: #ffd900;
+  color: #fff;
   background-color: #808080;
   padding: 10px;
   font-size: 12px;
@@ -3378,6 +3380,9 @@ a.button {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 20px;
 }
 
 .FEATURED {
@@ -3753,22 +3758,181 @@ nav.single-page {
 }
 
 @media (max-width: 576px) {
+  .rentals {
+    background-color: whitesmoke;
+  }
+  .rentals > div {
+    padding: 20px 0;
+  }
+  .rentals > div > div {
+    padding: 0;
+  }
+  .rentals > div > div > div:first-child > h3 {
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0px;
+  }
+  .rentals > div > div > div:last-child {
+    background: whitesmoke;
+    padding-top: 20px;
+  }
+  .rentals > div > div > div:last-child .rentals-results {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    color: #808080;
+    margin: 0px 0 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rentals > div > div > div:last-child .rentals-results > div > p {
+    font-size: 16px;
+    color: #808080;
+  }
+  .rentals > div > div > div:last-child .rentals-results > div .user-id {
+    position: relative;
+    height: 47px;
+    width: 260px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 4px;
+    margin-right: 15px;
+  }
+  .rentals > div > div > div:last-child .rentals-results > div .user-id .user-name {
+    height: 100%;
+    font-size: 16px;
+    float: left;
+    padding: 12px 0 0 12px;
+  }
+  .rentals > div > div > div:last-child .rentals-results > div .user-id .dropdown-arrow {
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #808080;
+    position: relative;
+    top: 16px;
+    left: 10px;
+    padding: 0;
+  }
+  .rentals > div > div > div:last-child .rentals-results > div .user-id .dropdown-menu {
+    top: 50px;
+    height: 148px;
+    width: 260px;
+    border: .5px solid #808080;
+    border-radius: 4px;
+  }
+  .rentals > div > div > div:last-child .rentals-results > div .user-id .dropdown-menu > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+  .rentals > div > div > div:last-child .rentals-results > div .user-id .dropdown-menu > div > a {
+    color: black;
+    font-size: 17px;
+    padding: 5px 0;
+  }
+  .rentals > div > div > div:last-child .rentals-results > div .user-id .Text {
+    width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .listings-hero .search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .listings-hero .search form {
+    width: 100%;
+  }
+  .listings-hero .search form > input {
+    font-size: 12px;
+  }
+  .listings-hero .search > ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .listings-hero .search > ul > li {
+    padding: 5px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 48%;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  .listings-hero .search > ul > li > div > a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    min-width: auto;
+  }
+  .listings-hero .search > ul > li > div > a .dropdown-menu {
+    min-width: auto;
+  }
+  .listings-hero .search > ul > li > div > a .dropdown-item {
+    color: #000000;
+    padding: 0px 20px;
+  }
+  .heroe {
+    height: 300px;
+  }
+  .heroe .search {
+    width: 100%;
+    max-width: 90%;
+  }
+  .heroe .search h1 {
+    font-size: 18px;
+  }
+  .heroe .search form input {
+    font-size: 10px;
+  }
+  .heroe .search ul {
+    padding: 8px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .heroe .search ul li {
+    padding: 5px;
+    width: 48%;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
   nav.navbar {
     padding: 0 15px;
   }
+  nav.navbar .navbar-toggler {
+    width: 50px;
+  }
   nav.navbar .navbar-toggler span {
-    display: block;
-    height: 8px;
+    height: 3px;
     width: 100%;
-    background-color: #000000;
-    border-radius: 5px;
   }
   nav.navbar .navbar-toggler span:nth-of-type(2) {
     margin: 5px 0;
-  }
-  nav.navbar .navbar-toggler:focus {
-    border: none;
-    outline: none;
   }
   nav.navbar .main-img img {
     height: 1.5rem;
@@ -4045,6 +4209,155 @@ nav.single-page {
   a.fixed-icon {
     left: 10px;
   }
+  .FEATURED > div:first-child {
+    background-color: #ffd900;
+    padding: 0 10px;
+    color: #808080;
+  }
+  .FEATURED > div:first-child h4, .FEATURED > div:first-child h3 {
+    font-size: 12px;
+  }
+  .FEATURED .priority-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .FEATURED .priority-list .second .prio-img {
+    width: 100%;
+    height: 250px;
+  }
+  .FEATURED .priority-list .last {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .FEATURED .priority-list .last p {
+    margin: 0;
+  }
+  .featured > div:first-child > h3 {
+    font-size: 12px;
+  }
+  .featured > div:first-child > h4 {
+    font-size: 12px;
+  }
+  .featured > div:first-child > img {
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 80px;
+  }
+  .featured .second {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .featured .second .large-img {
+    width: 58%;
+  }
+  .featured .second > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40%;
+    margin-left: 5px;
+  }
+  .featured .second > div:nth-child(2) .small-img {
+    margin: 0 0 8px 0px;
+    width: 100%;
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .featured .second h5 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .featured .second > div > a {
+    width: 150px;
+  }
+  .featured .last {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .featured .last > div {
+    padding: 10px;
+  }
+  .featured .last > div > h3 {
+    font-size: 12px;
+  }
+  .featured .last > div > p {
+    font-size: 10px;
+  }
+  .featured .last > div:last-child {
+    width: 100%;
+  }
+  .featured .last > div:last-child > hr {
+    display: none;
+  }
+  .featured .featured-details {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .featured .featured-details .head {
+    margin: 0;
+    border: none;
+  }
+  .featured .features-border {
+    display: none;
+  }
+  .featured a.button {
+    width: 200px;
+    font-size: 10px;
+    height: 30px;
+  }
+  body .rentals > div > div > div:last-child .card > a {
+    color: #fff;
+  }
+  body .rentals > div > div > div:last-child .card > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .rentals > div > div > div:last-child .card > div > img {
+    width: 100%;
+    height: 190px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .rentals > div > div > div:last-child .card > div > div {
+    width: 100% !important;
+    padding: 14px 0;
+  }
+  body .rentals > div > div > div:last-child .card > div > div > div > div > h4 {
+    font-size: 14px;
+  }
+  body .rentals > div > div > div:last-child .card > div > div > div > div > h5 {
+    font-size: 18px;
+  }
+  body .rentals > div > div > div:last-child .card > div > div > div > h4 {
+    font-size: 25px;
+  }
+  body .rentals > div > div > div:last-child .card > div > div > div > p {
+    margin: 0 10px 18px 0;
+    line-height: 1.4;
+  }
 }
 
 @media (min-width: 568px) and (max-width: 767px) {
@@ -4110,6 +4423,12 @@ nav.single-page {
     font-size: 20px;
     background-color: transparent;
     color: white;
+  }
+  .head {
+    padding: 40px 0 !important;
+  }
+  .head h5 {
+    font-size: 17px !important;
   }
   section.surbubs {
     margin: 20px 0;
@@ -4253,7 +4572,7 @@ nav.single-page {
   }
   nav.navbar .navbar-toggler span {
     display: block;
-    height: 8px;
+    height: 5px;
     width: 100%;
     background-color: #000000;
     border-radius: 5px;
@@ -4295,6 +4614,134 @@ nav.single-page {
   nav.navbar #navbar ul li a .fa {
     color: white;
     margin-right: 5px;
+  }
+  footer.main-footer .footer-inner ul li {
+    padding-right: 8px;
+    padding-bottom: 10px;
+  }
+  footer.main-footer .footer-inner ul li a {
+    font-size: 13px;
+  }
+  footer.main-footer .footer-inner img {
+    height: 50px;
+    padding-top: 15px;
+  }
+  footer.main-footer .last {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer.main-footer .last p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+  }
+  .FEATURED {
+    padding-bottom: 0;
+  }
+  .FEATURED > div:first-child h4, .FEATURED > div:first-child h3 {
+    color: #212529;
+  }
+  .FEATURED .priority-list .second .prio-img {
+    width: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .FEATURED .priority-list .last p {
+    font-size: 12px;
+    padding-bottom: 0;
+  }
+  .FEATURED .priority-list .last .west h3 {
+    font-size: 14px;
+  }
+  .FEATURED .priority-list .last .west > img {
+    width: 80px;
+    height: 30px;
+  }
+  .FEATURED .priority-list .last .prio-icons .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+  }
+  .FEATURED .priority-list .last .prio-icons .icons .left span, .FEATURED .priority-list .last .prio-icons .icons .right span {
+    font-size: 8px;
+  }
+  .FEATURED .priority-list .last .prio-icons > a {
+    font-size: 8px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .FEATURED .priority-list .last > div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .FEATURED .priority-list .last > div:last-child > h4 {
+    font-size: 15px;
+    line-height: 1.3;
+    text-align: left;
+    color: #DAA03DFF;
+  }
+  .FEATURED .priority-list .last > div:last-child > img {
+    width: 120px;
+    height: 60%;
+  }
+  .listings-hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .listings-hero .search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .listings-hero .search form {
+    width: 100%;
+  }
+  .listings-hero .search form > input {
+    font-size: 12px;
+  }
+  .listings-hero .search > ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .listings-hero .search > ul > li {
+    padding: 5px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 48%;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  .listings-hero .search > ul > li > div > a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    min-width: auto;
+  }
+  .listings-hero .search > ul > li > div > a .dropdown-menu {
+    min-width: auto;
+  }
+  .listings-hero .search > ul > li > div > a .dropdown-item {
+    color: #000000;
+    padding: 0px 20px;
   }
 }
 
