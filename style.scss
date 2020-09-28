@@ -1087,7 +1087,11 @@ nav.single-page{background-color:white;}
 // Small devices ( up to 767px)
 
 @media (max-width: 576px) {
-
+.breadcrumb{margin-left:10px;width:95%;
+  a{margin-right:16px !important;font-size:12px;
+     span{font-size:8px !important;}
+  }
+}
 .rentals{background-color: whitesmoke;
 	>div{padding:20px 0;;
 		>div{padding: 0;
@@ -1142,7 +1146,7 @@ nav.single-page{background-color:white;}
 	
 }
   //navbar styling
-nav.navbar{padding:0 15px;
+nav.navbar{padding:0 15px;position: relative;;
 	.navbar-toggler{width:50px;
 		span{height:3px;width:100% ;
 			&:nth-of-type(2){margin:5px 0;}
@@ -1154,7 +1158,7 @@ nav.navbar{padding:0 15px;
 	}
 	#navbar{
 		.nav-link{padding:0;}
-		ul{align-items: flex-start;padding-left:15px;
+		ul{align-items: flex-start;padding-left:15px;padding-top:20px;position: absolute;top: 100%;background:#fff;left: 0;width:100%;padding-right:15px;;
 			li{padding-bottom:10px;border-bottom:1px solid #808080;width:100%;margin-bottom:20px;
 				&:nth-of-type(4){padding:0 0px ;
 					img{position: relative;}
@@ -1537,7 +1541,7 @@ section.heroe{height:300px;
 	}
 }
   //navbar styling
-nav.navbar{padding:0 15px;
+nav.navbar{padding:0 15px;position: relative;
 	.navbar-toggler{
 		span{display: block;height:5px;width:100% ;background-color: #000000;border-radius:5px;
 			&:nth-of-type(2){margin:5px 0;}
@@ -1549,7 +1553,7 @@ nav.navbar{padding:0 15px;
 	}
 	#navbar{
 		.nav-link{padding:0;}
-		ul{align-items: flex-start;padding-left:15px;
+		ul{align-items: flex-start;padding-left:15px;padding-top:20px;position:absolute;top:100%;background:#fff;width:100%;right:0;;
 			li{padding-bottom:10px;border-bottom:1px solid #808080;width:100%;margin-bottom:20px;
 				&:nth-of-type(4){padding:0 0px ;
 					img{position: relative;}
@@ -1786,8 +1790,19 @@ footer.main-footer{
 }
 .rentals > div > div > div:nth-child(2) > div > div:first-child .card > div > img {height:380px;}
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > input{width: 80%;}
-
-}
+	.single-listings-card{
+		.carousel-inner{
+			.card{
+				>div{
+					>div{justify-content: space-between;
+					>p{font-size:10px;;>i{margin: 0 8px;}}
+					>a{font-size:8px;height:20px;padding:0;
+				}
+				}
+			}
+		}
+	}	
+}}
 // Large devices (Desktops  and up)
 @media (min-width:992px)  and (max-width:1199px){
   

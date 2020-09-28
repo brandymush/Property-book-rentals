@@ -3770,6 +3770,17 @@ nav.single-page {
 }
 
 @media (max-width: 576px) {
+  .breadcrumb {
+    margin-left: 10px;
+    width: 95%;
+  }
+  .breadcrumb a {
+    margin-right: 16px !important;
+    font-size: 12px;
+  }
+  .breadcrumb a span {
+    font-size: 8px !important;
+  }
   .rentals {
     background-color: whitesmoke;
   }
@@ -3939,6 +3950,7 @@ nav.single-page {
   }
   nav.navbar {
     padding: 0 15px;
+    position: relative;
   }
   nav.navbar .navbar-toggler {
     width: 50px;
@@ -3961,6 +3973,13 @@ nav.single-page {
         -ms-flex-align: start;
             align-items: flex-start;
     padding-left: 15px;
+    padding-top: 20px;
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    left: 0;
+    width: 100%;
+    padding-right: 15px;
   }
   nav.navbar #navbar ul li {
     padding-bottom: 10px;
@@ -4718,6 +4737,7 @@ nav.single-page {
   }
   nav.navbar {
     padding: 0 15px;
+    position: relative;
   }
   nav.navbar .navbar-toggler span {
     display: block;
@@ -4744,6 +4764,12 @@ nav.single-page {
         -ms-flex-align: start;
             align-items: flex-start;
     padding-left: 15px;
+    padding-top: 20px;
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    width: 100%;
+    right: 0;
   }
   nav.navbar #navbar ul li {
     padding-bottom: 10px;
@@ -5089,6 +5115,22 @@ nav.single-page {
   }
   .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > input {
     width: 80%;
+  }
+  .single-listings-card .carousel-inner .card > div > div {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .single-listings-card .carousel-inner .card > div > div > p {
+    font-size: 10px;
+  }
+  .single-listings-card .carousel-inner .card > div > div > p > i {
+    margin: 0 8px;
+  }
+  .single-listings-card .carousel-inner .card > div > div > a {
+    font-size: 8px;
+    height: 20px;
+    padding: 0;
   }
 }
 
