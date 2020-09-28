@@ -3461,6 +3461,12 @@ a.button {
   height: 50px;
 }
 
+.FEATURED .priority-list .last .prio-icons .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .FEATURED .priority-list .last .prio-icons .icons .left, .FEATURED .priority-list .last .prio-icons .icons .right {
   margin-bottom: 10px;
 }
@@ -3757,6 +3763,12 @@ nav.single-page {
   }
 }
 
+@media (max-width: 320px) {
+  .heroe .search ul li a {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 576px) {
   .rentals {
     background-color: whitesmoke;
@@ -3887,10 +3899,8 @@ nav.single-page {
     margin-bottom: 5px;
   }
   .listings-hero .search > ul > li > div > a {
-    font-size: 14px;
+    font-size: 12px;
     color: black;
-    text-decoration: none;
-    min-width: auto;
   }
   .listings-hero .search > ul > li > div > a .dropdown-menu {
     min-width: auto;
@@ -3923,6 +3933,9 @@ nav.single-page {
     width: 48%;
     background-color: #fff;
     margin-bottom: 5px;
+  }
+  .heroe .search ul li a {
+    color: #000;
   }
   nav.navbar {
     padding: 0 15px;
@@ -4361,9 +4374,138 @@ nav.single-page {
     margin: 0 10px 18px 0;
     line-height: 1.4;
   }
+  .single-description .inner p.first {
+    font-size: 10px;
+  }
+  .single-description .inner p {
+    font-size: 12px;
+  }
+  .single-description > div > img {
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 30px;
+  }
+  .single-description .property-types > div > div .item-1 {
+    text-align: center;
+  }
+  .single-description .property-types > div > div .item-1 h6 {
+    font-size: 15px;
+    border-bottom: .1px solid #808080;
+    padding-bottom: 12px;
+    margin: auto;
+  }
+  .single-description .property-types > div > div:nth-of-type(2) .item-1 h6 {
+    width: auto;
+    margin: auto;
+  }
+  .single-description .property-types > div > div:nth-of-type(2) .item-1 ul {
+    border-left: none;
+    border-right: none;
+  }
+  .single-listings-page {
+    height: 80px;
+  }
+  .single-listings-page > div {
+    padding: 0 8px;
+  }
+  .single-listings-page > div > h4 {
+    font-size: 15px;
+  }
+  .single-listings-page > div p {
+    font-size: 11px;
+  }
+  .single-listings-page > div:first-child h4 {
+    color: #fff;
+    margin: 0 auto;
+  }
+  .single-listings-page .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .breadcrumb a {
+    padding-right: 3px;
+    margin-right: 5px;
+  }
+  .breadcrumb a span {
+    color: #808080;
+    font-size: 9px;
+  }
+  .carousel-caption > h1 {
+    font-size: 20px;
+  }
+  .single-listings-card .carousel-inner .card > div > div > p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .single-listings-card .carousel-inner .card > div > div > p > i {
+    margin: 0 15px 0 5px;
+  }
+  .single-listings-card .carousel-inner .card > div > div > a {
+    font-size: 13px;
+    width: 120px;
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (min-width: 568px) and (max-width: 767px) {
+  .heroe {
+    height: 300px;
+  }
+  .heroe .search {
+    width: 100%;
+    max-width: 90%;
+  }
+  .heroe .search h1 {
+    font-size: 18px;
+  }
+  .heroe .search form input {
+    font-size: 10px;
+  }
+  .heroe .search ul {
+    padding: 8px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .heroe .search ul li {
+    padding: 5px;
+    width: 48%;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  .heroe .search ul li a {
+    color: #000;
+  }
+  body section.heroe > div.search > ul > li > div > div {
+    min-width: auto;
+    padding: 0 10px;
+  }
+  .breadcrumb a {
+    padding-right: 12px;
+    margin-right: 12px;
+  }
+  .breadcrumb a span {
+    color: #808080;
+    font-size: 12px;
+  }
+  .carousel-caption > h1 {
+    font-size: 28px;
+  }
   section.submit p {
     font-size: 25px;
   }
@@ -4487,6 +4629,7 @@ nav.single-page {
   }
   section.surbubs .main-details img.img-fluid {
     height: 320px;
+    width: 100%;
   }
   section.surbubs .main-details .region-1 {
     height: 320px;
@@ -4511,7 +4654,7 @@ nav.single-page {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    width: 100%;
+    width: 100% !important;
   }
   section.surbubs .main-details .region .overlay {
     top: 0;
@@ -4569,6 +4712,9 @@ nav.single-page {
   }
   section.heroe {
     height: 300px;
+  }
+  section.heroe ul li a {
+    color: #000;
   }
   nav.navbar {
     padding: 0 15px;
@@ -4653,6 +4799,7 @@ nav.single-page {
   .FEATURED .priority-list .last p {
     font-size: 12px;
     padding-bottom: 0;
+    padding-top: 12px;
   }
   .FEATURED .priority-list .last .west h3 {
     font-size: 14px;
@@ -4746,9 +4893,85 @@ nav.single-page {
     color: #000000;
     padding: 0px 20px;
   }
+  a.button {
+    font-size: 10px;
+    margin-right: 15px;
+  }
+  .rentals > div > div > div:nth-child(2) > div > div:first-child .card > div > img {
+    height: 280px;
+  }
+  .single-description .inner p.first {
+    font-size: 14px;
+  }
+  .single-description .inner p {
+    font-size: 14px;
+  }
+  .single-description > div > img {
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 30px;
+  }
+  .single-description .property-types > div > div .item-1 {
+    text-align: center;
+  }
+  .single-description .property-types > div > div .item-1 h6 {
+    font-size: 15px;
+    border-bottom: .1px solid #808080;
+    padding-bottom: 12px;
+    margin: auto;
+  }
+  .single-description .property-types > div > div:nth-of-type(2) .item-1 h6 {
+    width: auto;
+    margin: auto;
+  }
+  .single-description .property-types > div > div:nth-of-type(2) .item-1 ul {
+    border-left: none;
+    border-right: none;
+  }
+  .card.agent img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .card.agent img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .single-listings-card .card-body {
+    padding: .5rem;
+  }
+  .single-listings-card .single-card-image {
+    height: 150px;
+  }
+  .single-listings-card .carousel-inner .card > div > div > p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 5px;
+  }
+  .single-listings-card .carousel-inner .card > div > div > p > i {
+    margin: 0 1px 0 5px;
+  }
+  .single-listings-card .carousel-inner .card > div > div > a {
+    font-size: 10px;
+    width: 100px;
+    height: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   section.heroe > div.search {
     width: auto;
   }
@@ -4834,6 +5057,127 @@ nav.single-page {
   }
   footer.main-footer .footer-inner img {
     padding-top: 15px;
+  }
+  .listings-hero .search {
+    height: 80px;
+    padding: 5px 10px;
+  }
+  .listings-hero .search form {
+    width: 50%;
+  }
+  .listings-hero .search form > input {
+    font-size: 12px;
+  }
+  .listings-hero .search form button {
+    height: 40px;
+  }
+  .listings-hero .search > ul > li {
+    padding-right: 9px;
+  }
+  .listings-hero .search > ul > li > div > a {
+    font-size: 9px;
+  }
+  .listings-hero .search > ul > li > div > a .dropdown-menu {
+    min-width: auto;
+  }
+  .listings-hero .search > ul > li > div > a .dropdown-item {
+    color: #000000;
+    padding: 0px 20px;
+  }
+  .rentals > div > div > div:nth-child(2) > div > div:first-child .card > div > img {
+    height: 380px;
+  }
+  .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > input {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .FEATURED {
+    padding-bottom: 0;
+  }
+  .FEATURED > div:first-child {
+    background-color: #ffd900;
+    padding: 0 10px;
+    color: #808080;
+  }
+  .FEATURED > div:first-child h4, .FEATURED > div:first-child h3 {
+    color: #212529;
+  }
+  .FEATURED .priority-list .last .prio-icons .icons {
+    width: 160px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .FEATURED .priority-list .last .prio-icons .icons .left, .FEATURED .priority-list .last .prio-icons .icons .right {
+    margin-bottom: 10px;
+    width: 40%;
+    margin-right: 10px;
+  }
+  .FEATURED .priority-list .last .prio-icons .icons .left span, .FEATURED .priority-list .last .prio-icons .icons .right span {
+    font-size: 10px;
+  }
+  .FEATURED .priority-list .last .prio-icons > a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  a.button {
+    font-size: 10px;
+  }
+  .listings-hero .search form {
+    width: 40%;
+  }
+  .listings-hero .search > ul > li > div > a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  nav.navbar {
+    padding: 0 15px;
+  }
+  nav.navbar .navbar-toggler {
+    width: 50px;
+  }
+  nav.navbar .navbar-toggler span {
+    height: 3px;
+    width: 100%;
+  }
+  nav.navbar .navbar-toggler span:nth-of-type(2) {
+    margin: 5px 0;
+  }
+  nav.navbar .main-img img {
+    height: 1.5rem;
+  }
+  nav.navbar #navbar .nav-link {
+    padding: 0;
+  }
+  nav.navbar #navbar ul {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 15px;
+  }
+  nav.navbar #navbar ul li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #808080;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  nav.navbar #navbar ul li:nth-of-type(4) {
+    padding: 0 0px;
+  }
+  nav.navbar #navbar ul li:nth-of-type(4) img {
+    position: relative;
+  }
+  nav.navbar #navbar ul li a img {
+    height: 47px;
+  }
+  nav.navbar #navbar ul li a .fa {
+    color: white;
+    margin-right: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
