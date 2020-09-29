@@ -3773,6 +3773,9 @@ nav.single-page {
 }
 
 @media (max-width: 576px) {
+  section.services {
+    padding: 30px 16px;
+  }
   .breadcrumb {
     margin-left: 10px;
     width: 95%;
@@ -4360,7 +4363,7 @@ nav.single-page {
     display: none;
   }
   .featured a.button {
-    width: 200px;
+    width: inherit;
     font-size: 10px;
     height: 30px;
   }
@@ -5138,6 +5141,9 @@ nav.single-page {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .single-listings-card .carousel-inner .card > div > div > p > i {
+    margin: 0 0px;
+  }
   .FEATURED {
     padding-bottom: 0;
   }
