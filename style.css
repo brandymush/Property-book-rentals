@@ -4340,6 +4340,10 @@ nav.single-page {
   .featured .last > div > p {
     font-size: 10px;
   }
+  .featured .last > div a {
+    width: 100px;
+    text-align: center;
+  }
   .featured .last > div:last-child {
     width: 100%;
   }
