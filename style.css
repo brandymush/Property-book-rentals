@@ -3465,6 +3465,7 @@ a.button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 260px;
 }
 
 .FEATURED .priority-list .last .prio-icons .icons .left, .FEATURED .priority-list .last .prio-icons .icons .right {
@@ -3474,7 +3475,7 @@ a.button {
 .FEATURED .priority-list .last .prio-icons .icons .left span, .FEATURED .priority-list .last .prio-icons .icons .right span {
   width: 92px;
   font-size: 12px;
-  margin-right: 12px;
+  margin-right: 0px;
   display: inline-block;
 }
 
@@ -3492,8 +3493,9 @@ a.button {
   text-decoration: none;
   border: none;
   background: #808080;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
 }
 
 .FEATURED .priority-list .last > div:last-child {
@@ -3542,6 +3544,7 @@ body > section.heroe > div.search > ul > li > div > div {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  z-index: 1;
 }
 
 .hero .overlay {
@@ -5208,6 +5211,8 @@ nav.single-page {
     left: 0;
     background-color: #fff;
     width: 100%;
+    padding-right: 20px;
+    z-index: 999;
   }
   nav.navbar #navbar ul li {
     padding-bottom: 10px;
