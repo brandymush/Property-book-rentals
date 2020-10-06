@@ -22,6 +22,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
   font-family: 'Gotham';
+  list-style: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -125,7 +126,7 @@ nav.navbar .navbar-toggler span {
   display: block;
   height: 8px;
   width: 100%;
-  background-color: #000000;
+  background-color: #ff0000;
   border-radius: 5px;
 }
 
@@ -393,6 +394,7 @@ nav.navbar #navbar ul li a .login {
   background-color: white;
   padding-left: 28px;
   background-position: 1px center;
+  border-radius: 0;
 }
 
 .heroe .search form input > ::-webkit-input-placeholder {
@@ -451,11 +453,23 @@ nav.navbar #navbar ul li a .login {
   font-size: .9rem;
   color: white;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .heroe .search ul li .dropdown-item {
   color: #000000;
   padding: 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .popular-areas {
@@ -541,6 +555,10 @@ nav.navbar #navbar ul li a .login {
   padding: 10px 0;
   text-decoration: none;
   font-family: 'Gotham';
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 
 .popular-areas .showcase .item .overlay-text a.btn {
@@ -2018,28 +2036,194 @@ a.btn1 {
   margin-right: 15px;
 }
 
+.single-listings-card .carousel-inner .card > a {
+  color: #fff;
+}
+
+.single-listings-card .carousel-inner .card > div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.single-listings-card .carousel-inner .card > div > img {
+  width: 100%;
+  height: 190px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .single-listings-card .carousel-inner .card > div > div {
+  width: 100% !important;
+  padding: 14px 0;
+}
+
+.single-listings-card .carousel-inner .card > div > div > div > div > h4 {
+  font-size: 14px;
+}
+
+.single-listings-card .carousel-inner .card > div > div > div > div > h5 {
+  font-size: 18px;
+}
+
+.single-listings-card .carousel-inner .card > div > div > div > h4 {
+  font-size: 25px;
+}
+
+.single-listings-card .carousel-inner .card > div > div > div > p {
+  margin: 0 10px 18px 0;
+  line-height: 1.4;
+}
+
+.single-listings-card .item .card {
+  border: none;
+  position: relative;
+  margin-top: 20px;
+}
+
+.single-listings-card .item .card > a {
+  position: absolute;
+  background-color: #808080;
+  color: #fff;
+  padding: 6px 12px;
+  top: 5px;
+  left: 5px;
+  z-index: 99;
+  text-decoration: none;
+}
+
+.single-listings-card .item .card a.single {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: transparent;
+}
+
+.single-listings-card .item .card > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 15px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.single-listings-card .carousel-inner .card > div > div > p {
-  margin-right: 20px;
+.single-listings-card .item .card > div > img {
+  width: 40%;
+  height: 190px;
 }
 
-.single-listings-card .carousel-inner .card > div > div > p > i {
-  margin: 0 8px;
+.single-listings-card .item .card > div hr {
+  width: 95%;
+  margin: 12px auto;
 }
 
-.single-listings-card .carousel-inner .card > div > div > a {
-  border: 1px solid #808080;
-  padding: 4px 8px;
+.single-listings-card .item .card > div p {
+  font-size: 13px;
+}
+
+.single-listings-card .item .card > div > div {
+  width: 60%;
+}
+
+.single-listings-card .item .card > div > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+
+.single-listings-card .item .card > div > div > div > div > h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.single-listings-card .item .card > div > div > div > div > h5 {
+  font-size: 20px;
+}
+
+.single-listings-card .item .card > div > div > div > h4 {
+  font-size: 30px;
+}
+
+.single-listings-card .item .card > div > div > div > p {
+  margin: 0 10px 18px 0;
+  line-height: 1.4;
+}
+
+.single-listings-card .item .card > div > div > div.prio {
+  background-color: #ffd900;
+  padding: 0 15px;
+}
+
+.single-listings-card .item .card > div > div > div.prio > div > a {
   font-size: 12px;
+  color: #ffd900;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+
+.single-listings-card .item .card > div > div > div.prio > div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-listings-card .item .card > div > div > div.prio > div:nth-child(2) > h5 {
+  font-size: 15px;
+  margin: 0 10px;
+}
+
+.single-listings-card .item .card > div > div > div.prio > div:nth-child(2) > p {
+  width: 80px;
+  background: #ffd900;
+  text-align: center;
+  padding: 5px;
+}
+
+.single-listings-card .item .card > div > div > div.prio > div:nth-child(2) .priority {
+  background-color: #808080;
+  color: white;
+  z-index: 999999;
+}
+
+.single-listings-card .item .card > div > div > div:last-child {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-top: 16px;
+}
+
+.single-listings-card .item .card > div > div > div:last-child > span {
+  margin-right: 20px;
+  font-size: 12px;
+  color: black;
+}
+
+.single-listings-card .item .card > div > div > div:last-child > a {
+  border-radius: 3px;
+  padding: 8px 10px;
+  color: #fff;
+  margin-left: auto;
+  text-align: center;
+  font-size: 10px;
+  text-decoration: none;
+  background-color: #808080;
 }
 
 .card.agent {
@@ -3791,19 +3975,39 @@ nav.single-page {
 }
 
 @media (max-width: 576px) {
+  .currency-container {
+    left: 10px;
+    width: 100%;
+  }
+  .select-items div, .select-selected {
+    color: #212529;
+    padding: 8px 8px;
+    font-size: 12px;
+    font-size: 16px;
+  }
+  .single-container {
+    padding-top: 80px;
+  }
+  .custom-select p {
+    font-size: 16px;
+  }
   section.services {
     padding: 30px 16px;
   }
+  section.services h5 {
+    padding: 15px 0 12px;
+  }
   .breadcrumb {
-    margin-left: 10px;
     width: 95%;
+    margin: 0 0 8px;
+    padding: 10px 0;
   }
   .breadcrumb a {
-    margin-right: 16px !important;
+    margin-right: 15px !important;
     font-size: 12px;
   }
   .breadcrumb a span {
-    font-size: 8px !important;
+    font-size: 7px !important;
   }
   .rentals {
     background-color: whitesmoke;
@@ -3905,6 +4109,7 @@ nav.single-page {
   }
   .listings-hero {
     height: auto;
+    padding-top: 70px;
   }
   .listings-hero .search {
     -webkit-box-orient: vertical;
@@ -3912,30 +4117,73 @@ nav.single-page {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+    padding-top: 20px;
+    width: 100%;
+    min-width: 98%;
   }
   .listings-hero .search form {
     width: 100%;
   }
   .listings-hero .search form > input {
     font-size: 12px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .listings-hero .search form button {
+    height: 50px;
   }
   .listings-hero .search > ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .listings-hero .search > ul > li {
-    padding: 5px;
+  .listings-hero .search > ul .dropdown {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 48%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .listings-hero .search > ul > li {
+    padding: 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+  }
+  .listings-hero .search > ul > li:nth-of-type(1) {
+    width: 100%;
+  }
+  .listings-hero .search > ul > li:nth-of-type(2), .listings-hero .search > ul > li:nth-of-type(3) {
+    width: 48%;
+  }
+  .listings-hero .search > ul > li:nth-of-type(4), .listings-hero .search > ul > li:nth-of-type(5), .listings-hero .search > ul > li:nth-of-type(6) {
+    width: 32%;
   }
   .listings-hero .search > ul > li > div > a {
-    font-size: 12px;
+    font-size: 16px;
     color: black;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .listings-hero .search > ul > li > div > a .dropdown-menu {
     min-width: auto;
@@ -3943,19 +4191,39 @@ nav.single-page {
   .listings-hero .search > ul > li > div > a .dropdown-item {
     color: #000000;
     padding: 0px 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .heroe {
-    height: 300px;
+    height: 400px;
+    padding-top: 100px;
   }
   .heroe .search {
     width: 100%;
-    max-width: 90%;
+    max-width: 98%;
+    background-color: transparent;
+    padding: 15px 15px;
   }
   .heroe .search h1 {
     font-size: 18px;
   }
+  .heroe .search form {
+    margin-bottom: 5px;
+  }
   .heroe .search form input {
-    font-size: 10px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .heroe .search form button {
+    height: 50px;
   }
   .heroe .search ul {
     padding: 8px 0;
@@ -3963,28 +4231,64 @@ nav.single-page {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .heroe .search ul .dropdown {
+    width: 100%;
+    text-align: center;
+  }
   .heroe .search ul li {
-    padding: 5px;
-    width: 48%;
+    padding: 20px;
     background-color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: left;
+  }
+  .heroe .search ul li:nth-of-type(1) {
+    width: 100%;
+  }
+  .heroe .search ul li:nth-of-type(2), .heroe .search ul li:nth-of-type(3) {
+    width: 48%;
+  }
+  .heroe .search ul li:nth-of-type(5), .heroe .search ul li:nth-of-type(6), .heroe .search ul li:nth-of-type(4) {
+    width: 32%;
   }
   .heroe .search ul li a {
     color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    font-size: 16px;
   }
   nav.navbar {
     padding: 0 15px;
-    position: relative;
+    position: fixed;
+    z-index: 56567890098;
   }
   nav.navbar .navbar-toggler {
     width: 50px;
+    position: relative;
   }
   nav.navbar .navbar-toggler span {
-    height: 3px;
+    height: 5px;
     width: 100%;
   }
   nav.navbar .navbar-toggler span:nth-of-type(2) {
     margin: 5px 0;
+  }
+  nav.navbar .navbar-toggler li.nav-item {
+    margin-left: auto;
+    position: absolute;
+    right: 30px;
   }
   nav.navbar .main-img img {
     height: 1.5rem;
@@ -4030,9 +4334,11 @@ nav.single-page {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
   }
   section.submit p {
-    font-size: 25px;
+    font-size: 20px;
+    padding-bottom: 20px;
   }
   section.submit img {
     height: 60px;
@@ -4052,6 +4358,7 @@ nav.single-page {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    border-radius: 0px;
   }
   section.submit form button {
     height: 40px;
@@ -4061,7 +4368,17 @@ nav.single-page {
     color: white;
   }
   .community > div > h2 {
-    font-size: 18px;
+    font-size: 17px;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .community > div > h2::after, .community > div > h2::before {
+    width: 15%;
     margin: 0;
   }
   .community > div p {
@@ -4096,6 +4413,15 @@ nav.single-page {
   section.surbubs h1 {
     margin: 0;
     font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.surbubs h1::after, section.surbubs h1::before {
+    width: 14%;
   }
   section.surbubs p {
     font-size: 16px;
@@ -4224,6 +4550,16 @@ nav.single-page {
   .popular-areas h1 {
     margin: 0;
     font-size: 18px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .popular-areas h1::before, .popular-areas h1::after {
+    width: 20%;
+    margin: 0;
   }
   .popular-areas p {
     text-align: center;
@@ -4238,9 +4574,33 @@ nav.single-page {
     font-weight: bolder;
     margin: 12px 0;
   }
+  footer.main-footer .footer-inner {
+    text-align: center;
+  }
+  footer.main-footer .footer-inner ul {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   footer.main-footer .footer-inner ul li {
     padding-right: 8px;
     padding-bottom: 10px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer.main-footer .footer-inner ul li::after {
+    height: 100%;
+    width: 1px;
+    background-color: #808080;
+    content: '';
+    display: block;
+    margin-left: 5px;
   }
   footer.main-footer .footer-inner ul li a {
     color: #212529;
@@ -4249,7 +4609,8 @@ nav.single-page {
     text-decoration: none;
   }
   footer.main-footer .footer-inner img {
-    height: 30px;
+    height: 60px;
+    margin: 30px auto;
   }
   footer.main-footer .last {
     -webkit-box-pack: center;
@@ -4266,7 +4627,8 @@ nav.single-page {
     line-height: 20px;
   }
   a.fixed-icon {
-    left: 10px;
+    top: 90%;
+    left: 82%;
   }
   .FEATURED > div:first-child {
     background-color: #ffd900;
@@ -4299,11 +4661,15 @@ nav.single-page {
   .FEATURED .priority-list .last p {
     margin: 0;
   }
+  .featured > div:first-child {
+    padding-left: 5px;
+    height: 60px;
+  }
   .featured > div:first-child > h3 {
-    font-size: 12px;
+    font-size: 15px;
   }
   .featured > div:first-child > h4 {
-    font-size: 12px;
+    font-size: 15px;
   }
   .featured > div:first-child > img {
     height: 100%;
@@ -4455,13 +4821,14 @@ nav.single-page {
     border-right: none;
   }
   .single-listings-page {
-    height: 80px;
+    height: 65px;
   }
   .single-listings-page > div {
     padding: 0 8px;
   }
   .single-listings-page > div > h4 {
     font-size: 15px;
+    font-weight: bold;
   }
   .single-listings-page > div p {
     font-size: 11px;
@@ -4469,6 +4836,9 @@ nav.single-page {
   .single-listings-page > div:first-child h4 {
     color: #fff;
     margin: 0 auto;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: normal;
   }
   .single-listings-page .item {
     display: -webkit-box;
@@ -4481,7 +4851,7 @@ nav.single-page {
   }
   .breadcrumb a span {
     color: #808080;
-    font-size: 9px;
+    font-size: 16px;
   }
   .carousel-caption > h1 {
     font-size: 20px;
@@ -4514,6 +4884,31 @@ nav.single-page {
   .featured .second h5 {
     font-size: 14px !important;
     margin-bottom: 8px;
+  }
+  .carousel-image {
+    height: 300px;
+  }
+  .card.agent #agent .modal-body p {
+    display: block;
+    line-height: 1.3;
+  }
+  .card.agent #agent .modal-body .agent-name a.submit {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 15px;
+    margin: 0 10px 20px;
+  }
+  .rentals > div > div > div:last-child .card > div > div > div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rentals > div > div > div:last-child .card > div > div > div > div h4 {
+    padding-bottom: 5px;
+  }
+  .rentals > div > div > div:last-child .card > div > div > div p {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -5218,7 +5613,6 @@ nav.single-page {
 @media (max-width: 991px) {
   nav.navbar {
     padding: 0 15px;
-    position: relative;
   }
   nav.navbar .navbar-toggler {
     width: 50px;
@@ -5268,6 +5662,56 @@ nav.single-page {
   nav.navbar #navbar ul li a .fa {
     color: white;
     margin-right: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .single-listings-card .item .card {
+    -webkit-box-shadow: 4px 4px 4px whitesmoke;
+            box-shadow: 4px 4px 4px whitesmoke;
+  }
+  .single-listings-card .item .card > a {
+    color: #fff;
+  }
+  .single-listings-card .item .card > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .single-listings-card .item .card > div > img {
+    width: 100%;
+    height: 190px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .single-listings-card .item .card > div > div {
+    width: 100% !important;
+    padding: 14px 0;
+  }
+  .single-listings-card .item .card > div > div > div > div > h4 {
+    font-size: 14px;
+  }
+  .single-listings-card .item .card > div > div > div > div > h5 {
+    font-size: 18px;
+  }
+  .single-listings-card .item .card > div > div > div > h4 {
+    font-size: 25px;
+  }
+  .single-listings-card .item .card > div > div > div > p {
+    margin: 0 10px 18px 0;
+    line-height: 1.4;
+  }
+  .single-listings-card > div > div:last-child .card > div > div > div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .single-listings-card > div > div:last-child .card > div > div > div > div h4 {
+    padding-bottom: 5px;
+  }
+  .single-listings-card > div > div:last-child .card > div > div > div p {
+    margin-bottom: 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
