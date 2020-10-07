@@ -592,7 +592,10 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 			        }
 				}}}
 
-
+body > section.rentals > div > div > div.col-md-12.col-lg-4.col-sm-12.col-12.order-2.order-lg-1 > div > div.social-cards > div.card{
+   img{height:235px;margin:15px 0 !important;}
+   input{width:90%;height:40px;}
+}
 
 				///special
 	.single-listings-card{
@@ -1160,13 +1163,25 @@ nav.single-page{background-color:white;}
 // Small devices ( up to 767px)
 
 @media (max-width: 576px) {
-
+.future{margin-bottom: 20px;;
+     .price{display: flex;justify-content: space-between;align-items: center;height: 55px;background-color: white;padding-left: 8px;;
+	 img{height: 100%;width: 30%;object-fit: cover;}
+	 h3, h4{font-size: 14px;}
+	 }
+     .fearture-items{display: flex!important;justify-content: space-between!important;}
+     .carousel-item img{height: 260px;}
+	  p{line-height: 1.4;}
+	  h3{margin: 8px 0;font-size: 17px;font-weight: bold;}
+	  h5{font-size: 19px;}
+	  span{font-size: 13px;}
+	  .button{width: 120px;margin: 0 0 0 auto;}
+	  }
 .currency-container {left:10px;width:100%;;}
 
 .select-items div,.select-selected {color: #212529;padding: 8px 8px;font-size: 12px;font-size: 16px;
 }
 .single-container{padding-top:80px;}
-
+.single-listings-card h3 {font-size: 18px;}
 .custom-select p{font-size:16px;}
 section.services { padding:30px 16px;
         h5{padding: 15px 0 12px;}
@@ -1394,7 +1409,7 @@ footer.main-footer{
 	     .second{
 	          .prio-img{width:100% !important;height:250px;}
 				}
-		  .last{flex-direction: column;
+		  .last{flex-direction: column;padding-bottom: 0;;
 		      img{object-fit: contain !important;}
 		   p{margin:0;}
 			
@@ -1403,6 +1418,7 @@ footer.main-footer{
 
 	}
 }}
+.mobile{display: none;}
 .featured{
    
 	
@@ -1424,7 +1440,7 @@ footer.main-footer{
 					>a{width:150px;}	   
 			}
 		}
-	.last{flex-direction:row;width:100%;
+	.last{flex-direction:row;width:100%;padding-bottom: 0;;
 		>div{padding: 10px;
 			>h3{font-size:12px;}
 			>p{font-size:10px;}
@@ -1548,6 +1564,19 @@ footer.main-footer{
 
 // Small devices ( up to 767px)
 @media (min-width:568px)  and (max-width:767px){
+.future{margin-bottom:20px;;
+     .price{display: flex;justify-content: space-between;align-items: center;height: 55px;background-color: white;padding-left: 8px;;
+	 img{height: 100%;width: 30%;object-fit: cover;}
+	 h3, h4{font-size: 14px;}
+	 }
+     .fearture-items{display: flex!important;justify-content: space-between!important;}
+     .carousel-item img{height: 260px;}
+	  p{line-height: 1.4;}
+	  h3{margin: 8px 0;font-size: 17px;font-weight: bold;}
+	  h5{font-size: 19px;}
+	  span{font-size: 13px;}
+	  .button{width: 120px;margin: 0 0 0 auto;}
+	  }
 .heroe{height:300px;
 
 	.search{width:100%;max-width:90%;
@@ -1798,7 +1827,17 @@ a.button{font-size:10px;margin-right:15px;}
 // Medium devices (tablets, 768px and up)
 @media (min-width:768px)  and (max-width:991px){
 
+.social-cards{display: flex;justify-content: space-between;align-items: center;;}
+.rentals > div > div > div:nth-child(2) > div > div .card {height:200px;
+   .agencies{width:30%;}
+   img{height:150px;margin:12px 0;}
+   input{width:90%;margin-bottom:30px;}
+   
 
+}
+
+
+.single-container{margin-top:10px;margin-bottom:10px;padding-right: 0;padding-left: 0;}
 .card.agent img {object-fit: contain;}
 .single-listings-card {
 .card-body{padding: .5rem}
@@ -1909,7 +1948,12 @@ footer.main-footer{
 		}
 	}
 }
-.rentals > div > div > div:nth-child(2) > div > div:first-child .card > div > img {height:380px;}
+.rentals > div > div > div:nth-child(2) > div{
+   img{width:100%;}
+}
+.rentals > div > div > div:nth-child(2) > div > div{
+.card {width:100%;height:400px;margin:0 5px;width: fit-content;height: 328px;margin: 0 5px;;
+> div > img {height:150px;margin:14px 0;}}}
 .rentals > div > div > div:nth-child(2) > div > div:nth-child(2) > div > input{width: 80%;}
 	.single-listings-card{
 		.carousel-inner{
@@ -1923,10 +1967,18 @@ footer.main-footer{
 			}
 		}
 	}	
-}}
+}
+body > section.services > div > div > div > ul{margin-bottom:20px;}
+a.fixed-icon {left:90%;top:85%;}
+.listings-hero{height:10vh;}
+
+}
 // Large devices (Desktops  and up)
 @media (min-width:992px)  and (max-width:1199px){
-  
+  body > section.rentals > div > div > div.col-md-12.col-lg-4.col-sm-12.col-12.order-2.order-lg-1 > div > div.social-cards > div.card{
+   img{height:200px;margin:15px 0 !important;}
+   input{height:40px;width:90%;}
+}
 	.single-listings-card{
 		.carousel-inner{
 			.card{
@@ -2020,7 +2072,7 @@ nav.navbar{padding:0 15px;
 }
 // Medium devices (tablets, 768px and up)
 
-@media (min-width:1200px){
+@media (max-width:2400px){
   .single-listings-card{
 		.item{ 
 		    .card{box-shadow:4px 4px 4px whitesmoke;

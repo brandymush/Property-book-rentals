@@ -23,11 +23,11 @@
 
 
     <div class="left d-flex align-items-center">
-      <li class="search-icon">
+      <li class="search-icon d-flex d-lg-none">
         <a href="#billboard" data-toggle="collapse"><img src="./images/iconmonstr-search-thin-240.png" alt=""
             style="height:30px;"></a>
       </li>
-      <li class="nav-item d-flex d-lg-block">
+      <li class="nav-item d-flex d-lg-none">
         <a class="nav-link  position-relative dollar p-0"><img src="featured/currency-switcher.png" alt=""
             style="height:40px;"></a>
       </li>
@@ -595,26 +595,26 @@
   <!-- similar properties -->
   <section class="pt-5 pb-5 single-listings-card">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-6">
           <h3 class="mb-3">Similar Properties </h3>
         </div>
-        <div class="col-6 text-right">
-          <button class="controls mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="prev">
+        <div class="col-6 text-right owl-nav">
+          <button class="controls mb-3 owl-prev" type="button" href="#carouselExampleIndicators2" role="presentation" data-slide="prev">
             <i class="fa fa-arrow-left p-0"></i>
           </button>
 
-          <button class="controls mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+           <button class="controls mb-3 owl-next" type="button" href="#carouselExampleIndicators2" role="presentation" data-slide="prev">
             <i class="fa fa-arrow-right p-0"></i>
           </button>
 
 
         </div>
       </div>
-      <div class="col-12">
+   
         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" data-interval="false">
 
-          <div class="owl-carousel-2">
+          <div class="owl-carousel">
             <div class="item">
               
                   <div class="card">
@@ -645,13 +645,14 @@
                           <a href="single.html" class="view-more">View details</a>
                         </div>
                       </div>
-                    </div>
+                    
                   
                 
                 
                 </div>
               </div>
             </div>
+            
           </div>
           <!-- row -->
 
@@ -770,7 +771,7 @@
   <script src="owl.carousel.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
-   <script src="js/main.js"></script>
+   <!-- <script src="js/main.js"></script> -->
   <script src="js/js.js"></script>
 </body>
 
