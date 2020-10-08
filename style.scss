@@ -1157,6 +1157,7 @@ nav.single-page{background-color:white;}
 // Small devices ( up to 767px)
 
 @media (max-width: 576px) {
+#navbar > ul > li:nth-child(3){padding:0 !important;}
 .future{margin-bottom: 20px;;
      .price{display: flex;justify-content: space-between;align-items: center;height: 55px;background-color: white;padding-left: 8px;;
 	 img{height: 100%;width: 30%;object-fit: cover;}
@@ -1568,6 +1569,7 @@ footer.main-footer{
 
 // Small devices ( up to 767px)
 @media (min-width:568px)  and (max-width:767px){
+#navbar > ul > li:nth-child(3){padding:0 !important;}
 .social-cards{
    .card{text-align: center;
      img{height:200px;width:315px;margin: auto;margin:15px auto;}
@@ -1859,6 +1861,7 @@ a.button{font-size:10px;margin-right:15px;}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width:768px)  and (max-width:991px){
+#navbar > ul > li:nth-child(3){padding:0 !important;}
 #navbar > div{width:100%;right:0;z-index: 999999;background-color: #fff;}
 body > section.rentals > div > div > div.col-md-12.col-lg-4.col-sm-12.col-12.order-2.order-lg-1 > div > div.social-cards > div.card{
    img{height:135px;margin:15px 0 !important;}

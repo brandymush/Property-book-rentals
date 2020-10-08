@@ -3994,6 +3994,9 @@ nav.single-page {
 }
 
 @media (max-width: 576px) {
+  #navbar > ul > li:nth-child(3) {
+    padding: 0 !important;
+  }
   .future {
     margin-bottom: 20px;
   }
@@ -5011,6 +5014,9 @@ nav.single-page {
 }
 
 @media (min-width: 568px) and (max-width: 767px) {
+  #navbar > ul > li:nth-child(3) {
+    padding: 0 !important;
+  }
   .social-cards .card {
     text-align: center;
   }
@@ -5690,6 +5696,9 @@ nav.single-page {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  #navbar > ul > li:nth-child(3) {
+    padding: 0 !important;
+  }
   #navbar > div {
     width: 100%;
     right: 0;
