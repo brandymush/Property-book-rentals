@@ -5179,7 +5179,7 @@ nav.single-page {
   }
   .heroe {
     height: 400px;
-    padding-top: 100px;
+    padding-top: 0px;
   }
   .heroe .search {
     width: 100%;
