@@ -84,24 +84,24 @@ $(document).ready(function(){
     margin:10,
     autoplay:false,
     autoplayTimeout:400000,
-       nav:true,
+    nav:true,
     navigation:true,
-    navText: ['<span class="fa fa-angle-left"></span>','<span class="fa fa-angle-right"></span>'],
+    navText: ['<prev&#x27;"></span>','prev&#x27;'],
     autoplayHoverPause:true,
     responsive:{
         0:{
-          items:3,
+          items:1,
         
         },
         768:{
-          items:3,   
+          items:1,   
         },
         1440:{
            items:3, 
          
         },
         576:{
-            items:3,
+            items:1,
             nav:true,
             
         }
