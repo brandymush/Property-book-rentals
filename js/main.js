@@ -94,7 +94,7 @@ $(document).ready(function(){
         
         },
         768:{
-          items:1,   
+          items:2,   
         },
         1440:{
            items:3, 
