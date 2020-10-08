@@ -2076,16 +2076,6 @@ a.btn1 {
   line-height: 1.4;
 }
 
-body > section.rentals > div > div > div.col-md-12.col-lg-4.col-sm-12.col-12.order-2.order-lg-1 > div > div.social-cards > div.card img {
-  height: 235px;
-  margin: 15px 0 !important;
-}
-
-body > section.rentals > div > div > div.col-md-12.col-lg-4.col-sm-12.col-12.order-2.order-lg-1 > div > div.social-cards > div.card input {
-  width: 90%;
-  height: 40px;
-}
-
 .single-listings-card .item .card {
   border: none;
   position: relative;
@@ -2667,7 +2657,7 @@ body > section.rentals > div > div > div.col-md-12.col-lg-4.col-sm-12.col-12.ord
 .custom-select {
   border: none;
   padding: 0;
-  z-index: 9999999999;
+  z-index: 2;
   margin-right: 4px;
   width: auto;
   background-image: none;
@@ -2704,7 +2694,6 @@ body > section.rentals > div > div > div.col-md-12.col-lg-4.col-sm-12.col-12.ord
   background-image: none;
 }
 
-/* Style the arrow inside the select element: */
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #000 transparent;
@@ -3960,6 +3949,26 @@ nav.single-page {
   }
 }
 
+.social-cards .card {
+  text-align: center;
+}
+
+.social-cards .card img {
+  height: 225px;
+  width: 100%;
+  margin: auto;
+  margin: 15px auto;
+}
+
+.social-cards .card input {
+  height: 40px;
+  width: 90%;
+}
+
+.social-cards .card input:focus {
+  border: 1px solid #ff0000;
+}
+
 @media (max-width: 320px) {
   .heroe .search ul li a {
     font-size: 12px;
@@ -4076,6 +4085,22 @@ nav.single-page {
   }
   .breadcrumb a span {
     font-size: 7px !important;
+  }
+  .social-cards .card {
+    text-align: center;
+  }
+  .social-cards .card img {
+    height: 200px;
+    width: 315px;
+    margin: auto;
+    margin: 15px auto;
+  }
+  .social-cards .card input {
+    height: 40px;
+    width: 90%;
+  }
+  .social-cards .card input:focus {
+    border: 1px solid #ff0000;
   }
   .rentals {
     background-color: whitesmoke;
@@ -4986,6 +5011,22 @@ nav.single-page {
 }
 
 @media (min-width: 568px) and (max-width: 767px) {
+  .social-cards .card {
+    text-align: center;
+  }
+  .social-cards .card img {
+    height: 200px;
+    width: 315px;
+    margin: auto;
+    margin: 15px auto;
+  }
+  .social-cards .card input {
+    height: 40px;
+    width: 90%;
+  }
+  .social-cards .card input:focus {
+    border: 1px solid #ff0000;
+  }
   .future {
     margin-bottom: 20px;
   }
@@ -5041,18 +5082,123 @@ nav.single-page {
     width: 120px;
     margin: 0 0 0 auto;
   }
+  .listings-hero {
+    height: auto;
+    padding-top: 70px;
+  }
+  .listings-hero .search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding-top: 20px;
+    width: 100%;
+    min-width: 98%;
+  }
+  .listings-hero .search form {
+    width: 100%;
+  }
+  .listings-hero .search form > input {
+    font-size: 12px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .listings-hero .search form button {
+    height: 50px;
+  }
+  .listings-hero .search > ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .listings-hero .search > ul .dropdown {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .listings-hero .search > ul > li {
+    padding: 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 10px;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+  }
+  .listings-hero .search > ul > li:nth-of-type(1) {
+    width: 100%;
+  }
+  .listings-hero .search > ul > li:nth-of-type(2), .listings-hero .search > ul > li:nth-of-type(3) {
+    width: 48%;
+  }
+  .listings-hero .search > ul > li:nth-of-type(4), .listings-hero .search > ul > li:nth-of-type(5), .listings-hero .search > ul > li:nth-of-type(6) {
+    width: 32%;
+  }
+  .listings-hero .search > ul > li > div > a {
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .listings-hero .search > ul > li > div > a .dropdown-menu {
+    min-width: auto;
+  }
+  .listings-hero .search > ul > li > div > a .dropdown-item {
+    color: #000000;
+    padding: 0px 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .heroe {
-    height: 300px;
+    height: 400px;
+    padding-top: 100px;
   }
   .heroe .search {
     width: 100%;
-    max-width: 90%;
+    max-width: 98%;
+    background-color: transparent;
+    padding: 15px 15px;
   }
   .heroe .search h1 {
     font-size: 18px;
   }
+  .heroe .search form {
+    margin-bottom: 5px;
+  }
   .heroe .search form input {
-    font-size: 10px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .heroe .search form button {
+    height: 50px;
   }
   .heroe .search ul {
     padding: 8px 0;
@@ -5060,14 +5206,43 @@ nav.single-page {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .heroe .search ul .dropdown {
+    width: 100%;
+    text-align: center;
+  }
   .heroe .search ul li {
-    padding: 5px;
-    width: 48%;
+    padding: 20px;
     background-color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: left;
+  }
+  .heroe .search ul li:nth-of-type(1) {
+    width: 100%;
+  }
+  .heroe .search ul li:nth-of-type(2), .heroe .search ul li:nth-of-type(3) {
+    width: 48%;
+  }
+  .heroe .search ul li:nth-of-type(5), .heroe .search ul li:nth-of-type(6), .heroe .search ul li:nth-of-type(4) {
+    width: 32%;
   }
   .heroe .search ul li a {
     color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    font-size: 16px;
   }
   body section.heroe > div.search > ul > li > div > div {
     min-width: auto;
@@ -5287,12 +5462,6 @@ nav.single-page {
     opacity: .5s ease-out;
     left: 0;
     right: 0;
-  }
-  section.heroe {
-    height: 300px;
-  }
-  section.heroe ul li a {
-    color: #000;
   }
   nav.navbar {
     padding: 0 15px;
@@ -5521,6 +5690,14 @@ nav.single-page {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  body > section.rentals > div > div > div.col-md-12.col-lg-4.col-sm-12.col-12.order-2.order-lg-1 > div > div.social-cards > div.card img {
+    height: 135px;
+    margin: 15px 0 !important;
+  }
+  body > section.rentals > div > div > div.col-md-12.col-lg-4.col-sm-12.col-12.order-2.order-lg-1 > div > div.social-cards > div.card input {
+    width: 90%;
+    height: 40px;
+  }
   .social-cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5834,6 +6011,7 @@ nav.single-page {
     width: 100%;
     padding-right: 20px;
     z-index: 999;
+    background-color: #ff0000;
   }
   nav.navbar #navbar ul li {
     padding-bottom: 10px;
@@ -5846,6 +6024,9 @@ nav.single-page {
   }
   nav.navbar #navbar ul li:nth-of-type(4) img {
     position: relative;
+  }
+  nav.navbar #navbar ul li a {
+    color: #fff;
   }
   nav.navbar #navbar ul li a img {
     height: 47px;

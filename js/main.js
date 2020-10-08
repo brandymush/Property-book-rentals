@@ -48,11 +48,9 @@ $(".fixed-icon").click(function() {
 
 $('.carousel').carousel();
 
-var owl= $('.owl-carousel');
-
-var carouselOption={
-  
-    loop:true,
+$(document).ready(function(){
+    $('.owl-one').owlCarousel({
+       loop:true,
     margin:10,
     autoplay:false,
     autoplayTimeout:400000,
@@ -63,9 +61,7 @@ var carouselOption={
     responsive:{
         0:{
           items:4,
-          //  items:1,
-          //   nav:true,
-          //   navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'], 
+        
         },
         768:{
           items:5,   
@@ -81,7 +77,56 @@ var carouselOption={
         }
        
     }
+    });
 
-}
-owl.owlCarousel(carouselOption);
+     $('.owl-two').owlCarousel({
+       loop:true,
+    margin:10,
+    autoplay:false,
+    autoplayTimeout:400000,
+       nav:true,
+    navigation:true,
+    navText: ['<span class="fa fa-angle-left"></span>','<span class="fa fa-angle-right"></span>'],
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+          items:3,
+        
+        },
+        768:{
+          items:3,   
+        },
+        1440:{
+           items:3, 
+         
+        },
+        576:{
+            items:3,
+            nav:true,
+            
+        }
+       
+    }
+    });
+
+    
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
