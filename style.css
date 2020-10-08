@@ -5690,6 +5690,12 @@ nav.single-page {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  #navbar > div {
+    width: 100%;
+    right: 0;
+    z-index: 999999;
+    background-color: #fff;
+  }
   body > section.rentals > div > div > div.col-md-12.col-lg-4.col-sm-12.col-12.order-2.order-lg-1 > div > div.social-cards > div.card img {
     height: 135px;
     margin: 15px 0 !important;

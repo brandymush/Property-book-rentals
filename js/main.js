@@ -84,9 +84,9 @@ $(document).ready(function(){
     margin:10,
     autoplay:false,
     autoplayTimeout:400000,
-    nav:true,
-    navigation:true,
-    navText: ['<prev&#x27;"></span>','prev&#x27;'],
+    // nav:true,
+    // navigation:true,
+    // navText: ['<prev&#x27;"></span>','prev&#x27;'],
     autoplayHoverPause:true,
     responsive:{
         0:{
@@ -96,18 +96,30 @@ $(document).ready(function(){
         768:{
           items:2,   
         },
+         1200:{
+           items:3, 
+         
+        },
         1440:{
            items:3, 
          
         },
         576:{
-            items:1,
+            items:2,
             nav:true,
             
         }
        
     }
     });
+
+     // Custom Navigation Events
+  $(".next").click(function(){
+    owl.trigger('owl.next');
+  })
+  $(".prev").click(function(){
+    owl.trigger('owl.prev');
+  })
 
     
 
