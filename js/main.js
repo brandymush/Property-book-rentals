@@ -79,14 +79,61 @@ $(document).ready(function(){
     }
     });
 
-     $('.owl-two').owlCarousel({
-       loop:true,
+  //   $('.owl-two').owlCarousel({
+  //     loop:true,
+  //  margin:10,
+  //  items:3,
+  //  autoplay:false,
+  //  autoplayTimeout:400000,
+  //   nav:true,
+  //  navigation:true,
+  // navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+  //  autoplayHoverPause:true,
+  //  responsive:{
+  //      0:{
+  //        items:1,
+       
+  //      },
+  //      768:{
+  //        items:2,   
+  //      },
+  //      1440:{
+  //         items:3, 
+        
+  //      },
+  //      576:{
+  //          items:1,
+  //          nav:true,
+           
+  //      }
+      
+  //  }
+  //  });
+
+  
+
+  //    // Custom Navigation Events
+  // $(".next").click(function(){
+  //   owl.trigger('owl.next');
+  // })
+  // $(".prev").click(function(){
+  //   owl.trigger('owl.prev');
+  // })
+
+    
+
+});
+
+$(document).ready(function(){
+  var owl = $('.owl-two');
+  owl.owlCarousel({
+    loop:true,
     margin:10,
+    items:3,
     autoplay:false,
     autoplayTimeout:400000,
-    // nav:true,
-    // navigation:true,
-    // navText: ['<prev&#x27;"></span>','prev&#x27;'],
+     nav:true,
+    navigation:true,
     autoplayHoverPause:true,
     responsive:{
         0:{
@@ -96,36 +143,56 @@ $(document).ready(function(){
         768:{
           items:2,   
         },
-         1200:{
-           items:3, 
-         
-        },
         1440:{
            items:3, 
          
         },
         576:{
-            items:2,
+            items:1,
             nav:true,
             
         }
        
     }
-    });
-
-     // Custom Navigation Events
-  $(".next").click(function(){
-    owl.trigger('owl.next');
-  })
-  $(".prev").click(function(){
-    owl.trigger('owl.prev');
-  })
-
-    
-
+  });
+  
+  // Custom Button
+  $('.controls mb-3 owl-prev .prev').click(function() {
+    owl.trigger('next.owl.carousel');
+  });
+  $('.controls mb-3 owl-prev .next').click(function() {
+    owl.trigger('prev.owl.carousel');
+  });
+  
 });
 
-
+// $(".owl-two").slick({
+//   dots:true,
+//   slidesToShow:1,
+//   slidesToScroll:1,
+//   autoplay:false,
+//   autoplaySpeed: 2000,
+//   prevArrow: $('.control .prev'),
+//   responsive: [
+// 		{
+// 			breakpoint:576,
+// 			settings: {
+// 				slidesToShow:1,
+// 				slidesToScroll:1,
+// 			}
+// 		},
+// 		{
+// 			breakpoint:1250,
+// 			settings: {
+// 				slidesToShow:3,
+// 				slidesToScroll:3,
+// 			}
+// 		},
+		
+		
+// 	]
+  
+// });
 
 
 
